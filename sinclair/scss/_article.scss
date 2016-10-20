@@ -1,0 +1,41 @@
+.article-header{
+    text-align: center;
+    padding: 100px 0;
+    
+    h1{
+        font-family: $text-font-b;
+    }
+    p.small{
+        color: $gray;
+    }
+    p.article-author{
+        margin-top: 30px;
+    }
+}
+
+.article-post-top-border{border-top: 10px solid $gray;}
+.article-post{
+    
+    .author-sidebar{
+        img{
+            border: 2px solid $pink;
+        }
+        h3{
+            font-size: 18px;
+        }
+        p{
+            padding-top: 30px;
+        }
+    }
+    
+    .read-more-top-img{
+        padding: 0;
+        .read-more-div{
+            padding: 0 15px 20px 15px;
+        }
+        img{
+            width: 100%;
+        }
+    }
+    
+}
