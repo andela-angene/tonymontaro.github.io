@@ -1,0 +1,113 @@
+@mixin case-studies-about-us{
+    .about-case{
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        border: none;
+    }
+    .case-box{
+        @include border-box;
+
+        &:hover{
+            .case-img{
+                &:after{
+                    background: $pink-hover;
+                }
+            }
+            .case-hover{
+                opacity: 1;
+            }
+        }
+
+    }
+    .case-img{
+        position: relative;
+        img{
+            width: 100%;
+            display: block;
+            overflow: hidden;
+        }
+        &:after{
+            content: " ";
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: $transparent;
+            @include transition();
+        }
+    }
+    .case-hover{
+        width: 100%;
+        display: block;
+        padding: 20px 20px;
+        @include border-box;
+        position: absolute;
+        top: 0;
+        color: #fff;
+        opacity: 1;
+        
+        h1{
+            font-family: $text-font-b;
+            margin: 0;
+        }
+        .about-case-more{
+            margin-top: 40px;
+            padding-bottom: 10px;
+            width: 70%;
+            border-bottom: 1px solid #fff;
+            
+        }
+        img{
+            width: 30px;
+            margin-top: 10px;
+        }
+    }
+}
+
+.about-us-cover{
+    img{width: 100%;}
+}
+
+.about-sinclair{
+    background-color: $black;
+    color: #fff;
+    padding: 30px 0;
+    h3,p{margin: 0;}
+    
+    .col-sm-4{
+        border-right: 2px solid #fff;
+        
+        &:last-child{
+            border-right: none;
+        }
+    }
+}
+
+.about-percent{
+    padding: 20px 0;
+    img{
+        max-width: 100%;
+        padding: 10px;
+    }
+    .about-percent-wrap{
+        background-color: $light-gray;
+        text-align: center;
+        padding: 10px 8px 30px 8px;
+        border-bottom: 2px solid $pink;
+        
+        P,h2{margin: 0;}
+    }
+}
+
+.about-menu-list{
+    padding: 30px 0;
+    background-color: $light-gray;
+    
+    .col-sm-4{
+        padding-bottom: 20px;
+    }
+    @include case-studies-about-us();
+}

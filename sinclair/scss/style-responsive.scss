@@ -1,0 +1,22 @@
+@import "partials/functions";
+@import 'partials/variables';
+@import 'partials/mixins';
+
+@media only screen and (max-width: 992px) {
+
+    .case-boxes {
+
+      .case-box{
+        width: 50% !important;
+      }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+  .case-boxes {
+
+    .case-box{
+      width: 100% !important;
+    }
+  }
+}

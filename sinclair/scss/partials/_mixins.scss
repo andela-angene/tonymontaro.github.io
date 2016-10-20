@@ -1,0 +1,124 @@
+// === SCREENS ===
+@mixin tiny-screen(){
+  @media (max-width: 320px) {
+    @content;
+  }
+}
+@mixin small-screen(){
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+@mixin medium-screen(){
+  @media (max-width: 680px) {
+    @content;
+  }
+}
+@mixin large-screen(){
+  @media (max-width: 960px) {
+    @content;
+  }
+}
+
+@mixin  google-font($font){
+  $font: unquote($font);
+  @import url(https://fonts.googleapis.com/css?family=#{$font});
+}
+@mixin warning{
+  background-color: orange;
+  color: #ffffff;
+}
+@mixin box-shadow($shadow...){
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+@mixin apply-to-ie-6{
+  * html{
+    @content;
+  }
+}
+@mixin large-text{
+  font: {
+    size: 22px;
+    width: bold;
+  }
+}
+@mixin rounded($radius: 6px){
+  border-radius: $radius;
+}
+
+
+
+@mixin transition($time: 0.27s){
+  -webkit-transition: all $time;
+  -moz-transition: all $time;
+  -ms-transition: all $time;
+  -o-transition: all $time;
+  transition: all $time;
+}
+@mixin border-box{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@mixin footer-links{
+    a:link, a:visited{
+        color: $darker-gray;
+        border: none;
+        font-size: 13px;
+    }
+    a:hover, a:active{
+        color: darken($gray, 80%);
+    }
+}
+@mixin mobile-nav-links{
+    a:link, a:visited{
+        color: #fff !important;
+        border: none;
+//        font-size: 13px;
+    }
+    a:hover, a:active{
+        color: darken(#fff, 30%) !important;
+    }
+}
+
+@mixin social-icons-i{
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 25px;
+    color: $darker-gray;
+
+    @include transition;
+    &:hover{
+        color: $pink;
+
+    } 
+}
+
+@mixin owl-nav{
+    position: absolute;
+    z-index: 990;
+    font-size: 20px;
+    padding: 5px 10px !important;
+    background-color: #fff;
+    color: $pink;
+    left: -15px;
+}
+
+@mixin read-more-btn{
+    padding: 5px 10px;
+    color: #fff;
+    background-color: $pink;
+    border: none;
+    &:hover{background-color: darken($pink, 10%);}
+}
+
+@mixin chatbox-box{
+    width: 100%;
+    border: 1px solid $darker-gray-l;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 20px 50px;
+}

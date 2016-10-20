@@ -1,0 +1,283 @@
+@mixin case-studies{
+    .about-case{
+        position: relative;
+        width: 90%;
+        border: 2px solid $pink;
+    }
+    .case-box{
+        @include border-box;
+
+        &:hover{
+            .case-img{
+                &:after{
+                    background: $pink-hover;
+                }
+            }
+            .case-hover{
+                opacity: 1;
+            }
+        }
+
+    }
+    .case-img{
+        img{
+            width: 100%;
+            display: block;
+            overflow: hidden;
+        }
+        &:after{
+            content: " ";
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: $transparent;
+            @include transition();
+        }
+    }
+    .case-hover{
+        width: 100%;
+        display: block;
+        padding: 20px 0;
+        @include border-box;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        color: #fff;
+        opacity: 0;
+        @include transition();
+    }
+}
+
+.section-title{
+    font-family: $text-font-b;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.about-tabs{
+    
+    
+    .about-tab-links{
+        list-style: none;
+        justify-content: space-between;
+        
+        a:link, a:visited{
+            color: $darker-gray;
+            border: none;
+            font-size: 12px;
+        }
+        a:hover, a:active{
+            color: darken($gray, 80%);
+        }
+        .col-sm-2{
+            padding: 0;
+            margin: 0;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            border-bottom: 2px solid $gray;
+            @include transition();
+            
+            i {
+                display: inline-block;
+                position: absolute;
+                font-size: 12px;
+                bottom: -7px;
+                left: 50%;
+                color: $gray;
+                transform: translateX(-50%);
+                @include transition();
+            }
+        }
+        .col-sm-2.active{
+            border-bottom: 2px solid $pink;
+            a{
+                color: $pink;
+            }
+            i{color: $pink;}
+        }
+        .col-sm-2:hover{
+            border-bottom: 2px solid darken($pink, 5%);
+            a{
+                color: darken($pink, 10%);
+            }
+            i{color: darken($pink, 5%);}
+        }
+        
+        
+    }
+    
+    
+    .tab-content{
+        height: 480px;
+        .tab-pane{
+            height: 480px;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            box-sizing: border-box;
+            align-items: center;
+           
+            
+            .panel-text{
+                max-width: 600px;
+                margin: 0 auto;
+                padding-top: 200px;
+                color: #fff;
+                h1{
+                    font-family: $text-font-b;
+                }
+                p{
+                    font-style: italic;
+                    font-size: 16px;
+                }
+            }
+        }
+        
+        #core-values{
+            background-image: url(../images/bgs/about-mountain1.jpg);
+        }
+        #what-we-do{
+            background-image: url(../images/bgs/about-mountain2.jpg);
+        }
+        #management{
+            background-image: url(../images/bgs/about-mountain3.jpg);
+        }
+        #team-strategy{
+            background-image: url(../images/bgs/about-mountain4.jpg);
+        }
+        #thought-leadership{
+            background-image: url(../images/bgs/about-mountain5.jpg);
+        }
+        #insights{
+            background-image: url(../images/bgs/about-mountain6.jpg);
+        }
+    }
+}
+
+
+.sticky-register-footer{
+    display: none;
+    padding: 5px 0;
+    background-color: transparentize($black, 0.1);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 999;
+    
+    p{
+        padding: 0;
+        margin: 0;
+        color: $gray;
+        
+        
+    }
+    .pull-left p {
+        position: relative;
+        top: 5px;
+    }
+    .subscribe-stf{
+        padding: 5px 10px;
+        border: 1px solid $pink;
+        margin-left: 4px;
+        color: $gray;
+        i{
+            color: $pink;
+        }
+    }
+    img{
+        height: 30px;
+    }
+}
+
+.about-post{
+    
+    .container{
+        padding: 60px 15px;
+        background-color: $light-gray;
+        
+        .col-sm-9{
+            padding-bottom: 30px;
+            @media (min-width: 767px){
+                padding: 0 40px;
+            }
+            h2{
+                font-family: $text-font-b;
+                margin: 0;
+                padding-bottom: 20px;
+            }
+        }
+        
+        
+    }
+    
+    
+    p{
+        line-height: 25px;
+    }
+    .about-passport{
+        max-width: 100px;
+    }
+    .col-sm-3{
+        padding-right: 10px;
+        max-width: 250px;
+        margin-top: 20px;
+        p{
+            font-size: 13px;
+            strong{font-family: $text-font-b;}
+        }
+        h3{
+            font-family: $text-font-b;
+        }
+        .socail-icons{
+            i {
+                @include social-icons-i;
+                font-size: 16px;
+            }
+           
+        }
+        
+    }
+    
+    .about-read-more{
+        border: 1px solid $gray;
+        button.read-more-btn{
+            position: relative;
+            top: -15px;
+        }
+        padding-bottom: 30px;
+        
+        ul {
+            list-style: none;
+            padding:0;
+            margin:0;
+        }
+
+        li { 
+            padding-left: 1em; 
+            text-indent: -.7em;
+        }
+
+        li:before {
+            content: "• ";
+            color: $pink; 
+            font-size: 21px;
+        }
+    }
+    
+    
+//    case studies
+    @include case-studies();
+}
+
+
+.about-separate-img{
+    img{
+        width: 100%;
+        height: auto;
+    }
+}

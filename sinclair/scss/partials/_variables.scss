@@ -1,0 +1,33 @@
+
+// === COLORS ===
+$pink: #E61B86;
+$pink-hover: rgba( 230, 27, 134, 0.6);
+$black:  #232426;
+$gray: #DADADA;
+$light-gray: #F7F7F7;
+$darker-gray: darken($gray, 50%);
+$darker-gray-l: darken($gray, 20%);
+$transparent: rgba(250, 250, 250, 0);
+
+
+$text-color: #222;
+$theme-color: #170a48;
+$secondary-color: #f27731;
+$ternary-color: #ccf962;
+$link-color: $secondary-color;
+$menu-item-color: white;
+
+// === FONTS ===
+$text-font: "NHaasGrotesk", Helvetica, Verdana, Sans-Serif;
+$text-font-b: "NHaasGrotesk-b", Helvetica, Verdana, Sans-Serif;
+$headline-font: 'Titillium Web', Georgia, serif;
+
+// === SIZES ===
+$footer-bottom-pad: 50px;
+$nav-li-pad: 10px;
+$footer-text-heading: 30px;
+
+$context-width: 960px;
+$header-height: 60px;
+$footer-height: 90px;
+$col: col-width($columns: 8);

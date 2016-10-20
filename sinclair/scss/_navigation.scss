@@ -1,0 +1,183 @@
+//Start NOrmal NAVIGATION
+.navigation{
+    padding: 0;
+    margin: 0;
+
+    .top-nav{
+        display: inline-block;
+        padding: 5px 0;
+        position: relative;
+        text-decoration: none;
+        @include border-box;
+        float: right;
+
+        ul{
+            list-style: none;
+
+            li{
+                float: left;
+                padding: 3px 10px;
+                &:last-child{
+                    padding-right: 0;
+                }
+
+                a:link, a:visited {
+                    color: $black;
+                    text-decoration: none;
+                    @include transition();
+                }
+                a:active, a:hover {
+                    color: lighten($black, 30%);
+                }
+            }
+            .sign-in{
+                border-left: 2px $black solid;
+                border-right: 2px $black solid;
+                a:link, a:visited {color: $pink;}
+                a:active, a:hover {color: lighten($pink, 20%);}
+            }
+        }
+    }
+
+    nav {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        background-color: $black;
+
+        ul{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            li{
+                padding: $nav-li-pad;
+                &:first-child{
+                    padding-left: 0;
+                }
+                &:last-child{
+                    padding-right: 0;
+                }
+
+                a:link,
+                a:visited {
+                    color: #fff;
+                    text-decoration: none;
+                    padding-bottom: 3px;
+                    border-bottom: 1px solid transparent;
+                    @include transition();
+                }
+                a:active,
+                a:hover{
+                    border-bottom-color: $pink;
+                }
+            }
+            .logo {
+                @include footer-links;
+                img{
+                    height: 35px;
+                    width: auto;
+                }
+            }
+        }
+    }
+
+}
+//End NAVIGATION
+
+//Start Inverted NAVIGATION
+.navigation-inverse{
+    padding: 0;
+    margin: 0;
+    background-color: $black;
+
+    .top-nav{
+        display: inline-block;
+        padding: 5px 0;
+        position: relative;
+        text-decoration: none;
+        @include border-box;
+        float: right;
+        color: #fff;
+
+        ul{
+            list-style: none;
+
+            li{
+                float: left;
+                padding: 3px 10px;
+                &:last-child{
+                    padding-right: 0;
+                }
+
+                a:link, a:visited {
+                    color: #fff;
+                    text-decoration: none;
+                    @include transition();
+                }
+                a:active, a:hover {
+                    color: lighten($black, 30%);
+                }
+            }
+            .sign-in{
+                border-left: 2px #fff solid;
+                border-right: 2px #fff solid;
+                a:link, a:visited {color: $pink;}
+                a:active, a:hover {color: lighten($pink, 20%);}
+            }
+        }
+    }
+
+    nav {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        background-color: #fff;
+
+        ul{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            li{
+                padding: $nav-li-pad;
+                &:first-child{
+                    padding-left: 0;
+                }
+                &:last-child{
+                    padding-right: 0;
+                }
+
+                a:link,
+                a:visited {
+                    color: $black;
+                    text-decoration: none;
+                    padding-bottom: 3px;
+                    border-bottom: 1px solid transparent;
+                    @include transition();
+                }
+                a:active,
+                a:hover{
+                    border-bottom-color: $pink;
+                }
+            }
+            .logo {
+                @include footer-links;
+                img{
+                    height: 35px;
+                    width: auto;
+                }
+                padding-right: 200px;
+            }
+        }
+    }
+
+}
+//End NAVIGATION
+

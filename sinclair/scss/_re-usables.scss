@@ -1,0 +1,175 @@
+@font-face {
+    font-family: "NHaasGrotesk-b";
+    font-family: $text-font-b;
+    src: url("NHaasGroteskTXPro-75Bd.otf") format("opentype");
+}
+@font-face {
+    font-family: "NHaasGrotesk";
+    src: url("NHaasGroteskTXPro-55Rg.otf") format("opentype");
+}
+
+//Start Re-useables
+.fixed-navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 998;
+}
+body {
+    font-family: $text-font;
+    font-size: 14px;
+
+    a:link, a:visited{
+        text-decoration: none;
+        color: $pink;
+        padding-bottom: 3px;
+        border-bottom: 1px solid transparent;
+        @include transition();
+    }
+    a:hover, a:active{
+        border-bottom-color: $pink;
+    }
+    .pink-text{
+        color: $pink;
+    }
+    .italic-text{
+        font-style: italic;
+    }
+
+    .wrapper{
+        padding: 0;
+        margin: 0;
+        padding-bottom: 80px;
+        background-color: $light-gray;
+    }
+    .read-more-btn{
+        @include read-more-btn();
+    }
+    strong{
+        font-family: $text-font-b;
+    }
+    .contoner{padding: 0 15px;}
+    .link-rm-default:link,.link-rm-default:visited,.link-rm-default:hover,.link-rm-default:active{
+        border: none;
+        color: $black;
+        padding: 0; margin: 0;
+    }
+    .display-none{
+        display: none;
+    }
+}
+//Mobile Navigation
+.navbar{
+    display: none;
+    z-index: 999;
+    background-color: $black;
+    color: #fff;
+
+    .navbar-brand{
+        padding: 7px 20px;
+        img{
+            height: 100%;
+        }
+    }
+
+    ul{
+        li{
+            color: #fff;
+            @include mobile-nav-links();
+        }
+    }
+}
+
+//Show mobile nav for small screens
+@media (max-width: 767px){
+    body{
+        padding-top: 50px;
+    }
+    .navbar{
+        display: block;
+    }
+    .navigation,.navigation-inverse{
+        display: none;
+    }
+}
+
+//End Re-usables
+
+
+//Chatbox PopUp
+.chatbox-a{max-width: 400px; margin: 30px auto;}
+.chatbox{
+    position: relative;
+    max-width: 400px !important;
+    margin: 0 auto;
+    background-color: $gray;
+    color: $darker-gray;
+    border-radius: 0;
+    border-bottom: 2px solid $pink;
+
+    h3{
+        margin: 0;
+        font-size: 18px;
+    }
+    p{margin: 0;}
+
+    .chatbox-head{
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
+        background-color: #fff;
+        border-bottom: 1px solid $darker-gray-l;
+        margin-bottom: 20px;
+        h3{}
+        div{
+            position: absolute;
+            float: right;
+            top: 15px;
+            right: 15px;
+            a{
+                color: $darker-gray;
+                font-size: 16px;
+                padding-left: 10px;
+            }
+
+        }
+    }
+
+    .chatbox-team{
+        @include chatbox-box();
+        text-align: center;
+
+        .chatbox-team-imgs{
+            padding: 20px 0;
+            width: 100%;
+            img{
+                width: 50px;
+            }
+        }
+    }
+
+    .chatbox-online{
+        @include chatbox-box();
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+        .chatbox-email{
+            font-size: 20px;
+            margin-top: 10px;
+            color: skyblue;
+        }
+    }
+
+    .chatbox-start-conv{
+        margin: 30px 0;
+        border-radius: 10px;
+        border: 1px solid $darker-gray-l;
+
+        input{
+            border: none !important;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+    }
+}
+//End Chatbox PopUp
