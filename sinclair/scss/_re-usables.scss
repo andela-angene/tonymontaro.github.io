@@ -35,6 +35,9 @@ body {
     .italic-text{
         font-style: italic;
     }
+    .gray-text{
+        color: $gray;
+    }
 
     .wrapper{
         padding: 0;
@@ -93,6 +96,10 @@ body {
     }
 }
 
+.offset-section{
+    position: relative;
+    top: -300px;
+}
 //End Re-usables
 
 

@@ -1,3 +1,15 @@
+//Extend jquery with animateCss
+$.fn.extend({
+    animateCss: function (animationName) {
+        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        this.addClass('animated ' + animationName).one(animationEnd, function() {
+            $(this).removeClass('animated ' + animationName);
+        });
+    }
+});
+
+
+
 (function ($) {
     "use strict";
 
@@ -50,9 +62,9 @@ function init_masory() {
     })(jQuery);
 }
 
-//Case top scroll effect
+//Case top scroll effect (offset section)
 $(function () {
-    var bar = $('.case-studies');
+    var bar = $('.offset-section');
 
     var top = bar.css('top');
     $(window).scroll(function () {
@@ -87,11 +99,11 @@ $(document).ready(function(){
         }
     });
     
-    $('.section-title').waypoint(function (direction) {
+    $('body').waypoint(function (direction) {
         if(direction == 'down'){
             $('.sticky-register-footer').css('display', 'block');
         }
-    });
+    }, {offset: -150});
     
     
     //Start carousel-group
@@ -153,6 +165,23 @@ $(document).ready(function(){
     });
     
     
+    //Contact Animation
+    $('.contact-img-a').hover(function(){
+        $(this).find('.contact-fadeIn').css('display', 'block');
+        $(this).find('.contact-fadeIn').animateCss('fadeIn');
+        $(this).find('.contact-slideIn').css('display', 'block');
+        $(this).find('.contact-slideIn').animateCss('slideInLeft');
+    }, function(){
+        $(this).find('.contact-slideIn').fadeOut();
+        $(this).find('.contact-fadeIn').fadeOut();
+    });
+    
 });
+
+
+
+
+
+
 
 
