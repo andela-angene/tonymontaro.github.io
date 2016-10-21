@@ -108,4 +108,51 @@ $(document).ready(function(){
     $('.owl-next').html('<i class="glyphicon glyphicon-chevron-right"></i>');
 
     //End carousel-group
-})
+    
+    
+    
+    
+    //Circles!
+    var showCircles = $("#showCircles"), inited = false;
+    showCircles.appear({force_process: true});
+    
+    showCircles.on('appear', function(){
+        if (!inited){
+            $("#circle1").circleProgress({
+                value: 0.4,
+                size: 290,
+                lineCap: "round",
+                startAngle: 99,
+                emptyFill: "#232426",
+                fill: {
+                    gradient: ["#E61B86", "#E61B86"]
+                }
+            });
+            $("#circle2").circleProgress({
+                value: 0.6,
+                size: 290,
+                lineCap: "round",
+                startAngle: 99,
+                emptyFill: "#232426",
+                fill: {
+                    gradient: ["#E61B86", "#E61B86"]
+                }
+            });
+            $("#circle3").circleProgress({
+                value: 0.9,
+                size: 290,
+                lineCap: "round",
+                startAngle: 99,
+                emptyFill: "#232426",
+                fill: {
+                    gradient: ["#E61B86", "#E61B86"]
+                }
+            });
+            inited = true;
+        }
+    });
+    
+    
+});
+
+

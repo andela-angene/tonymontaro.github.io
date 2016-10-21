@@ -203,14 +203,17 @@
 
         
         <section class="about-percent">
-            <div class="container">
+            <div data-appear-top-offset="-200" id="showCircles" class="container">
                 <div class="row">
                     <div class="col-sm-4">
                        <div class="about-percent-wrap">
-                           <img src="images/about/40p.jpg" alt="">
+                           <div class="about-circle">
+                               <div id="circle1"></div>
+                               <h2><strong>40%</strong></h2>
+                           </div>
                            <h2>
                                STATS <br>
-                               NUMBER1
+                               NUMBER 1
                            </h2>
                            <p>
                                When an unknown printer took a gallery of type and scrambled
@@ -220,10 +223,13 @@
                     </div>
                     <div class="col-sm-4">
                         <div class="about-percent-wrap">
-                            <img src="images/about/60p.jpg" alt="">
+                            <div class="about-circle">
+                                <div id="circle2"></div>
+                                <h2><strong>60%</strong></h2>
+                            </div>
                             <h2>
                                 STATS <br>
-                                NUMBER1
+                                NUMBER 2
                             </h2>
                             <p>
                                 When an unknown printer took a gallery of type and scrambled
@@ -233,10 +239,14 @@
                     </div>
                     <div class="col-sm-4">
                         <div class="about-percent-wrap">
-                            <img src="images/about/90p.jpg" alt="">
+                            <div class="about-circle">
+                                <div id="circle3"></div>
+                                <h2><strong>90%</strong></h2>
+                            </div>
+                               
                             <h2>
                                 STATS <br>
-                                NUMBER1
+                                NUMBER 3
                             </h2>
                             <p>
                                 When an unknown printer took a gallery of type and scrambled
@@ -750,6 +760,9 @@
         <script src="js/imagesloaded.pkgd.min.js"></script>
         <script src="js/jquery.waypoints.min.js"></script>
         <script src="js/owl.carousel.min.js"></script>
+<!--        circle animation and appear.js -->
+        <script src="js/circle/jquery.appear.js"></script>
+        <script src="js/circle/circle-progress.js"></script>
 
         <script src="js/script.js"></script>
     </body>
