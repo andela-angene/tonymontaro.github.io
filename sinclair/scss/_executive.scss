@@ -1,0 +1,40 @@
+@mixin pink-hover-border{
+    border: 0.1px solid transparent;
+    @include transition();
+    &:hover{
+        border: 2px solid $pink;
+    }
+}
+
+.text-box{
+    line-height: 25px;
+    @include pink-hover-border();
+    
+    h3{
+        font-size: 25px;
+        font-family: $text-font-b;
+        line-height: 29px;
+    }
+    h1{
+        float: left;
+        margin: 5px 10px 0 0;
+        font-family: $text-font-b;
+        font-size: 41px;
+    }
+}
+
+.image-box{
+    padding: 0;
+    @include pink-hover-border();
+    
+    img{
+        width: 100%;
+        padding: 0; margin: 0;
+    }
+}
+
+
+
+.executive{
+    padding: 50px 0;
+}
