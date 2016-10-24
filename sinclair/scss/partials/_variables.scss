@@ -10,6 +10,7 @@ $darker-gray-l: darken($gray, 20%);
 $transparent: rgba(250, 250, 250, 0);
 
 
+
 $text-color: #222;
 $theme-color: #170a48;
 $secondary-color: #f27731;
@@ -21,6 +22,9 @@ $menu-item-color: white;
 $text-font: "NHaasGrotesk", Helvetica, Verdana, Sans-Serif;
 $text-font-b: "NHaasGrotesk-b", Helvetica, Verdana, Sans-Serif;
 $headline-font: 'Titillium Web', Georgia, serif;
+
+// === FONTS SIZES ===
+$text-box-header: 35px;
 
 // === SIZES ===
 $footer-bottom-pad: 50px;
