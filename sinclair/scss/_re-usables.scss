@@ -7,6 +7,12 @@
     font-family: "NHaasGrotesk";
     src: url("NHaasGroteskTXPro-55Rg.otf") format("opentype");
 }
+@font-face {
+    font-family: "NHaasGrotesk-l";
+    src: url("NHaasGroteskDSPro-35XLt.otf") format("opentype");
+}
+
+
 
 //Start Re-useables
 .fixed-navbar{
@@ -98,7 +104,7 @@ body {
 
 .offset-section{
     position: relative;
-    top: -300px;
+    top: -180px;
 }
 //End Re-usables
 

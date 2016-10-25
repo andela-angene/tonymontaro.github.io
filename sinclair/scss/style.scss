@@ -9,22 +9,25 @@
 @import "re-usables";
 
 //Index page
-@import "index";
+@import "pages/index";
 
 //Showcase Page
-@import "core-values";
+@import "pages/core-values";
 
 //About -> Core Values
-@import "about";
+@import "pages/about";
 
 //About 
-@import "about-us";
+@import "pages/about-us";
 
 //Article News
-@import "article";
+@import "pages/article";
 
 //Contact
-@import "contact";
+@import "pages/contact";
 
 //Executive
-@import "executive";
+@import "pages/executive";
+
+//Talent
+@import "pages/talent";

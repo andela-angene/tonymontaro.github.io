@@ -62,8 +62,8 @@ function init_masory() {
     })(jQuery);
 }
 
-//Case top scroll effect (offset section)
-$(function () {
+    //Case top scroll effect (offset section)
+    $(function () {
     var bar = $('.offset-section');
 
     var top = bar.css('top');
@@ -99,6 +99,7 @@ $(document).ready(function(){
         }
     });
     
+    //Sticky foot strip
     $('body').waypoint(function (direction) {
         if(direction == 'down'){
             $('.sticky-register-footer').css('display', 'block');
@@ -114,7 +115,7 @@ $(document).ready(function(){
     });
 
 
-    //change nav text
+        //change nav text
 
     $('.owl-prev').html('<i class="glyphicon glyphicon-chevron-left"></i>');
     $('.owl-next').html('<i class="glyphicon glyphicon-chevron-right"></i>');
@@ -124,7 +125,7 @@ $(document).ready(function(){
     
     
     
-    //Circles!
+    //Circles about page!
     var showCircles = $("#showCircles"), inited = false;
     showCircles.appear({force_process: true});
     
@@ -176,6 +177,12 @@ $(document).ready(function(){
         $(this).find('.contact-fadeIn').fadeOut();
     });
     
+    
+    $('.case-box-dld-pdf').hover(function(){
+        $('.case-hover-dld').fadeOut();
+    }, function(){
+        $('.case-hover-dld').fadeIn();
+    });
 });
 
 

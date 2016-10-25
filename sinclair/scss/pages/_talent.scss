@@ -1,0 +1,39 @@
+@mixin case-box-covered($color){
+    .case-box-covered{
+        position: absolute;
+        top: 0; bottom: 0; left: 0; right: 0;
+        background-color: $color;
+    }
+}
+
+.talent-management{
+    .small{
+        font-family: $text-font-l;
+        font-size: 16px;
+    }
+    .header-text{
+        max-width: 600px;
+    }
+    
+    @include case-box-covered($light-gray);
+}
+
+.case-box-dld-pdf{
+    @include case-box-covered($black);
+    
+    .case-hover-dld{
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+.case-box-dld-pdf:hover{
+    
+   
+    .case-img {
+        &:after{
+            opacity: 1;
+            background: $black !important;
+        }
+    }
+}
