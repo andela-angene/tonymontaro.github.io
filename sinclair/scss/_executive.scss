@@ -15,8 +15,8 @@
 }
 
 @mixin pink-hover-border{
-    border: 0.1px solid transparent;
-    @include transition();
+//    border: 1px solid transparent;
+//    @include transition();
     &:hover{
         border: 2px solid $pink;
     }
@@ -54,7 +54,7 @@
         margin: 10px 0;
         a{
             padding: 1px 10px;
-            background-color: $black
+            background-color: $black;
             color: #fff;
         }
     }
