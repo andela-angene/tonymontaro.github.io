@@ -143,7 +143,7 @@
 }
 
 
-//Practices
+//Practices and Venture
 .practices{
     .text-box{
         &:hover{
@@ -158,7 +158,7 @@
         }
     }
     @media (min-width: 767px){
-        .practice-image{
+        .practice-image, .venture-image{
             float: left;
         }
         .text-box{float: right;}
@@ -178,5 +178,29 @@
         padding-bottom: 100px;
        
     }
+}
+.venture-image{
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+@mixin venture-up($top: 0){
+    position: relative;
+    top: $top;
     
+    .text-box{
+        background-color: #fff;
+    }
+}
+@media (min-width: 767px){
+    .venture-up1{
+        @include venture-up(-130px);
+    }
+    .venture-up2{
+        @include venture-up(-260px);
+    }
+    .venture-up3{
+        @include venture-up(-390px);
+    }
 }
