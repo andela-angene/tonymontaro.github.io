@@ -113,6 +113,11 @@ $(document).ready(function(){
         items: 1,
         loop: true
     });
+    $('#news-header-carousel').owlCarousel({
+        nav: true,
+        items: 1,
+        loop: true
+    });
 
 
         //change nav text

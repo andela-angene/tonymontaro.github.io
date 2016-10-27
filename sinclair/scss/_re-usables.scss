@@ -11,6 +11,10 @@
     font-family: "NHaasGrotesk-l";
     src: url("NHaasGroteskDSPro-35XLt.otf") format("opentype");
 }
+@font-face {
+    font-family: "NHaasGrotesk-xl";
+    src: url("NHaasGroteskDSPro-15UltTh.otf") format("opentype");
+}
 
 
 
@@ -24,6 +28,7 @@
 body {
     font-family: $text-font;
     font-size: 14px;
+    letter-spacing: 0.7px;
 
     a:link, a:visited{
         text-decoration: none;
@@ -43,6 +48,9 @@ body {
     }
     .gray-text{
         color: $gray;
+    }
+    .light-text{
+        font-family: $text-font-xl;
     }
 
     .wrapper{

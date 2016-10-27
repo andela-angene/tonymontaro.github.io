@@ -1,6 +1,7 @@
 @import "partials/functions";
 @import 'partials/variables';
 @import 'partials/mixins';
+@import 'partials/vendors';
 
 //Navigation
 @import "navigation";
@@ -31,3 +32,6 @@
 
 //Talent
 @import "pages/talent";
+
+//News
+@import "pages/news";
