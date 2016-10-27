@@ -183,6 +183,13 @@ $(document).ready(function(){
     }, function(){
         $('.case-hover-dld').fadeIn();
     });
+    
+    //Venture Item show
+    $('.venture-item').hover(function(){
+        $(this).addClass('venture-show');
+    }, function(){
+        $(this).removeClass('venture-show');
+    });
 });
 
 

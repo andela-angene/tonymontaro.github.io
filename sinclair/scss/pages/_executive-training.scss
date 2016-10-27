@@ -32,7 +32,8 @@
         font-family: $text-font-b;
         line-height: 29px;
     }
-    h1{
+    h1{font-family: $text-font-b;}
+    .h1-float-left{
         float: left;
         margin: 5px 10px 0 0;
         font-family: $text-font-b;

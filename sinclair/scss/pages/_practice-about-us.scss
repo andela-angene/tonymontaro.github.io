@@ -180,6 +180,7 @@
     }
 }
 .venture-image{
+    @include transition();
     img{
         width: 100%;
         height: auto;
@@ -194,6 +195,9 @@
     }
 }
 @media (min-width: 767px){
+    .venture-up0{
+        @include venture-up(0);
+    }
     .venture-up1{
         @include venture-up(-130px);
     }
@@ -202,5 +206,32 @@
     }
     .venture-up3{
         @include venture-up(-390px);
+    }
+}
+
+.venture{
+   
+    @media(min-width: 767px){
+        margin-bottom: -300px;
+        .text-box{
+            opacity: 0;
+        } 
+    }
+    .venture-item{
+        @include transition();
+    }
+    
+    .venture-show{
+        z-index: 999;
+        background-color: #fff;
+        .venture-image{
+            img{
+                border: 2px solid $pink;
+                z-index: 999;
+            }
+        }
+        .text-box{
+            opacity: 1 !important;
+        }
     }
 }
