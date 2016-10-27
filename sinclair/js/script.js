@@ -195,6 +195,12 @@ $(document).ready(function(){
     }, function(){
         $(this).removeClass('venture-show');
     });
+    
+    //news filters on click
+    $('.news-filters a').click(function(){
+        $('.news-filters a').removeClass('news-active-filter');
+        $(this).addClass('news-active-filter');
+    });
 });
 
 
