@@ -206,6 +206,14 @@ $(document).ready(function(){
         $('.news-filters a').removeClass('news-active-filter');
         $(this).addClass('news-active-filter');
     });
+    
+    //trending items on click
+    $('.trending-item').click(function(){
+        
+        $('.trending-item').removeClass('trending-item-active');
+        
+        $(this).addClass('trending-item-active');
+    });
 });
 
 

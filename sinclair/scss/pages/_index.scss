@@ -32,7 +32,7 @@
         bottom: -18px; right: 0;
         padding: 0;
         width: 50px;
-        z-index: 998;
+        z-index: 995;
     }
     h2,h1{
         margin: 0;
@@ -140,6 +140,7 @@
     
     .trending-item{
         display: flex;
+        
         div{
             display: inline-flex;
             flex-wrap: wrap;
@@ -155,13 +156,20 @@
                 justify-content: center;
                 width: 30px;
                 height: 30px;
-                border: 2px solid $pink;
+                border: 2px solid $darker-gray;
                 border-radius: 15px;
+                @include transition();
             }
         }
         .trending-text{
             width: 80%;
             border-bottom: 1px solid $gray;
+        }
+    }
+    .trending-item:hover, .trending-item-active{
+        .trending-num span{
+            border-color: $pink;
+            color: $pink;
         }
     }
 }
