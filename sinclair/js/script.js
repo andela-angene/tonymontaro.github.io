@@ -9,6 +9,7 @@ $.fn.extend({
 });
 
 
+
 (function ($) {
     "use strict";
 
@@ -40,6 +41,14 @@ $.fn.extend({
             return results[1] || 0;
         }
     }
+    
+    $.loadManagementPerson = function(name){
+        console.log('hi');
+        $('#management-team').load('management-person.txt', function(){
+            $('#management-team').addClass('management-person-active');
+        });
+    }
+    
     
 })(jQuery);
 
@@ -236,7 +245,15 @@ $(document).ready(function(){
         
         $('a[href = "#'+aboutUsPage+'"]').tab('show');
     }
-        
+    
+    $('a[href="#management"]').click(function(){
+        if($('#management-team').hasClass('management-person-active')){
+            $('#management-team').load('management-team.txt', function(){
+                $('#management-team').removeClass('management-person-active');
+            });
+           
+        }
+    });
         
 });
 

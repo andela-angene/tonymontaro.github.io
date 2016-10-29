@@ -1,3 +1,4 @@
+.dark-bg{background-color: $black;}
 .about-box-half-e{
     padding: 0 5px;
     .row{
@@ -9,12 +10,19 @@
         padding: 5px;
     }
 }
+.about-box-desc{margin-top: 20px;}
 .about-box-half{
+    
     padding: 5px;
     @include maintain-aspect-r(102%);
     .box-half{
         padding: 0;
-        img{
+        .logo-div{
+            position: absolute;
+            bottom: 30px; right: 30px;
+            img{width: 60px;height: auto;}
+        }
+        >img{
             width: 100%;
         }
     }
@@ -31,6 +39,7 @@
     }
 }
 .about-box{
+    @include maintain-aspect-r(100%);
     padding: 0px 10px;    
     .box{
         position: relative;
@@ -39,11 +48,14 @@
         @include transition();
         &:hover{
             background-color: $pink;
+            .contact-text{
+                color: #fff;
+                a,.pink-text{color: #fff;}
+            }
         }
-        img{
+        > img{
             width: 100%;
         }
-        
         .text-dark-bg{
             position: absolute;
             bottom: 5px; right: 5px; left: 5px;
@@ -54,11 +66,21 @@
             opacity: 0.8;
             z-index: 996;
         }
-        .download-image{
-            position: absolute;
-            img{
-                width: 100px;
+        .contact-text{
+            padding-left: 15px;
+            h2{
+                font-size: 35px;
             }
+        }
+    }
+    .social-box{
+        background-color: $black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i{
+            color: #fff;
+            font-size: 100px;
         }
     }
 }
@@ -75,8 +97,39 @@
         top: 5px; bottom: 5px;
         left: 5px; right: 5px;
         background-color: #000;
-        opacity: 0.5;
+        opacity: 0.4;
         border: 1px solid #000;
         @include transition();
     }
 }
+.download-box{
+    &:hover{
+        img{display: none;}
+        background-color: $black !important;
+        .download-text{
+            display: flex;
+        }
+    }
+    .download-image{
+        position: absolute;
+        top: 0;left: 0;
+        width: 100%; height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 100px;
+        }
+    }
+    .download-text{
+        display: none;
+        position: absolute;
+        top: 0;left: 0;
+        width: 100%; height: 100%;
+        align-items: center;
+        justify-content: center;
+        color: $pink;
+        font-size: 30px;
+    }
+}
+
