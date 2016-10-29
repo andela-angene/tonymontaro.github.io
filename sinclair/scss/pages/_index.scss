@@ -141,15 +141,19 @@
     
     .trending-item{
         display: flex;
+        &:last-child{
+            .trending-text{border: none;}
+            .trend80{display: none;}
+        }
         
         div{
             display: inline-flex;
             flex-wrap: wrap;
             height: 80px;
-            overflow: hidden;
             align-items: center;
         }
         .trending-num{
+            position: relative;
             width: 20%;
             justify-content: center;
             span{
@@ -160,19 +164,38 @@
                 height: 30px;
                 border: 2px solid $darker-gray;
                 border-radius: 15px;
+                z-index: 982;
+                background-color: #fff;
                 @include transition();
             }
+            .trend80{
+                width: 1px;
+                height: 80px;
+                border-right: 2px solid $darker-gray;
+                position: absolute;
+                top: 40px;
+                z-index: 980;
+                @include transition();
+            }
+            
         }
         .trending-text{
             width: 80%;
             border-bottom: 1px solid $gray;
         }
+        
     }
     .trending-item:hover, .trending-item-active{
-        .trending-num span{
-            border-color: $pink;
-            color: $pink;
+        .trending-num {
+            span{
+                border-color: $pink;
+                color: $pink;
+            }
+            .trend80{
+                border-color: $pink;
+            }
         }
+        
     }
 }
 .homepage-content-row{
