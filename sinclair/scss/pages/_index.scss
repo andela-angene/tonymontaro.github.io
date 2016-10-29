@@ -51,7 +51,7 @@
 }
 #home-header-carousel{
     display: flex;
-    background-color: $gray;
+    background-color: $light-gray;
     justify-content: center;
 
     .owl-controls{
@@ -187,18 +187,64 @@
     }
     .home-content-box{
         padding: 0 5px;
-        @include maintain-aspect-r(98.3%);
+        @media (min-width: 991px){
+            @include maintain-aspect-r(98.3%);
+        }
+        
         img{
             width: 100%;
-            @include transition();
+           
             &:hover{
-                border: 5px solid $pink;
+                border: 2px solid $pink;
+            }
+        }
+        .text-box{
+            padding: 20px;
+            background-color: $light-gray;
+            .home-content-title{
+                display: block;
+                position: relative;
+                .fox-button-d{
+                    float: right;
+                }
+                h2{
+                    display: inline-block;
+                    margin: 0;
+                    font-family: $text-font-b;
+                }
+            }
+        }
+        .text-box-d{
+            background-color: $black;
+            color: #fff;
+            .fox-button-l{float: right;}
+            h2{
+                color: $pink;
+                padding-bottom: 15px;
+            }
+            .read-more{
+                display: inline-block;
+                padding-right: 20px;
+                padding-bottom: 20px;
+                border-bottom: 2px solid #fff;
+                a{
+                    color: #fff;
+                    border: none;
+                }
             }
         }
     }
 }
-.hcr-mid{
-    .col-md-4{
-        
-    }
+//Fox Buttons
+.fox-button-d{
+    padding: 10px 15px;
+    color: $pink;
+    background-color: $black;
+    border: none;
+}
+.fox-button-l{
+    padding: 10px 15px;
+    color: $black;
+    background-color: #fff;
+    border: none;
 }
