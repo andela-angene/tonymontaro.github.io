@@ -129,7 +129,7 @@ $(document).ready(function(){
     
     
     //Start carousel-group
-    $('#carousel-group').owlCarousel({
+    $('#footer-news').owlCarousel({
         nav: true,
         items: 1,
         loop: true
