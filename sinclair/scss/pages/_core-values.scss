@@ -35,6 +35,25 @@
 
 
 // Start Case study Masonry
+@media only screen and (max-width: 992px) {
+
+    .case-boxes {
+
+        .case-box{
+            width: 50% !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .case-boxes {
+
+        .case-box{
+            width: 100% !important;
+        }
+    }
+}
+
 .case-studies{
     
     padding-top: 60px;
@@ -147,7 +166,7 @@
         }
     }
 
-}
+} 
 //End Case study Masonry
 
 

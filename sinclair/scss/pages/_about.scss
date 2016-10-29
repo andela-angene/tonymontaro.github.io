@@ -121,7 +121,7 @@
             width: 100%;
             box-sizing: border-box;
             align-items: center;
-            background-image: url(../images/bgs/about-mountain1.jpg);
+            
             
             .panel-text{
                 max-width: 600px;
@@ -143,21 +143,24 @@
             
             
         }
+        #core-values .panel-text-div{
+            background-image: url(../images/about-us/about-mountain1.jpg);
+        }
         
-        #what-we-do{
-            background-image: url(../images/bgs/about-mountain2.jpg);
+        #what-we-do .panel-text-div{
+            background-image: url(../images/about-us/about-mountain1.jpg);
         }
-        #management{
-            background-image: url(../images/bgs/about-mountain3.jpg);
+        #management .panel-text-div{
+            background-image: url(../images/about-us/about-mountain1.jpg);
         }
-        #team-strategy{
-            background-image: url(../images/bgs/about-mountain4.jpg);
+        #team-strategy .panel-text-div{
+            background-image: url(../images/about-us/about-mountain1.jpg);
         }
-        #thought-leadership{
-            background-image: url(../images/bgs/about-mountain5.jpg);
+        #thought-leadership .panel-text-div{
+            background-image: url(../images/about-us/about-mountain1.jpg);
         }
-        #insights{
-            background-image: url(../images/bgs/about-mountain6.jpg);
+        #insights .panel-text-div{
+            background-image: url(../images/about-us/about-mountain1.jpg);
         }
     }
 }

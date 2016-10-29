@@ -9,7 +9,6 @@ $.fn.extend({
 });
 
 
-
 (function ($) {
     "use strict";
 
@@ -28,6 +27,19 @@ $.fn.extend({
     $(document).ready(function () {
         init_masory();
     });
+    
+    //jQuery code snippet to get the dynamic variables stored in the url as parameters and
+    //store them as JavaScript variables ready for use with your scripts:
+
+    $.urlParam = function(name){
+        var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+        if (results==null){
+            return null;
+        }
+        else{
+            return results[1] || 0;
+        }
+    }
     
 })(jQuery);
 
@@ -214,6 +226,18 @@ $(document).ready(function(){
         
         $(this).addClass('trending-item-active');
     });
+    
+    
+    //Tabs about page     
+    //$.urlParam('page') contains the variable on the url
+    
+    if($.urlParam('page')){
+        var aboutUsPage = $.urlParam('page');
+        
+        $('a[href = "#'+aboutUsPage+'"]').tab('show');
+    }
+        
+        
 });
 
 
