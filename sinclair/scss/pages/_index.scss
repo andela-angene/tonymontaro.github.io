@@ -50,17 +50,19 @@
     padding: 50px 0;
 }
 #home-header-carousel{
-    display: flex;
+    position: relative;
     background-color: $light-gray;
-    justify-content: center;
+
 
     .owl-controls{
-        align-self: flex-end;
-        order: -1;
+        display: inline-block;
         position: absolute;
-        @media (max-width: 767px){
-            left: 0;
-            align-self: flex-end;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @media (min-width: 768px){
+            
         }
         
 
@@ -177,6 +179,8 @@
                 border-right: 2px solid $darker-gray;
                 position: absolute;
                 top: 40px;
+                left: 50%;
+                transform: translateX(-50%);
                 z-index: 980;
                 @include transition();
             }

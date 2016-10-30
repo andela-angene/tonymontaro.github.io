@@ -1,14 +1,16 @@
 #footer-news{
-    display: flex;
+    position: relative;
 
     .owl-controls{
-        align-self: center;
-        order: -1;
+        display: inline-block;
         position: absolute;
-        left: -15px;
-        @media (max-width: 767px){
-            left: 0;
-            align-self: flex-start;
+        top: 0;
+
+
+        @media (min-width: 768px){
+            top: 50%;
+            left: -20px;
+            transform: translateY(-50%);
         }
 
         div.owl-next,div.owl-prev{

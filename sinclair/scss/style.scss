@@ -1,13 +1,19 @@
 @import "partials/functions";
 @import 'partials/variables';
 @import 'partials/mixins';
-@import 'partials/vendors';
 
-//Navigation
-@import "navigation";
 
 //Re Usables
 @import "re-usables";
+* {
+    min-height: 0;
+    min-width: 0;
+}
+@import 'partials/vendors';
+//Navigation
+@import "navigation";
+
+
 
 
 //Showcase Page
