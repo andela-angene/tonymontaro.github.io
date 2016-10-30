@@ -22,7 +22,9 @@
     }
 }
 .gray-box-l{background-color: $light-gray;}
-
+.view-our-case{
+    border: none !important;
+}
 .text-box{
     line-height: 25px;
     @include pink-hover-border();
@@ -62,6 +64,7 @@
     }
 }
 .line-div{
+    
     display: flex;
     justify-content: space-between;
     margin: 5px 0;
@@ -69,6 +72,9 @@
         padding: 1px 10px;
         background-color: $black;
         color: #fff !important;
+        &:hover{
+            background-color: $pink;
+        }
     }
 }
 .text-box-sm{
@@ -93,7 +99,7 @@
 
 .image-box{
     padding: 0;
-    @include pink-hover-border();
+    
     
     img{
         width: 100%;
