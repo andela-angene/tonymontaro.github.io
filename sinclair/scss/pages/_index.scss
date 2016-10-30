@@ -123,6 +123,9 @@
 .homepage-trending{
     padding: 0;
     background-color: $light-gray;
+    @media (min-width: 991px){
+        @include maintain-aspect-r(142%);
+    }
     
     .homepage-trending-header{
         position: relative;

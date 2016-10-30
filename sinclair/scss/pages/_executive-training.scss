@@ -49,15 +49,26 @@
             border: none;
         }
     }
-    .line-div{
-       display: flex;
+    
+    .line-div-l{
+        display: flex;
         justify-content: space-between;
-        margin: 10px 0;
+        margin: 5px 0;
         a{
             padding: 1px 10px;
-            background-color: $black;
+            background-color: $gray;
             color: #fff;
         }
+    }
+}
+.line-div{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+    a{
+        padding: 1px 10px;
+        background-color: $black;
+        color: #fff !important;
     }
 }
 .text-box-sm{

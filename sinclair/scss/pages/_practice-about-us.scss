@@ -144,6 +144,12 @@
 
 
 //Practices and Venture
+.fl-head-text{
+    float: left;
+    margin: 0 5px 0 0;
+    font-size: 36px;
+    font-family: $text-font-b;
+}
 .practices{
     .text-box{
         &:hover{
