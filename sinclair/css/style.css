@@ -1944,6 +1944,10 @@ footer .footer-copyright p {
   color: #fff;
 }
 
+.text-box .line-div-l a:hover {
+  background-color: #E61B86;
+}
+
 .line-div {
   display: -webkit-box;
   display: -ms-flexbox;

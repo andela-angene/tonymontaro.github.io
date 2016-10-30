@@ -60,11 +60,13 @@
             padding: 1px 10px;
             background-color: $gray;
             color: #fff;
+            &:hover{
+                background-color: $pink;
+            }
         }
     }
 }
 .line-div{
-    
     display: flex;
     justify-content: space-between;
     margin: 5px 0;
