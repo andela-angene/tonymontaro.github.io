@@ -14,20 +14,17 @@
     }
 }
 
-@mixin pink-hover-border{
-//    border: 1px solid transparent;
-//    @include transition();
+.gray-box-l{background-color: $light-gray;}
+.pink-hover-bd{
     &:hover{
         border: 2px solid $pink;
     }
 }
-.gray-box-l{background-color: $light-gray;}
-.view-our-case{
-    border: none !important;
+.pink-border{
+    border: 2px solid $pink;
 }
 .text-box{
     line-height: 25px;
-    @include pink-hover-border();
     
     h3{
         font-size: 25px;
