@@ -145,7 +145,7 @@ body .pad0 {
 
 .offset-section {
   position: relative;
-  top: -180px;
+  top: -230px;
 }
 
 .chatbox-a {
@@ -495,7 +495,7 @@ body #frotateG_08 {
 .navigation nav ul li a:visited {
   color: #fff;
   text-decoration: none;
-  padding-bottom: 3px;
+  padding-bottom: 5px;
   border-bottom: 1px solid transparent;
   -webkit-transition: all 0.27s;
   transition: all 0.27s;
@@ -645,6 +645,103 @@ body #frotateG_08 {
 
 .active-menu {
   border-bottom-color: #E61B86 !important;
+}
+
+.top-tabs {
+  padding-top: 20px;
+}
+
+.top-tabs .about-tab-links {
+  list-style: none;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.top-tabs .about-tab-links a:link, .top-tabs .about-tab-links a:visited {
+  color: #5b5b5b;
+  border: none;
+  font-size: 12px;
+}
+
+.top-tabs .about-tab-links a:hover, .top-tabs .about-tab-links a:active {
+  color: #0e0e0e;
+}
+
+.top-tabs .about-tab-links .col-sm-2, .top-tabs .about-tab-links .col-sm-3 {
+  padding: 0;
+  margin: 0;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #DADADA;
+  -webkit-transition: all 0.27s;
+  transition: all 0.27s;
+}
+
+.top-tabs .about-tab-links .col-sm-2 i, .top-tabs .about-tab-links .col-sm-3 i {
+  display: inline-block;
+  position: absolute;
+  font-size: 12px;
+  bottom: -7px;
+  left: 50%;
+  color: #DADADA;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: all 0.27s;
+  transition: all 0.27s;
+}
+
+.top-tabs .about-tab-links .col-sm-2.active, .top-tabs .about-tab-links .col-sm-3.active {
+  border-bottom: 2px solid #E61B86;
+}
+
+.top-tabs .about-tab-links .col-sm-2.active a, .top-tabs .about-tab-links .col-sm-3.active a {
+  color: #E61B86;
+}
+
+.top-tabs .about-tab-links .col-sm-2.active i, .top-tabs .about-tab-links .col-sm-3.active i {
+  color: #E61B86;
+}
+
+.top-tabs .about-tab-links .col-sm-2:hover, .top-tabs .about-tab-links .col-sm-3:hover {
+  border-bottom: 2px solid #d11779;
+}
+
+.top-tabs .about-tab-links .col-sm-2:hover a, .top-tabs .about-tab-links .col-sm-3:hover a {
+  color: #ba146b;
+}
+
+.top-tabs .about-tab-links .col-sm-2:hover i, .top-tabs .about-tab-links .col-sm-3:hover i {
+  color: #d11779;
+}
+
+.top-tabs .tab-content .panel-text-div {
+  height: 480px;
+  height: 480px;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
+  align-items: center;
+}
+
+.top-tabs .tab-content .panel-text-div .panel-text {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 200px;
+  color: #fff;
+}
+
+.top-tabs .tab-content .panel-text-div .panel-text h1 {
+  font-family: "NHaasGrotesk-b", Helvetica, Verdana, Sans-Serif;
+}
+
+.top-tabs .tab-content .panel-text-div .panel-text p {
+  font-style: italic;
+  font-size: 16px;
 }
 
 .header {
@@ -2020,7 +2117,7 @@ footer .footer-copyright p {
 }
 
 .executive {
-  padding: 50px 0;
+  padding: 0;
 }
 
 .training-headerpic img {
