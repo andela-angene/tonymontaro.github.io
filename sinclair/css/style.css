@@ -1259,6 +1259,10 @@ footer .footer-copyright p {
   background-color: #fff !important;
 }
 
+.about-tabs {
+  padding-top: 20px;
+}
+
 .about-tabs .about-tab-links {
   list-style: none;
   -webkit-box-pack: justify;
