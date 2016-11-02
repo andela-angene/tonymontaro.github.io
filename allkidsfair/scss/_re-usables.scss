@@ -1,0 +1,26 @@
+
+body{
+    //	font-family: $text-font;
+    //    color: $text-color;
+    //    font-size: $text-size;
+
+    .t-container{
+        max-width: $context-width;
+        margin: 0 auto;
+    }
+}
+
+
+#top-search{
+
+    .logo{
+        img{
+            width: 150px;
+        }
+    }
+    .cart{
+        a{
+            font-size: 16px;
+        }
+    }
+}
