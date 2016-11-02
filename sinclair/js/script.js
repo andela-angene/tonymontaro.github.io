@@ -128,21 +128,34 @@ $(document).ready(function(){
     }, {offset: -150});
     
     
-    //Start carousel-group
+    //Start carousel-group news-header-carousel
     $('#footer-news').owlCarousel({
-        nav: true,
-        items: 1,
-        loop: true
+        navigation: true,
+        singleItem: true,
+        loop: true,
+        pagination: false,
+        rewindSpeed: 200
     });
     $('#news-header-carousel').owlCarousel({
-        nav: true,
-        items: 1,
-        loop: true
+        navigation: true,
+        singleItem: true,
+        loop: true,
+        pagination: false,
+        rewindSpeed: 200
     });
     $('#home-header-carousel').owlCarousel({
-        nav: true,
-        items: 1,
-        loop: true
+        navigation: true,
+        singleItem: true,
+        loop: true,
+        pagination: false,
+        rewindSpeed: 200
+    });
+    $('#news-executive-carousel').owlCarousel({
+        navigation: true,
+        singleItem: true,
+        loop: true,
+        pagination: false,
+        rewindSpeed: 200
     });
 
 

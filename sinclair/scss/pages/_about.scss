@@ -51,14 +51,16 @@
         @include transition();
     }
 }
-
+#team-strategy{
+    .container{padding-bottom: 50px;}
+}
 .section-title{
     font-family: $text-font-b;
     text-align: center;
     margin-bottom: 20px;
     margin-top: 20px;
 }
-
+.bg-white{background-color: #fff !important;}
 .about-tabs{
     
     
@@ -111,7 +113,7 @@
         
     }
     
-    
+    .h20{max-height: 200px}
     .tab-content{
         .panel-text-div{
             height: 480px;
@@ -137,12 +139,7 @@
                 }
             }
         }    
-        .tab-pane{
 
-           
-            
-            
-        }
         #core-values .panel-text-div{
             background-image: url(../images/about-us/about-mountain1.jpg);
         }
@@ -162,6 +159,37 @@
         #insights .panel-text-div{
             background-image: url(../images/about-us/about-mountain1.jpg);
         }
+        #risk .panel-text-div{
+            background-image: url(../images/executive/risk-bg.jpg);
+        }
+    }
+    .strategy-header{
+        padding-bottom: 10px;
+        h2,h3,h1{display: inline; line-height: 50px;}
+        h1{
+            font-family: $text-font-b;
+            font-size: 40px;
+        }
+        h2{font-size: 30px;}
+        h3{font-size: 28px;}
+    }
+    .container-img{
+        img{
+            width: 100%;
+            margin: 20px 0;
+            border: 2px solid $pink;
+        }
+    }
+    .strategy-list-i{
+        padding: 20px;
+        background-color: $light-gray;
+        margin: 10px 0;
+        h1,h3{display: inline;}
+        .num{
+            padding-left: 30px;
+            padding-right: 60px;
+        }
+        h1{font-family: $text-font-b;}
     }
 }
 
