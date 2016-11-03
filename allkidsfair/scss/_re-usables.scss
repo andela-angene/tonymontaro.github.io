@@ -24,3 +24,49 @@ body{
         }
     }
 }
+
+
+/*========================================*/
+/*    FOOTER   */
+/*========================================*/
+
+footer{
+    padding: 20px 0 0 0;
+    margin: 0;
+    border-top: 1px dashed #bebebe;
+    font-size: 20px;
+}
+.sponsors{
+    margin: 20px 0;
+    img{
+        border: 1px solid #000;
+        border-radius: 10px;
+    }
+}
+.roslyn{
+    padding: 0 0 20px 0;
+}
+.roslyn img{margin-left: 10px;}
+.footer-nav{
+    border-top: 1px dashed #bebebe;
+    border-bottom: 1px dashed #bebebe;
+    text-align: center;
+    padding: 10px 0 ;
+    font-size: 14px;
+}
+.foot-nav{
+    border-right: 1px solid gray;
+    letter-spacing: 1px;
+}
+.foot-nav:last-child{border-right: none;}
+.footer-number{
+    padding: 20px 0 0 0;
+}
+.copyright{
+    font-size: 18px;
+}
+.big-phone{
+    color: #F16DA4;
+    font-size: 30px;
+    letter-spacing: 4px;
+}

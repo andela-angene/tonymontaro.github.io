@@ -119,145 +119,11 @@ section a:hover {color: #656565 !important;}
 
 
 
-/*========================================*/
-/*    FOOTER   */
-/*========================================*/
-
-footer{
-    padding: 20px 0 0 0;
-    margin: 0;
-    border-top: 1px dashed #bebebe;
-    font-size: 20px;
-}
-.sponsors{
-    margin: 20px 0;
-}
-.roslyn{
-    padding: 0 0 20px 0;
-}
-.roslyn img{margin-left: 10px;}
-.footer-nav{
-    border-top: 1px dashed #bebebe;
-    border-bottom: 1px dashed #bebebe;
-    text-align: center;
-    padding: 10px 0 ;
-    font-size: 14px;
-}
-.foot-nav{
-    border-right: 1px solid gray;
-    letter-spacing: 1px;
-}
-.foot-nav:last-child{border-right: none;}
-.footer-number{
-    padding: 20px 0 0 0;
-}
-.copyright{
-    font-size: 18px;
-}
-.big-phone{
-    color: #F16DA4;
-    font-size: 30px;
-    letter-spacing: 4px;
-}
 
 
 
 
-/*========================================*/
 
-/*    HOME - PAGE  */
-
-/*========================================*/
-.mail_radio_wrap{
-    position: relative;
-    top: -20px;
-}
-
-
-
-/*Carousel*/
-.home-owl-carousel{
-    border-bottom: 1px dashed #bebebe;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-}
-.carousel-item1{
-    color: #fff;
-}
-.carousel-item2{
-    color: #fff;
-}
-.carousel-item3{
-    color: #fff;
-}
-
-.carousel-text-wrapper{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 800;
-    background: #000;
-    opacity: 0.3;
-}
-
-div.owl-next:hover,
-div.owl-prev:hover{
-    background-color: #F16DA4 !important;
-}
-div.owl-next{
-   
-    position: absolute;
-    top: 50%;
-    right: 0;
-    z-index: 999;
-    background-color: #bebebe;
-    color: #fff;
-    display: inline-block;
-    padding: 10px 8px !important;
-    font-size: 80%;
-    margin: 0 10px;
-    border-radius: 5px;
-}
-div.owl-prev {
-    
-    position: absolute;
-    top: 50%;
-    left: 0;
-    z-index: 999;
-    background-color: #bebebe;
-    color: #fff;
-    display: inline-block;
-    padding: 10px 8px !important;
-    font-size: 80%;
-    margin: 0 10px;
-    border-radius: 5px;
-}
-.carousel-text{
-    position: absolute;
-    top: 50%; left: 50%;
-    -webkit-transform: translate(-50% , -50%);
-    transform: translate(-50% , -50%);
-    width: 100%;
-    padding: 20px;
-    letter-spacing: 1px;
-    z-index: 801;
-}
-.carousel-text h1{
-    font-weight: 400;
-    font-size: 300%;
-}
-.carousel-text h3{
-    font-weight: 400;
-    font-size: 160%
-}
-.join-us-lead{
-    font-size: 22px !important;
-}
-.text-orange{
-    color: #F16DA4;
-    font-size: 26px;
-}
 
                 /*========================================*/
                 /*    Mobile Media Queries   */
@@ -286,53 +152,7 @@ div.owl-prev {
     }
 }
 
-/*========================================*/
-/*    PURCHASE HERE   */
-/*========================================*/
-.purchase-img{
-    display: inline-block;
-    border: 1px #bebebe solid;
-    margin-bottom: 10px;
-    margin: 5px;
-    background-color: #b3b3b3;
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s;
-}
-.purchase-img:hover{
-    background-color: #F16DA4;
-}
-.purchase-img img{
-   
-}
-.purchase-item-name{
-    position: relative;
-    padding: 4px 0;
-    text-align: center;
-    width: 100%;
-    box-sizing: border-box;
-    color: #fff;
-    font-size: 18px;
-}
-.purchase a:link,
-.purchase a:active,
-.purchase a:visited,
-.purchase a:hover
-{color: #fff }
 
-.purchase-here .col-sm-3{
-    
-    box-sizing: border-box;
-}
-.purchase-here-text{
-    padding-top: 10px;
-}
-
-
-@media (min-width: 767px) and (max-width: 1200px) {
-    .purchase-item-name{
-        font-size: 85%;
-    }
-}
 
 /*========================================*/
 /*    HOME GALLERY   */
@@ -521,4 +341,140 @@ div.owl-prev {
 
 .dont-break-out {
 
+}
+
+
+
+
+
+
+
+
+
+
+/*For main.css*/
+a.btn-orange{color: #fff !important}
+/*===========================================
+OVER50 Styles
+=============================================*/
+
+
+
+.orange-background .radio-option{
+    background-color: #ee753c !important;
+    color: #fff !important;
+}
+
+.product-item .price,
+.product-item span {font-size: 18px !important}
+
+.product-item .name a {font-size: 20px !important}
+
+{
+    border: 1px solid #bebebe !important;
+    font-size: 18px !important;
+}
+
+div.action input[type="button"] {
+    width: 100px;
+    background: url(http://tempo50-com.3dcartstores.com/images/category_template_btn.png) no-repeat center;
+    margin: 0 auto;
+}
+div.action input[type="button"]:hover {border: 1px solid #bebebe}
+div#qv_buttons{opacity: 0; width: 1px; height: 1px}
+
+span.label{
+    color: #656565 !important;
+    white-space: normal !important;
+    font-size: 100% !important;
+    font-weight: 700 !important;
+    text-align: left !important;
+    float: none !important;
+    display: inline !important;
+    padding: 0 !important;
+}
+span.required{margin-right: 1px !important}
+div#rTabs li{list-style: none;}
+
+div.sort-by{display: none !important}
+div.shipQuote{display: none !important}
+
+/*make item box smaller */
+.product-item{
+    display: inline-block !important;
+    margin: 0 auto !important;
+    padding: 0 10px !important;
+    margin-bottom: 10px !important;
+    text-align: center !important;
+    border: 1px solid #bebebe;
+    width: 280px !important;
+    min-height: 338px !important;
+}
+.product-item .status {margin: 0 !important}
+.product-item .name {margin-bottom: 0 !important}
+div.stars{display: none !important}
+
+@media(max-width: 400px){
+    .recalculate{
+        font-size: 13px !important;
+    }
+}
+
+.chkComments textarea{
+    width: 223px !important;
+}
+.product-responsive{
+    display: inline-block !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+}
+
+.purple-text{color: rgb(128, 0, 128);}
+.purple-text1{color: rgb(128, 0, 128);}
+.form-z-index{z-index: 990}
+div.action input {color: transparent !important}
+
+.subscribe-facebook p{
+    display: inline-block;
+}
+
+
+.display_none{
+    display: none !important;
+}
+
+.cvv2-edited{
+    float: right !important;
+}
+.ccv-to-right{
+    display: block;
+    float: left;
+    width: 185px;
+}
+.r-tabs-nav{
+    display: block !important;
+}
+.shoppingCartTotal{margin: 0 !important}
+div.opt-field label{
+    font-weight: 400 !important;
+}
+div.shoppingCartTotal div.row{
+    padding-right: 15px !important;
+}
+div.chkComments{
+    padding-bottom: 0 !important;
+}
+@media (min-width: 767px){
+    div#spanCheckout button.btn{
+        position: relative;
+        top: -50px
+    }
+    div#spanCheckout{
+        height: 1px
+    }
+}
+
+div.logo slash img{
+    height: 150px;
+    width: auto;
 }
