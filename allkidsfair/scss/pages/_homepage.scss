@@ -118,7 +118,9 @@ div {
     &:hover {
         background-color: #F16DA4;
     }
-    img {}
+    img {
+        max-width: 200px;
+    }
 }
 
 .purchase-item-name {
@@ -184,3 +186,5 @@ div {
         padding-bottom: 10px;
     }
 }
+
+

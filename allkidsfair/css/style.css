@@ -5,7 +5,7 @@
 /*    NAVIGATION SECTION   */
 /*========================================*/
 #nav_wrap_two {
-  background: #fff;
+  background-color: #edd7ba;
   margin-bottom: 10px !important;
 }
 
@@ -165,6 +165,10 @@
 .link-menu-ul a:hover, .link-menu-ul a:active {
   color: #F16DA4;
   text-decoration: none;
+}
+
+body {
+  background-color: #edd7ba;
 }
 
 body .t-container {
@@ -360,6 +364,10 @@ div.owl-prev {
 
 .purchase-img:hover {
   background-color: #F16DA4;
+}
+
+.purchase-img img {
+  max-width: 200px;
 }
 
 .purchase-item-name {

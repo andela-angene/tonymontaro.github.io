@@ -172,7 +172,7 @@ section a:hover {color: #656565 !important;}
 /*    HOME DESCRIPTION   */
 /*========================================*/
 .great-reasons ul{
-    list-style-image: url("../images/img-middle.jpg");
+    list-style-image: url("../images/round-star.png");
 /*    font-size: 18px;*/
 }
 #home-description section{
