@@ -445,6 +445,7 @@ div.owl-prev {
   border-radius: 10px;
   border: 2px solid #F16DA4;
   padding: 10px;
+  margin: 20px auto;
 }
 
 @media (min-width: 767px) {
