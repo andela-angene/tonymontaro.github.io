@@ -445,6 +445,13 @@ div.owl-prev {
   }
 }
 
+@media (max-width: 767px) {
+  .children-interest {
+    text-align: center;
+    margin: 15px;
+  }
+}
+
 .children-interest h3 {
   font-family: "Itim", Georgia, serif;
   color: #1398DD;

@@ -204,6 +204,10 @@ div {
             border-right: 2px solid $pink;
         }
     }
+    @media (max-width: 767px){
+        text-align: center;
+        margin: 15px;
+    }
     h3{
         font-family: $headline-font;
         color: $blue;
