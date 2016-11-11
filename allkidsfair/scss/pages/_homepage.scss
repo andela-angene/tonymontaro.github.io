@@ -48,7 +48,7 @@ div {
         top: 50%;
         right: 0;
         z-index: 999;
-        background-color: #bebebe;
+        background-color: $pink !important;
         color: #fff;
         display: inline-block;
         padding: 10px 8px !important;
@@ -61,7 +61,7 @@ div {
         top: 50%;
         left: 0;
         z-index: 999;
-        background-color: #bebebe;
+        background-color: $pink !important;
         color: #fff;
         display: inline-block;
         padding: 10px 8px !important;

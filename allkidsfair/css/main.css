@@ -1,5 +1,5 @@
 /*
-OVER 50 Website by MontaroWeb
+All Kids Website by MontaroWeb
 color: #F16DA4;
 */
 
@@ -85,17 +85,7 @@ section a:hover {color: #656565 !important;}
     width: 20%;
     float: left;
 }
-.pre{
-        display: block;
-        padding: 9.5px;
-        margin: 0 0 10px;
-        font-size: 18px;
-        line-height: 1.42857143;
-        color: #333;
-        background-color: #f5f5f5;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-}
+
 
 @media (min-width: 768px) {
     .col-sm-15 {
@@ -181,19 +171,7 @@ section a:hover {color: #656565 !important;}
 
 
 
-/*========================================*/
 
-/*    BEAUTY QUEENS - PAGE  */
-
-/*========================================*/
-
-.beauty-queens h3 {padding-bottom: 20px;}
-.beauty-queens figure{padding-bottom: 20px;}
-.figure-queen img{
-    padding: 10px;
-    border: 1px solid #656565;
-    border-radius: 10px;
-}
 
 /*========================================*/
 

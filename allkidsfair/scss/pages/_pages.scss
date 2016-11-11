@@ -1,1 +1,51 @@
 
+.page-heading-photos{
+    figure{
+        margin: 0 auto;
+        @media (min-width: 767px){
+            max-width: 400px;
+        }
+        
+    }
+}
+
+/*========================================*/
+
+/*    BEAUTY QUEENS - PAGE  */
+
+/*========================================*/
+
+.beauty-queens {
+    h3, figure {
+        padding-bottom: 20px;
+    }
+}
+
+.figure-queen img {
+    padding: 10px;
+    border: 1px solid #656565;
+    border-radius: 10px;
+    max-width: 95%;
+    
+    @media (min-width: 767px){
+        max-width: 400px;
+    }
+}
+
+/*========================================*/
+
+/*    TESTIMONIALS - PAGE  */
+
+/*========================================*/
+
+.pre{
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 18px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: darken($tan, 5%);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

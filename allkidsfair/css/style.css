@@ -138,9 +138,6 @@
   border-radius: 8px;
   margin-right: 5px;
   -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  -o-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -156,9 +153,6 @@
   color: #656565;
   font-weight: bold;
   -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  -o-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -295,7 +289,7 @@ div.owl-next {
   top: 50%;
   right: 0;
   z-index: 999;
-  background-color: #bebebe;
+  background-color: #F16DA4 !important;
   color: #fff;
   display: inline-block;
   padding: 10px 8px !important;
@@ -309,7 +303,7 @@ div.owl-prev {
   top: 50%;
   left: 0;
   z-index: 999;
-  background-color: #bebebe;
+  background-color: #F16DA4 !important;
   color: #fff;
   display: inline-block;
   padding: 10px 8px !important;
@@ -361,9 +355,6 @@ div.owl-prev {
   margin-bottom: 10px;
   background-color: #b3b3b3;
   -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  -o-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -482,4 +473,49 @@ div.owl-prev {
 
 .subscribe-div .input-group {
   margin-bottom: 30px;
+}
+
+.page-heading-photos figure {
+  margin: 0 auto;
+}
+
+@media (min-width: 767px) {
+  .page-heading-photos figure {
+    max-width: 400px;
+  }
+}
+
+/*========================================*/
+/*    BEAUTY QUEENS - PAGE  */
+/*========================================*/
+.beauty-queens h3, .beauty-queens figure {
+  padding-bottom: 20px;
+}
+
+.figure-queen img {
+  padding: 10px;
+  border: 1px solid #656565;
+  border-radius: 10px;
+  max-width: 95%;
+}
+
+@media (min-width: 767px) {
+  .figure-queen img {
+    max-width: 400px;
+  }
+}
+
+/*========================================*/
+/*    TESTIMONIALS - PAGE  */
+/*========================================*/
+.pre {
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 18px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #e8cba6;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
