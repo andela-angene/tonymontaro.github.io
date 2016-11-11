@@ -180,26 +180,6 @@ section a:hover {color: #656565 !important;}
 }
 
 
-/*========================================*/
-/*    HOME-FOOTER  */
-/*========================================*/
-.home-footer{
-    border-top: 1px dashed #bebebe;
-}
-.kidsfair{
-    padding: 20px 50px;
-}
-
-.btn-modified{
-    background-color: #F16DA4 !important;
-    color: #fff  !important;
-}
-.mail-subscribe{
-    padding-top: 20px;
-}
-.subscribe-div .input-group {
-    margin-bottom: 30px;
-}
 
 /*========================================*/
 

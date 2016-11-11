@@ -458,3 +458,28 @@ div.owl-prev {
   font-family: "Itim", Georgia, serif;
   color: #1398DD;
 }
+
+/*========================================*/
+/*    HOME-FOOTER  */
+/*========================================*/
+.home-footer {
+  border-top: 1px dashed #bebebe;
+}
+
+.kidsfair {
+  padding: 20px 50px;
+}
+
+.btn-modified {
+  background-color: #F16DA4 !important;
+  color: #fff  !important;
+}
+
+.mail-subscribe {
+  padding-top: 20px;
+  border-top: 1px dashed #bebebe;
+}
+
+.subscribe-div .input-group {
+  margin-bottom: 30px;
+}
