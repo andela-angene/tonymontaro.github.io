@@ -7,6 +7,10 @@
         }
         
     }
+    .row{
+        max-width: 900px;
+        margin: 0 auto;
+    }
 }
 
 /*========================================*/
@@ -46,6 +50,11 @@
     line-height: 1.42857143;
     color: #333;
     background-color: darken($tan, 5%);
-    border: 1px solid #ccc;
+    border: 1px solid #676767;
     border-radius: 4px;
+}
+
+
+.draft-map-img{
+    width: 100%;
 }

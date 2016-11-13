@@ -123,10 +123,14 @@ div {
 .purchase-here{
     @media (min-width: 1000px){
         .col-sm-3{
-            padding: 40px;
+            padding: 10px;
         }
     }
     
+    .row{
+        max-width: 900px;
+//        margin: 0 auto;
+    }
 }
 
 .purchase-item-name {
