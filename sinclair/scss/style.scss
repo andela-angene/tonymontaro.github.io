@@ -5,10 +5,7 @@
 
 //Re Usables
 @import "re-usables";
-* {
-    min-height: 0;
-    min-width: 0;
-}
+
 @import 'partials/vendors';
 //Navigation
 @import "navigation";
@@ -24,9 +21,9 @@
 @import "pages/footer";
 
 //About -> Core Values
-@import "pages/about";
+@import "pages/about-us";
 
-//About 
+//About
 @import "pages/practice-about-us";
 
 //Article News

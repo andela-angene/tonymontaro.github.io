@@ -1,25 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "NHaasGrotesk-b";
-  font-family: "NHaasGrotesk-b", Helvetica, Verdana, Sans-Serif;
-  src: url("NHaasGroteskTXPro-75Bd.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "NHaasGrotesk";
-  src: url("NHaasGroteskTXPro-55Rg.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "NHaasGrotesk-l";
-  src: url("NHaasGroteskDSPro-35XLt.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "NHaasGrotesk-xl";
-  src: url("NHaasGroteskDSPro-15UltTh.otf") format("opentype");
-}
-
 .fixed-navbar {
   position: fixed;
   top: 0;
@@ -249,11 +228,6 @@ body .pad0 {
   border: none !important;
   border-radius: 10px;
   background-color: #fff;
-}
-
-* {
-  min-height: 0;
-  min-width: 0;
 }
 
 .navigation {
@@ -621,7 +595,6 @@ body .pad0 {
 
 .header {
   height: 80vh;
-  background-image: url(../images/cover-img.png);
   background-position: center;
   background-size: cover;
   color: #fff;
@@ -1178,63 +1151,6 @@ footer .footer-copyright p {
   max-height: 200px;
 }
 
-.about-tabs .tab-content .panel-text-div {
-  height: 480px;
-  height: 480px;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  box-sizing: border-box;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -ms-grid-row-align: center;
-  align-items: center;
-}
-
-.about-tabs .tab-content .panel-text-div .panel-text {
-  max-width: 600px;
-  margin: 0 auto;
-  padding-top: 200px;
-  color: #fff;
-}
-
-.about-tabs .tab-content .panel-text-div .panel-text h1 {
-  font-family: "NHaasGrotesk-b", Helvetica, Verdana, Sans-Serif;
-}
-
-.about-tabs .tab-content .panel-text-div .panel-text p {
-  font-style: italic;
-  font-size: 16px;
-}
-
-.about-tabs .tab-content #core-values .panel-text-div {
-  background-image: url(../images/about-us/about-mountain1.jpg);
-}
-
-.about-tabs .tab-content #what-we-do .panel-text-div {
-  background-image: url(../images/about-us/about-mountain1.jpg);
-}
-
-.about-tabs .tab-content #management .panel-text-div {
-  background-image: url(../images/about-us/about-mountain1.jpg);
-}
-
-.about-tabs .tab-content #team-strategy .panel-text-div {
-  background-image: url(../images/about-us/about-mountain1.jpg);
-}
-
-.about-tabs .tab-content #thought-leadership .panel-text-div {
-  background-image: url(../images/about-us/about-mountain1.jpg);
-}
-
-.about-tabs .tab-content #insights .panel-text-div {
-  background-image: url(../images/about-us/about-mountain1.jpg);
-}
-
-.about-tabs .tab-content #risk .panel-text-div {
-  background-image: url(../images/executive/risk-bg.jpg);
-}
-
 .about-tabs .strategy-header {
   padding-bottom: 10px;
 }
@@ -1280,6 +1196,35 @@ footer .footer-copyright p {
 
 .about-tabs .strategy-list-i h1 {
   font-family: "NHaasGrotesk-b", Helvetica, Verdana, Sans-Serif;
+}
+
+.panel-text-div {
+  height: 480px;
+  height: 480px;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
+  align-items: center;
+}
+
+.panel-text-div .panel-text {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 200px;
+  color: #fff;
+}
+
+.panel-text-div .panel-text h1 {
+  font-family: "NHaasGrotesk-b", Helvetica, Verdana, Sans-Serif;
+}
+
+.panel-text-div .panel-text p {
+  font-style: italic;
+  font-size: 16px;
 }
 
 .sticky-register-footer {
@@ -1726,6 +1671,10 @@ footer .footer-copyright p {
   opacity: 1 !important;
 }
 
+.practice-post .panel-text-div h1, .practice-post .panel-text-div p {
+  color: #232426;
+}
+
 .article-header {
   text-align: center;
   padding: 100px 0;
@@ -1870,54 +1819,6 @@ footer .footer-copyright p {
 
 .contact .col-md-6 .contact-img > div p, .contact .col-md-6 .contact-img > div h3, .contact .col-md-6 .contact-img > div h1 {
   margin: 0;
-}
-
-.contact .col-md-6 .contact-img-sgp1 {
-  background-image: url(../images/contact/sgp1.jpg);
-}
-
-.contact .col-md-6 .contact-img-sgp2 {
-  background-image: url(../images/contact/sgp2.jpg);
-}
-
-.contact .col-md-6 .contact-img-ldn1 {
-  background-image: url(../images/contact/ldn1.jpg);
-}
-
-.contact .col-md-6 .contact-img-ldn2 {
-  background-image: url(../images/contact/ldn2.jpg);
-}
-
-.contact .col-md-6 .contact-img-del1 {
-  background-image: url(../images/contact/del1.jpg);
-}
-
-.contact .col-md-6 .contact-img-del2 {
-  background-image: url(../images/contact/del2.jpg);
-}
-
-.contact .col-md-6 .contact-img-cwb1 {
-  background-image: url(../images/contact/cwb1.jpg);
-}
-
-.contact .col-md-6 .contact-img-cwb2 {
-  background-image: url(../images/contact/cwb2.jpg);
-}
-
-.contact .col-md-6 .contact-img-chi1 {
-  background-image: url(../images/contact/chi1.jpg);
-}
-
-.contact .col-md-6 .contact-img-chi2 {
-  background-image: url(../images/contact/chi2.jpg);
-}
-
-.contact .col-md-6 .contact-img-nbo1 {
-  background-image: url(../images/contact/nbo1.jpg);
-}
-
-.contact .col-md-6 .contact-img-nbo2 {
-  background-image: url(../images/contact/nbo2.jpg);
 }
 
 .contact .col-md-6 .contact-slideIn, .contact .col-md-6 .contact-fadeIn {
