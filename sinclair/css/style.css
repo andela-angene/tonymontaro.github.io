@@ -580,17 +580,20 @@ body .pad0 {
 }
 
 .post-list ul {
-  padding-left: 15px;
+  list-style: none;
+  padding-left: 0;
 }
 
 .post-list li {
   padding: 10px 0;
-  color: #E61B86;
+  color: #232426;
   font-size: 16px;
 }
 
-.post-list li span {
-  color: #232426;
+.post-list li:before {
+  content: "• ";
+  color: #E61B86;
+  /* or whatever color you prefer */
 }
 
 .header {
@@ -2297,6 +2300,11 @@ footer .footer-copyright p {
   margin-bottom: 50px;
 }
 
+#home-header-carousel .owl-controls div.owl-next:hover, #home-header-carousel .owl-controls div.owl-prev:hover {
+  background-color: #E61B86;
+  color: #fff;
+}
+
 #home-header-carousel .owl-controls div.owl-next {
   margin-left: 20px;
 }
@@ -2566,11 +2574,21 @@ footer .footer-copyright p {
   border: none;
 }
 
+.fox-button-d:hover {
+  background-color: #E61B86;
+  color: #fff;
+}
+
 .fox-button-l {
   padding: 10px 15px;
   color: #232426;
   background-color: #fff;
   border: none;
+}
+
+.fox-button-l:hover {
+  background-color: #E61B86;
+  color: #fff;
 }
 
 .dark-bg {

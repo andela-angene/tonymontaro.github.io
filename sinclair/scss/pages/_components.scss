@@ -6,14 +6,17 @@
         font-size: 16px;
     }
     ul{
-        padding-left: 15px;
+        list-style: none;
+        padding-left: 0;
     }
     li{
         padding: 10px 0;
-        color: $pink;
+        color: $black;
         font-size: 16px;
-        span{
-            color: $black;
-        }
+       
+    }
+    li:before {
+        content: "• ";
+        color: $pink; /* or whatever color you prefer */
     }
 }

@@ -70,9 +70,9 @@ div {
         border-radius: 5px;
     }
     &.owl-dot{
-        span{background-color: $pink !important;}
+        span{background-color: $blue !important;}
         &.active{
-            span{background-color: darken($pink, 20%) !important;}
+            span{background-color: darken($blue, 40%) !important;}
         }
     }
     
@@ -130,12 +130,12 @@ div {
 .purchase-here{
     @media (min-width: 1000px){
         .col-sm-3{
-            padding: 10px;
+//                padding: 10px;
         }
     }
     
     .row{
-        max-width: 900px;
+//        max-width: 900px;
 //        margin: 0 auto;
     }
 }

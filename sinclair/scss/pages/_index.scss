@@ -73,6 +73,10 @@
             color: $pink;
             float: left;
             margin-bottom: 50px;
+            &:hover{
+                background-color: $pink;
+                color: #fff;
+            }
         }
         div.owl-prev{
             
@@ -268,10 +272,18 @@
     color: $pink;
     background-color: $black;
     border: none;
+    &:hover{
+        background-color: $pink;
+        color: #fff;
+    }
 }
 .fox-button-l{
     padding: 10px 15px;
     color: $black;
     background-color: #fff;
     border: none;
+    &:hover{
+        background-color: $pink;
+        color: #fff;
+    }
 }
