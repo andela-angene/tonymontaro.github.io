@@ -69,6 +69,13 @@ div {
         margin: 0 10px;
         border-radius: 5px;
     }
+    &.owl-dot{
+        span{background-color: $pink !important;}
+        &.active{
+            span{background-color: darken($pink, 20%) !important;}
+        }
+    }
+    
 }
 
 .carousel-text {
