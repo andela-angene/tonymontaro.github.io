@@ -1,0 +1,6 @@
+<div class="input-group">
+                            <input placeholder="Email Address" type="text" class="form-control">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default btn-modified" type="submit">Submit</button>
+                            </span>
+                        </div>
