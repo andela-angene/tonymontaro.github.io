@@ -22,7 +22,6 @@
 
 //add cat-menu-ul items to mobile menu
 var catMenu = $('.cat-menu-ul').html();
-catMenu = catMenu.replace(/<li><img src="images\/round-star.png" class="middle-menu"><\/li>/gi, "");
 $("#dropdown-menu1").html(catMenu);
 //add link-menu items to sub mobile nav
 var linkMenu = $('.link-menu-ul').html();

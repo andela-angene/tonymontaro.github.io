@@ -1,6 +1,7 @@
 /*
-All Kids Website by MontaroWeb
-color: #F16DA4;
+All Kids Website,
+Developer: Anthony Ngene
+URL: http://montaroweb.com
 */
 
 /*==========================*/
@@ -256,7 +257,7 @@ section a:hover {color: #656565 !important;}
         display: block;
         overflow: auto;
     }
-    body{padding-top: 50px;}
+    body{padding-top: 50px !important;}
     #catigory-menu,
     .middle-menu,
     .link-menu {display: none;}
@@ -436,3 +437,310 @@ div.logo slash img{
     height: 150px;
     width: auto;
 }
+
+
+
+
+
+
+
+    /* Justswell-html5 */
+
+/*******************************************************/
+/*          STYLES USED THROUGHTOUT THE WEBSITE        */
+/*******************************************************/
+
+
+/*data:: Controls the font style of your content on all the pages.*/
+.data {
+    text-decoration: none;
+    word-spacing: normal;
+    font-size: 12px;
+}
+/*alternative:: Controls the background color of the boxes used throughout the site.*/
+.alternative {
+    background: #FFF;
+}
+/*page_headers:: Controls the title of all your pages.*/
+.page_headers {
+    font-size: 28px;
+    font-weight: 800;
+    color: #22303a;
+}
+/*titles:: Controls the Tiles  of sections within pages on the site such as (Specials, Feature Items, Items, Related Items).*/ 
+.titles {
+    font-size: 18px;
+    color: #383733;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 30px;
+    margin-bottom: 10px;
+    padding-left: 9px;
+    border-bottom: 1px solid #383733;
+    display: block;
+}
+/*price:: Controls the way the product's final price display throughout the site.*/ 
+.price {
+    font-size: 13px;
+    color: #22303a;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+/*error:: Controls the error messages*/ 
+.error {
+    font-size: 12px;
+    font-weight: 400;
+    color: #e10e04;
+    text-decoration: none;
+}
+/*borders:: Controls the color of the line dividers used throughout the site.*/ 
+.borders {
+    color: #585C5F;
+    border: 1px solid #CCC;
+    border-style: none none solid;
+}
+/*borders2:: Controls the color of the solid line dividers used throughout the site.*/ 
+.borders2 {
+    border: 1px solid #CCC;
+    border-style: none none solid;
+}
+/*A:: Controls the way the all Links without an associated style display before a user clicks or mouses over them.*/ 	 
+A {
+    color: #000;
+    font-size: 13px;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 400;
+}
+/*A:hover:: When a user passes  their mouse over them.*/ 	 	
+A:hover {
+    color: #929497;
+}
+/*A:visited:: After a user has visited that section.*/ 
+A:visited {
+    color: #000;
+    font-size: 13px;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 400;
+}
+/*A:visited:hover:: When a user hovers over a section they have visited.*/ 	 
+A:visited:hover {
+    color: #929497;
+}
+/*******************************************************************************************************/
+/*   STYLES ONLY USED ON VIEW CART AND CHECKOUT PAGES      */
+/*******************************************************************************************************/
+
+/*checkout-headers:: Controls the titles of the sections on the checkout pages (Billing Information, Shipping Information etc)*/
+.checkout-headers {
+    font-size: 14px;
+    color: #22303a;
+    font-weight: 700;
+}
+/*steps:: Controls the way the steps on the checkout pages display.*/
+.steps {
+    font-size: 16px;
+    font-weight: 700;
+    color: #CCC;
+}
+/*steps_on:: Controls the way the step the customer is currently on displays on the checkout pages.*/
+.steps_on {
+    font-size: 16px;
+    font-weight: 700;
+    color: #22303a;
+}
+/*titles2:: Controls the titles on the view cart page*/ 
+.titles2 {
+    font-size: 12px;
+    font-weight: 700;
+    background-color: #EEE;
+    color: #22303a;
+    padding:4px;
+}
+/*******************************************************************************************************/
+/*   STYLES ONLY USED ON PRODUCT PAGES      */
+/*******************************************************************************************************/
+
+/*options-titles:: Controls the way the option titles display on the product page.*/
+.options-titles {
+    font-size: 12px;
+    font-weight: 700;
+    color: #585C5F;
+    border: 1px solid #CCC;
+    border-style: none none solid;
+}
+/*item:: Controls the item description and item details text.*/ 
+.item {
+    /*    font-size: 12px;*/
+    color: #383733;
+    font-weight: 400;
+}
+/*itemTitle:: Controls the name of the Product.*/ 
+.item-title {
+    font-size: 22px;
+    color: #22303a;
+    font-weight:bold;
+}
+/*price-info:: Controls the way the sub-prices display on the product page, the final price is controlled by the style called "price".*/ 
+.price-info {
+    font-size: 12px;
+    font-weight: 400;
+    color: #585C5F;
+}
+/*small-txt:: Controls the way the item id displays.*/ 
+.small-txt {
+    color: #afafae;
+    text-decoration: none;
+    text-align: left;
+    letter-spacing: 0;
+    font-size: 10px;
+    vertical-align:bottom;
+}
+/*availability-txt:: Controls the way the Availability of the product displays i.e. 'In Stock', 'Back Order'.*/ 
+.availability-txt {
+    color: #22303a;
+}
+/*reward-title:: Controls the title of the Reward Points section.*/ 
+.reward-title {
+    color: #22303a;
+    text-decoration: none;
+    word-spacing: normal;
+    text-align: left;
+    letter-spacing: 7px;
+    line-height: 10px;
+    font-size: 16px;
+    font-style:italic;
+}
+/**********************************************************/
+/*      FORM FIELDS & BUTTONS THROUGHOUT THE WEBSITE      */
+/**********************************************************/
+
+/*btn:: Controls the buttons, (ONLY if it is not using and image).*/ 
+.btn {
+    border: none;
+    background: #22303a;
+    font-weight: 400;
+    font-size: 12px;
+    color: #FFF;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 0;
+    padding: 9px 14px;
+    -webkit-appearance: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+/*btn_over:: Controls the buttons when a user mouses over them, (ONLY if it is not using and image).*/ 
+.btn_over {
+    border: none;
+    background: #c9dae4;
+    font-weight: 400;
+    font-size: 12px;
+    color: #FFF;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 0;
+    padding: 9px 14px;
+    -webkit-appearance: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+}
+/*button:hover:: Controls the button tag when a user mouses over them, (ONLY if it is not using and image).*/ 
+button:hover {
+    background: #c9dae4;
+    cursor: pointer;
+}
+/*txtBoxStyle:: Controls the text and style of the Text Boxes.*/  	
+.txtBoxStyle {
+    border: 1px solid #b7b4ac;
+    background: #fefefe;
+    font-weight: 400;
+    font-size: 12px;
+    color: #000;
+    margin: 0;
+    padding: 8px 12px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+}
+/*txtAreaStyle:: Controls the text and style of the Text Areas.*/ 	
+.txtAreaStyle {
+    border: 1px solid #b7b4ac;
+    background: #fefefe;
+    font-weight: 400;
+    font-size: 12px;
+    color: #000;
+    margin: 0;
+    padding: 8px 12px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+}
+/*txtSearch:: Controls the style of the Search Box, if different from txtBoxStyle.*/
+.txtBoxSearch {
+    height: 20px;
+    color: #000;
+    font-size: 12px;
+    border: none;
+    padding: 3px 0 0 0;
+    margin: 0;
+}
+
+/********************************************/
+/*   STYLES USED ONLY ON THE INVOICE        */
+/********************************************/
+
+/*invoice_table:: Controls the background color on your invoices*/ 
+.invoice_table {
+    background-color: #f9f8f8;
+}
+/*invoice_title:: Controls the way the title of the invoices look */ 
+.invoice_title {
+    font-size: 10px;
+    font-weight: 700;
+    background-color: #cbcaca;
+    color: #4f4e4e;
+}
+/*************************************************************/
+/*          LEGACY STYLES: STYLES USED PRIOR TO v3.2         */
+/*************************************************************/
+
+/*font1:: Primary Screen Font */ 
+.font1 {
+    font-size: 12px;
+    font-weight: 400;
+    color: #383733;
+}
+/*font2:: Secondary Screen Font */ 
+.font2 {
+    font-size: 12px;
+    font-weight: 400;
+    color: #22303a;
+}
+.font3 {
+    font-size: 12px;
+    font-weight: 400;
+    color: #FFF;
+}
+.font4 {
+    font-size: 12px;
+    font-weight: 400;
+    color: #c32519;
+}
+/*top:: Controls the  Color of the top Bar*/		
+.top {
+    background: none;
+}
+/*line:: Controls the  Color of the line bellow the top bar*/		
+.line {
+    background: #FFF;
+}
+
+

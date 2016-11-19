@@ -19,6 +19,16 @@
 }
 
 /* search */
+#top-search{
+    @media (max-width: 767px){
+        .cart{
+            display: inline-block;
+        }
+        .search{
+            display: inline-block;
+        }
+    }
+}
 
 .btn-orange {
     color: #fff;

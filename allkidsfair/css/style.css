@@ -22,6 +22,15 @@
 }
 
 /* search */
+@media (max-width: 767px) {
+  #top-search .cart {
+    display: inline-block;
+  }
+  #top-search .search {
+    display: inline-block;
+  }
+}
+
 .btn-orange {
   color: #fff;
   background-color: #F16DA4;
