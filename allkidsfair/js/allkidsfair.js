@@ -65,4 +65,55 @@ $(document).ready(function() {
     $('.owl-next').html('<i class="glyphicon glyphicon-chevron-right"></i>');
 
 
+
+     //AJAX MAILER
+    $(function() {
+        $("#send_mail").click(function() {
+        	if($('#name').val() == ""){
+                alert('Please enter your Name');
+                return;
+            }
+            if($('#email').val() == ""){
+                alert('Please enter your E-mail');
+                return;
+            }
+
+            if($("#vinyl").prop('checked') == true){
+                var vinyl = "true"
+            }else{var vinyl = "false"}
+            if($("#dtg").prop('checked') == true){
+                var dtg = "true"
+                }else{var dtg = "false"}
+            if($("#silk").prop('checked') == true){
+                var silk = "true"
+                }else{var silk = "false"}
+            if($("#embroid").prop('checked') == true){
+                var embroid = "true"
+                }else{var embroid = "false"}
+            
+            var data = {
+                name: $("#name").val(),
+                
+                vinyl: vinyl,
+                dtg: dtg,
+                silk: silk,
+                embroid: embroid,
+                email: $("#email").val(),
+                message: $("#message").val(),
+                send_mail: $("#send_mail").val(),
+            }
+            $.ajax({
+                type: "POST",
+                url: "http://www.montaroweb.com/hosted/allkidsfair/send_mail.php",
+                data: data,
+                success: function(data){
+                	alert('mail sent');
+                    $('#thank-you').modal();
+                },
+            });
+
+        });
+    });
+
 });    
+
