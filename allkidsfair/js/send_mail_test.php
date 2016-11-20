@@ -33,7 +33,7 @@ $message .= "Areas of Interest: ". $services. "<br><br>";
 
 // set here
 $subject = "Contact form your website by: ".$email;
-$to = 'Barbara@AllKidsFair.com';
+$to = 'bossmontaro@gmail.com';
 
 //$body = <<<HTML
 //$message
