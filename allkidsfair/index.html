@@ -471,7 +471,7 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="contact-form">
-                                    <form >
+                                    <form id="allkids-contact">
                                         <h3>CONTACT US FOR MORE INFO ABOUT THIS AMAZING EVENT</h3>
                                         
                                         <div class="form-group">
@@ -484,7 +484,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label>Email*</label>
-                                            <input name="email" id="ak_email" type="email" class="form-control" required>
+                                            <input name="email" id="ak_email" type="text" class="form-control" required>
                                         </div>
                                         <div class="form-group">
                                             <label>Phone*</label>
@@ -509,6 +509,7 @@
                                         
                                         <div class="form-group">
                                             <input id="send_mail" type="button" class="btn btn-orange" value="Submit">
+                                            <div id="ajax-mail-loader" class="pull-right ajax-mail-loader"><img src="images/ajax-loader.gif" alt="loading mail"></div>
                                         </div>
                                         <div class="small-text">* Required field</div>
                                     </form>
@@ -546,6 +547,7 @@
                 </div>
             </section>
             <script>
+                
                 //AJAX MAILER
                 $(function() {
                     $("#send_mail").click(function() {
@@ -602,7 +604,15 @@
                             type: "POST",
                             url: "http://www.montaroweb.com/hosted/allkidsfair/send_mail_test.php",
                             data: data,
+                            beforeSend: function(){
+                                $('#ajax-mail-loader').removeClass('ajax-mail-loader');
+                            },
                             complete: function(data){
+                                $('#ajax-mail-loader').addClass('ajax-mail-loader');
+                                
+                                $('#allkids-contact input[type="text"]').val("");
+                                $('#allkids-contact input[type="checkbox"]').attr('checked', false);
+                                
                                 alert('mail sent');
                             },
                         });

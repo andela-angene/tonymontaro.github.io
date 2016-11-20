@@ -12,7 +12,11 @@
 @import "pages/pages";
 
 
-
+/* hide mail ajax loader */
+.ajax-mail-loader{
+    display: none;
+    float: right;
+}
 
 .col-xs-5ths,
 .col-sm-5ths,

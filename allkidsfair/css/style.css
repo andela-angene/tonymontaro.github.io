@@ -151,9 +151,6 @@
   border-radius: 8px;
   margin-right: 5px;
   -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  -o-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -169,9 +166,6 @@
   color: #656565;
   font-weight: bold;
   -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  -o-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -386,9 +380,6 @@ div.owl-dot.active span {
   margin-bottom: 10px;
   background-color: #b3b3b3;
   -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  -o-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -565,6 +556,12 @@ div.owl-dot.active span {
 
 .draft-map-img {
   width: 100%;
+}
+
+/* hide mail ajax loader */
+.ajax-mail-loader {
+  display: none;
+  float: right;
 }
 
 .col-xs-5ths,
