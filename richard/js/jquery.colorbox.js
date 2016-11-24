@@ -401,6 +401,8 @@
 				$loaded = $tag(div, 'LoadedContent', 'width:0; height:0; overflow:hidden; visibility:hidden');
 				$content.css({width:'', height:''}).append($loaded);
 
+                loadedWidth = 0;
+                
 				// Cache values needed for size calculations
 				interfaceHeight = $topBorder.height() + $bottomBorder.height() + $content.outerHeight(true) - $content.height();
 				interfaceWidth = $leftBorder.width() + $rightBorder.width() + $content.outerWidth(true) - $content.width();
@@ -660,6 +662,8 @@
 			left = scrollLeft;
 			$box.css({position: 'absolute'});
 		}
+        
+        loadedWidth = 0;
 
 		// keeps the top and left positions within the browser's viewport.
 		if (settings.get('right') !== false) {
@@ -689,6 +693,8 @@
 			$topBorder[0].style.width = $bottomBorder[0].style.width = $content[0].style.width = (parseInt($box[0].style.width,10) - interfaceWidth)+'px';
 			$content[0].style.height = $leftBorder[0].style.height = $rightBorder[0].style.height = (parseInt($box[0].style.height,10) - interfaceHeight)+'px';
 		}
+        
+        
 
 		css = {width: settings.w + loadedWidth + interfaceWidth, height: settings.h + loadedHeight + interfaceHeight, top: top, left: left};
 

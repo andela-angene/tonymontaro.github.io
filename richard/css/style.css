@@ -10,11 +10,16 @@ body {
   width: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
+  background-color: #222;
 }
 
 body .t-container {
   max-width: 960px;
   margin: 0 auto;
+}
+
+.clear-both {
+  clear: both;
 }
 
 .hidden {
@@ -88,6 +93,37 @@ body .t-container {
 
 .photo-wrap .photo-desc p i:first-child {
   padding-left: 0;
+}
+
+.navigation-bar {
+  position: fixed;
+  top: 0;
+  padding: 50px;
+  z-index: 999999;
+  right: 0;
+}
+
+.navigation-bar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-bar ul li {
+  color: #fff;
+  float: left;
+  margin-left: 20px;
+}
+
+.navigation-bar ul li a:visited, .navigation-bar ul li a:link {
+  color: #fff;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+
+.navigation-bar ul li .active-link, .navigation-bar ul li a:hover, .navigation-bar ul li a:active {
+  text-decoration: none;
+  border-bottom: 2px solid #fff;
 }
 
 /*
@@ -260,7 +296,6 @@ ordered & tabbed in a way that represents the nesting of the generated HTML.
 }
 
 #cboxLoadedContent {
-  margin-bottom: 28px;
   width: 100% !important;
   height: 100vh !important;
   overflow: hidden !important;
@@ -322,6 +357,7 @@ ordered & tabbed in a way that represents the nesting of the generated HTML.
 #cboxPrevious {
   position: absolute;
   top: 50%;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   left: 0;
   background: url(../images/arrow-left.png) no-repeat;
@@ -340,6 +376,7 @@ ordered & tabbed in a way that represents the nesting of the generated HTML.
 #cboxNext {
   position: absolute;
   top: 50%;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   right: 0;
   background: url(../images/arrow-right.png) no-repeat -50px 0;
@@ -359,6 +396,7 @@ ordered & tabbed in a way that represents the nesting of the generated HTML.
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   background: url(../images/close.png) no-repeat -50px 0;
   background-position: center;
@@ -371,4 +409,101 @@ ordered & tabbed in a way that represents the nesting of the generated HTML.
 
 #cboxClose:hover {
   opacity: 1;
+}
+
+.contact {
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  color: #fff;
+  background: no-repeat center center fixed;
+  background-size: cover;
+}
+
+.contact .contact-div {
+  padding-top: 150px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact .contact-div .social-icons {
+  padding-top: 20px;
+  display: block;
+}
+
+.contact .contact-div .social-icons i {
+  display: inline-block;
+  margin-right: 15px;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+
+.contact .contact-div .desc h1 {
+  padding-bottom: 30px;
+}
+
+.contact .contact-div .desc .contact-close {
+  margin-top: 150px;
+  text-align: center;
+}
+
+.contact .contact-div .desc .contact-close img {
+  width: 50px;
+}
+
+.contact .contact-div .contact-form {
+  padding-top: 80px;
+}
+
+.contact .contact-div .contact-form .form-control {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+.contact .contact-div .contact-form .r-button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  margin-top: 20px;
+  padding: 10px 15px;
+}
+
+.contact .photo-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  color: #222;
+}
+
+.contact .photo-footer p {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+.contact .photo-footer .social-icons {
+  float: right;
+}
+
+.contact .photo-footer .social-icons i {
+  display: inline-block;
+  margin-left: 15px;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  border: 2px solid #222;
+  color: #222;
+  font-size: 20px;
+  text-align: center;
 }
