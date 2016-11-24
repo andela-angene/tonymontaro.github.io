@@ -151,6 +151,9 @@
   border-radius: 8px;
   margin-right: 5px;
   -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -166,6 +169,9 @@
   color: #656565;
   font-weight: bold;
   -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -380,6 +386,9 @@ div.owl-dot.active span {
   margin-bottom: 10px;
   background-color: #b3b3b3;
   -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -604,5 +613,5 @@ div.owl-dot.active span {
 /*    Product and Category Pages  */
 /*========================================*/
 div.product-item, div.r-tabs-panel {
-  background-color: #e8cba6 !important;
+  background-color: #f2e3ce !important;
 }
