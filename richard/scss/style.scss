@@ -1,0 +1,26 @@
+/*
+* Developed by Anthony Ngene (http://montaroweb.com)
+*/
+@import "partials/functions";
+@import 'partials/variables';
+@import 'partials/mixins';
+
+
+@include google-font("Lato");
+@include google-font("Courgette");
+
+body{
+	font-family: $text-font;
+    color: $text-color;
+    font-size: $text-size;
+    width: 100%;
+    overflow-y: scroll;
+    .t-container{
+        max-width: $context-width;
+        margin: 0 auto;
+    }
+}
+
+
+
+@import 'partials/colorbox';
