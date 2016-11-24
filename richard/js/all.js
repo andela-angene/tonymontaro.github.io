@@ -78,7 +78,7 @@ function init_masonry(){
 
 
 
-$('.work-item').colorbox({rel:'work-item', width:"100%", height:"100%", inline:true});
+$('.init-colorbox').colorbox({rel:'init-colorbox', width:"100%", height:"100%", inline:true});
 
 
 
