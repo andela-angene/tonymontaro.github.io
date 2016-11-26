@@ -907,7 +907,7 @@ footer .footer-menu .footer-socail .socail-icons {
 }
 
 footer .footer-menu .footer-socail .socail-icons i {
-  margin-right: 10px;
+  margin-right: 15px;
   font-size: 25px;
   color: #5b5b5b;
   -webkit-transition: all 0.27s;
@@ -929,13 +929,14 @@ footer .footer-menu .footer-socail .bronchure {
 
 footer .footer-menu .footer-socail .bronchure img {
   display: inline-block;
-  width: 50px;
-  margin-right: 2px;
+  width: 40px;
+  margin-right: 5px;
 }
 
 footer .footer-menu .footer-socail .bronchure a {
   display: inline-block;
   width: 120px;
+  font-size: 12px;
 }
 
 footer .footer-copyright .footer-logo img {
