@@ -98,7 +98,7 @@ body .t-container {
 .navigation-bar {
   position: fixed;
   top: 0;
-  padding: 50px;
+  padding: 50px 50px 0 0;
   z-index: 999999;
   right: 0;
 }
@@ -124,6 +124,24 @@ body .t-container {
 .navigation-bar ul li .active-link, .navigation-bar ul li a:hover, .navigation-bar ul li a:active {
   text-decoration: none;
   border-bottom: 2px solid #fff;
+}
+
+.navigation-bar-logo {
+  position: fixed;
+  top: 0;
+  padding: 50px 0 0 50px;
+  z-index: 999999;
+  left: 0;
+}
+
+.navigation-bar-logo img {
+  width: 150px;
+}
+
+@media (max-width: 500px) {
+  .navigation-bar-logo {
+    display: none;
+  }
 }
 
 /*
@@ -416,10 +434,7 @@ ordered & tabbed in a way that represents the nesting of the generated HTML.
   height: 100vh;
   overflow-y: auto;
   color: #fff;
-<<<<<<< HEAD
-=======
   padding-bottom: 70px;
->>>>>>> 8a5f6604479510bf801cce559ed484e64a5288b0
   background: no-repeat center center fixed;
   background-size: cover;
 }
@@ -453,11 +468,7 @@ ordered & tabbed in a way that represents the nesting of the generated HTML.
 }
 
 .contact .contact-div .desc .contact-close {
-<<<<<<< HEAD
-  margin-top: 150px;
-=======
   margin-top: 120px;
->>>>>>> 8a5f6604479510bf801cce559ed484e64a5288b0
   text-align: center;
 }
 
@@ -469,11 +480,19 @@ ordered & tabbed in a way that represents the nesting of the generated HTML.
   padding-top: 80px;
 }
 
-.contact .contact-div .contact-form .form-control {
+.contact .contact-div .contact-form .form-controlz {
+  width: 100%;
   background-color: transparent;
+  padding: 10px 20px;
   border: none;
+  border-radius: 0;
   border-bottom: 1px solid #fff;
   color: #fff;
+  outline: none;
+}
+
+.contact .contact-div .contact-form .form-controlz:focus {
+  outline: 1px solid transparent;
 }
 
 .contact .contact-div .contact-form .r-button {
@@ -514,4 +533,175 @@ ordered & tabbed in a way that represents the nesting of the generated HTML.
   color: #222;
   font-size: 20px;
   text-align: center;
+}
+
+.photo {
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  color: #fff;
+  padding-bottom: 70px;
+  background: no-repeat center center fixed;
+  background-size: contain;
+}
+
+.photo .photo-full {
+  position: relative;
+  height: 100%;
+}
+
+.photo .photo-full img {
+  width: 100%;
+  position: relative;
+  max-height: 100%;
+}
+
+.photo .photo-wrap {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.photo .photo-wrap .photo-footer {
+  padding: 20px;
+  background-color: #fff;
+  color: #222;
+}
+
+.photo .photo-wrap .photo-footer p {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+.photo .photo-wrap .photo-footer .social-icons {
+  float: right;
+}
+
+.photo .photo-wrap .photo-footer .social-icons i {
+  display: inline-block;
+  margin-left: 15px;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  border: 2px solid #222;
+  color: #222;
+  font-size: 20px;
+  text-align: center;
+}
+
+.photo .photo-wrap .photo-desc {
+  padding-bottom: 10px;
+}
+
+.photo .photo-wrap .photo-desc h2 {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.photo .photo-wrap .photo-desc p {
+  padding: 0;
+  margin: 0;
+}
+
+.photo .photo-wrap .photo-desc p i {
+  padding-left: 20px;
+  padding-right: 8px;
+  font-size: 18px;
+}
+
+.photo .photo-wrap .photo-desc p i:first-child {
+  padding-left: 0;
+}
+
+.photo .photo-footer-1 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  color: #222;
+}
+
+.photo .photo-footer-1 p {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+.photo .photo-footer-1 .social-icons {
+  float: right;
+}
+
+.photo .photo-footer-1 .social-icons i {
+  display: inline-block;
+  margin-left: 15px;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  border: 2px solid #222;
+  color: #222;
+  font-size: 20px;
+  text-align: center;
+}
+
+#boxPrev {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 0;
+  background: url(../images/arrow-left.png) no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 70px;
+  height: 100%;
+  text-indent: -9999px;
+  opacity: 0;
+}
+
+#boxPrev:hover {
+  opacity: 1;
+}
+
+#boxNext {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 0;
+  background: url(../images/arrow-right.png) no-repeat -50px 0;
+  background-position: center;
+  background-size: contain;
+  width: 70px;
+  height: 100%;
+  text-indent: -9999px;
+  opacity: 0;
+}
+
+#boxNext:hover {
+  opacity: 1;
+}
+
+#boxClose {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: url(../images/close.png) no-repeat -50px 0;
+  background-position: center;
+  background-size: contain;
+  width: 70px;
+  height: 80%;
+  text-indent: -9999px;
+  opacity: 0;
+}
+
+#boxClose:hover {
+  opacity: 1;
 }

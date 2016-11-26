@@ -92,7 +92,7 @@ body{
 .navigation-bar{
     position: fixed;
     top: 0;
-    padding: 50px;
+    padding: 50px 50px 0 0;
     z-index: 999999;
     right: 0;
     
@@ -115,6 +115,22 @@ body{
         }
     }
 }
+.navigation-bar-logo{
+    position: fixed;
+    top: 0;
+    padding: 50px 0 0 50px;
+    z-index: 999999;
+    left: 0;
+    img{
+        width: 150px;
+    }
+}
+@media (max-width: 500px){
+    .navigation-bar-logo{
+        display: none;
+    }
+}
 
 @import 'partials/colorbox';
 @import 'contact';
+@import 'photo';

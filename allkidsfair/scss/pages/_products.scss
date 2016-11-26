@@ -5,3 +5,19 @@
 div.product-item, div.r-tabs-panel {
     background-color: lighten($tan, 5%) !important;
 }
+.product-item {
+    border: 1px solid #3c3c3c !important;
+}
+
+div.product-item div.status{
+    display: none !important;
+}
+ul.cat-menu-ul a {
+    font-size: 18px;
+}
+@media (max-width: 467px){
+    .cart a{
+        font-size: 11px !important;
+    }
+    
+}
