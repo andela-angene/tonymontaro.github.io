@@ -102,6 +102,18 @@ function init_masory() {
         //launch modal
         $('#registerPopup').modal();
     });
+    $(".hover-type-2").click(function(){
+        
+        var client = {
+            photo: $(this).attr('data-photo'),
+            name: $(this).data('name')
+        }
+        
+        $('.pop-photo-clip img').attr('src', client.photo);
+        $('.popup-client-name').html(client.name);
+        
+        $('#testimonials').modal();
+    })
     
     $(".launch-chatbox").click(function(){
         $('#chatbox').modal();
@@ -151,6 +163,13 @@ $(document).ready(function(){
         rewindSpeed: 200
     });
     $('#news-executive-carousel').owlCarousel({
+        navigation: true,
+        singleItem: true,
+        loop: true,
+        pagination: false,
+        rewindSpeed: 200
+    });
+    $('#news-executive-carousel-2').owlCarousel({
         navigation: true,
         singleItem: true,
         loop: true,

@@ -184,8 +184,10 @@ footer{
 .modal{
 
 }
-
-.registerPopup{
+.registerPopup .register-desc img{
+    margin-top: 20px;
+}
+.registerPopup, .testimonials{
     padding: 0; margin: 0;
     display: block;
     @include border-box;
@@ -224,7 +226,7 @@ footer{
             border: none;
         }
         img{
-            margin-top: 20px;
+            
             width: 100%;
             height: auto;
         }
@@ -245,7 +247,11 @@ footer{
             }
         }
 
-
+        .pop-photo-clip{
+            margin-top: 20px;
+            max-height: 205px;
+            overflow: hidden;
+        }
     }
 
     .register-form-div{
@@ -259,13 +265,18 @@ footer{
         h2{
             color: #fff;
             margin: 0;
-            padding-bottom: 40px;
+            padding-bottom: 15px;
         }
+        form {padding-top: 30px;}
         .form-control{
             width: 80%;
             margin: 0 auto;
             background-color: $gray;
-            margin-bottom: 20px;
+            margin-bottom: 35px;
+        }
+        
+        p{
+            color: #e8e8e8;
         }
         .popup-form-img{
             text-align: right;
