@@ -34,6 +34,31 @@ body .t-container {
   }
 }
 
+/* Mobile Nav */
+#mobile-navbar {
+  display: none;
+  background-color: transparent;
+  z-index: 999;
+}
+
+@media (max-width: 767px) {
+  #mobile-navbar {
+    display: block;
+  }
+}
+
+#mobile-navbar .navbar-collapse {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+#mobile-navbar .navbar-collapse a {
+  color: #fff;
+}
+
+#mobile-navbar .navbar-collapse a:hover {
+  color: #b9b9b9;
+}
+
 .clear-both {
   clear: both;
 }
@@ -42,71 +67,17 @@ body .t-container {
   display: none;
 }
 
-.photo-wrap {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
-.photo-wrap .photo-footer {
-  padding: 20px;
-  background-color: #fff;
-  color: #222;
-}
-
-.photo-wrap .photo-footer p {
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-  font-size: 14px;
-}
-
-.photo-wrap .photo-footer .social-icons {
-  float: right;
-}
-
-.photo-wrap .photo-footer .social-icons i {
-  display: inline-block;
-  margin-left: 15px;
-  width: 30px;
-  height: 30px;
-  box-sizing: border-box;
-  border-radius: 15px;
-  border: 2px solid #222;
-  color: #222;
-  font-size: 20px;
-  text-align: center;
-}
-
-.photo-wrap .photo-desc {
-  padding-bottom: 10px;
-}
-
-.photo-wrap .photo-desc h2 {
-  margin: 0;
-  padding-bottom: 10px;
-}
-
-.photo-wrap .photo-desc p {
-  padding: 0;
-  margin: 0;
-}
-
-.photo-wrap .photo-desc p i {
-  padding-left: 20px;
-  padding-right: 8px;
-  font-size: 18px;
-}
-
-.photo-wrap .photo-desc p i:first-child {
-  padding-left: 0;
+@media (max-width: 767px) {
+  .navigation-bar, .navigation-bar-logo {
+    display: none;
+  }
 }
 
 .navigation-bar {
   position: fixed;
   top: 0;
   padding: 50px 50px 0 0;
-  z-index: 999999;
+  z-index: 980;
   right: 0;
 }
 
@@ -383,6 +354,7 @@ ordered & tabbed in a way that represents the nesting of the generated HTML.
 #cboxPrevious {
   position: absolute;
   top: 50%;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   left: 0;
   background: url(../images/arrow-left.png) no-repeat;
@@ -401,6 +373,7 @@ ordered & tabbed in a way that represents the nesting of the generated HTML.
 #cboxNext {
   position: absolute;
   top: 50%;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   right: 0;
   background: url(../images/arrow-right.png) no-repeat -50px 0;
@@ -420,6 +393,7 @@ ordered & tabbed in a way that represents the nesting of the generated HTML.
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   background: url(../images/close.png) no-repeat -50px 0;
   background-position: center;
@@ -441,13 +415,10 @@ ordered & tabbed in a way that represents the nesting of the generated HTML.
   padding-bottom: 70px;
   margin-bottom: -70px;
   background: no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 767px) {
   .contact {
     padding-bottom: 120px;
   }
@@ -530,8 +501,13 @@ ordered & tabbed in a way that represents the nesting of the generated HTML.
 }
 
 .photo-footer .t-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -566,15 +542,18 @@ html, body {
 
 .photo {
   width: 100%;
-  height: 100%;
-  overflow-y: auto;
+  min-height: 100%;
   color: #fff;
   padding-bottom: 70px;
+  margin-bottom: -150px;
   background: no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
+}
+
+@media (max-width: 500px) {
+  .photo {
+    padding-bottom: 120px;
+  }
 }
 
 .photo .photo-full {
@@ -588,71 +567,46 @@ html, body {
   max-height: 100%;
 }
 
-.photo .photo-wrap {
-  position: absolute;
-  bottom: 0;
+.photo-wrap {
   width: 100%;
 }
 
-.photo .photo-wrap .photo-footer {
-  padding: 20px 0;
-  background-color: #fff;
-  color: #222;
+@media (min-width: 1000px) {
+  .photo-wrap {
+    height: 150px;
+  }
 }
 
-.photo .photo-wrap .photo-footer .t-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.photo .photo-wrap .photo-footer p {
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-  font-size: 14px;
-}
-
-.photo .photo-wrap .photo-footer .social-icons i {
-  display: inline-block;
-  margin-left: 15px;
-  width: 30px;
-  height: 30px;
-  box-sizing: border-box;
-  border-radius: 15px;
-  border: 2px solid #222;
-  color: #222;
-  font-size: 20px;
-  text-align: center;
-}
-
-.photo .photo-wrap .photo-desc {
+.photo-desc {
   padding-bottom: 10px;
+  color: #fff;
 }
 
-.photo .photo-wrap .photo-desc h2 {
+.photo-desc h2 {
   margin: 0;
   padding-bottom: 10px;
+  color: #fff;
 }
 
-.photo .photo-wrap .photo-desc p {
+.photo-desc p {
   padding: 0;
   margin: 0;
 }
 
-.photo .photo-wrap .photo-desc p i {
+.photo-desc p i {
   padding-left: 20px;
   padding-right: 8px;
   font-size: 18px;
 }
 
-.photo .photo-wrap .photo-desc p i:first-child {
+.photo-desc p i:first-child {
   padding-left: 0;
 }
 
 #boxPrev {
   position: absolute;
   top: 50%;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   left: 0;
   background: url(../images/arrow-left.png) no-repeat;
@@ -671,6 +625,7 @@ html, body {
 #boxNext {
   position: absolute;
   top: 50%;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   right: 0;
   background: url(../images/arrow-right.png) no-repeat -50px 0;
@@ -690,6 +645,7 @@ html, body {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   background: url(../images/close.png) no-repeat -50px 0;
   background-position: center;

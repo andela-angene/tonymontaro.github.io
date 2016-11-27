@@ -5,10 +5,13 @@ html, body {
 .page{height: 100%}
 .photo{
     width: 100%;
-    height: 100%;
-    overflow-y: auto;
+    min-height: 100%;
     color: #fff;
     padding-bottom: 70px;
+    margin-bottom: -150px; 
+    @media (max-width: 500px){
+        padding-bottom: 120px;
+    }
 
     background: no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -25,64 +28,36 @@ html, body {
             max-height: 100%;
         }
     }
-
-    .photo-wrap{
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-
-        .photo-footer{
-            padding: 20px 0;
-            background-color: #fff;
-            color: $text-color;
-            .t-container{
-                display: flex;
-                justify-content: space-between;
-                flex-wrap: wrap;
-            }
-            p{
-                display: inline-block;
-                padding: 0; margin: 0;
-                font-size: 14px;
-            }
-            .social-icons{
-                i{
-                    display: inline-block;
-                    margin-left: 15px;
-                    width: 30px;
-                    height: 30px;
-                    box-sizing: border-box;
-                    border-radius: 15px;
-                    border: 2px solid $text-color;
-                    color: $text-color;
-                    font-size: 20px;
-                    text-align: center;
-                }
-            }
-        }
-        .photo-desc{
-            padding-bottom: 10px;
-            h2{
-                margin: 0;
-                padding-bottom: 10px;
-            }
-            p{
-                padding: 0; margin: 0;
-
-                i{
-                    &:first-child{padding-left: 0;}
-                    padding-left: 20px;
-                    padding-right: 8px;
-                    font-size: 18px;
-                }
-            }
-        }
+}
+.photo-wrap{
+    @media (min-width: 1000px){
+        height: 150px;
     }
+    width: 100%;
 
-    
+
 
 }
+.photo-desc{
+    
+    padding-bottom: 10px;
+    color: #fff;
+    h2{
+        margin: 0;
+        padding-bottom: 10px;
+        color: #fff;
+    }
+    p{
+        padding: 0; margin: 0;
 
+        i{
+            &:first-child{padding-left: 0;}
+            padding-left: 20px;
+            padding-right: 8px;
+            font-size: 18px;
+        }
+    }
+}
 
 
 #boxPrev {

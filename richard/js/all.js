@@ -78,9 +78,6 @@ function init_masonry(){
 
 
 
-$('.init-colorbox').colorbox({rel:'init-colorbox', width:"100%", height:"100%", inline:true});
-
-
 
 
 
