@@ -3,6 +3,15 @@
 */
 @import url(https://fonts.googleapis.com/css?family=Lato);
 @import url(https://fonts.googleapis.com/css?family=Courgette);
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 body {
   font-family: "Lato", Arial, sans-serif;
   color: #222;
@@ -14,8 +23,15 @@ body {
 }
 
 body .t-container {
-  max-width: 960px;
+  max-width: 85%;
   margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  body .t-container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
 }
 
 .clear-both {
@@ -24,15 +40,6 @@ body .t-container {
 
 .hidden {
   display: none;
-}
-
-.hidden-work-item {
-  width: 100%;
-  height: 100vh;
-  color: #fff;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .photo-wrap {
@@ -113,6 +120,7 @@ body .t-container {
   color: #fff;
   float: left;
   margin-left: 20px;
+  margin-bottom: 10px;
 }
 
 .navigation-bar ul li a:visited, .navigation-bar ul li a:link {
@@ -375,7 +383,6 @@ ordered & tabbed in a way that represents the nesting of the generated HTML.
 #cboxPrevious {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   left: 0;
   background: url(../images/arrow-left.png) no-repeat;
@@ -394,7 +401,6 @@ ordered & tabbed in a way that represents the nesting of the generated HTML.
 #cboxNext {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   right: 0;
   background: url(../images/arrow-right.png) no-repeat -50px 0;
@@ -414,7 +420,6 @@ ordered & tabbed in a way that represents the nesting of the generated HTML.
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   background: url(../images/close.png) no-repeat -50px 0;
   background-position: center;
@@ -431,12 +436,21 @@ ordered & tabbed in a way that represents the nesting of the generated HTML.
 
 .contact {
   width: 100%;
-  height: 100vh;
-  overflow-y: auto;
+  min-height: 100%;
   color: #fff;
   padding-bottom: 70px;
+  margin-bottom: -70px;
   background: no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
+}
+
+@media (max-width: 500px) {
+  .contact {
+    padding-bottom: 120px;
+  }
 }
 
 .contact .contact-div {
@@ -476,6 +490,12 @@ ordered & tabbed in a way that represents the nesting of the generated HTML.
   width: 50px;
 }
 
+@media (max-width: 767px) {
+  .contact .contact-div .desc .contact-close {
+    display: none;
+  }
+}
+
 .contact .contact-div .contact-form {
   padding-top: 80px;
 }
@@ -502,27 +522,27 @@ ordered & tabbed in a way that represents the nesting of the generated HTML.
   padding: 10px 15px;
 }
 
-.contact .photo-footer {
-  position: absolute;
-  bottom: 0;
+.photo-footer {
   width: 100%;
-  padding: 20px;
+  padding: 20px 0;
   background-color: #fff;
   color: #222;
 }
 
-.contact .photo-footer p {
+.photo-footer .t-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.photo-footer p {
   display: inline-block;
   padding: 0;
   margin: 0;
   font-size: 14px;
 }
 
-.contact .photo-footer .social-icons {
-  float: right;
-}
-
-.contact .photo-footer .social-icons i {
+.photo-footer .social-icons i {
   display: inline-block;
   margin-left: 15px;
   width: 30px;
@@ -535,14 +555,26 @@ ordered & tabbed in a way that represents the nesting of the generated HTML.
   text-align: center;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.page {
+  height: 100%;
+}
+
 .photo {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   overflow-y: auto;
   color: #fff;
   padding-bottom: 70px;
   background: no-repeat center center fixed;
-  background-size: contain;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .photo .photo-full {
@@ -563,9 +595,15 @@ ordered & tabbed in a way that represents the nesting of the generated HTML.
 }
 
 .photo .photo-wrap .photo-footer {
-  padding: 20px;
+  padding: 20px 0;
   background-color: #fff;
   color: #222;
+}
+
+.photo .photo-wrap .photo-footer .t-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .photo .photo-wrap .photo-footer p {
@@ -573,10 +611,6 @@ ordered & tabbed in a way that represents the nesting of the generated HTML.
   padding: 0;
   margin: 0;
   font-size: 14px;
-}
-
-.photo .photo-wrap .photo-footer .social-icons {
-  float: right;
 }
 
 .photo .photo-wrap .photo-footer .social-icons i {
@@ -616,43 +650,9 @@ ordered & tabbed in a way that represents the nesting of the generated HTML.
   padding-left: 0;
 }
 
-.photo .photo-footer-1 {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 20px;
-  background-color: #fff;
-  color: #222;
-}
-
-.photo .photo-footer-1 p {
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-  font-size: 14px;
-}
-
-.photo .photo-footer-1 .social-icons {
-  float: right;
-}
-
-.photo .photo-footer-1 .social-icons i {
-  display: inline-block;
-  margin-left: 15px;
-  width: 30px;
-  height: 30px;
-  box-sizing: border-box;
-  border-radius: 15px;
-  border: 2px solid #222;
-  color: #222;
-  font-size: 20px;
-  text-align: center;
-}
-
 #boxPrev {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   left: 0;
   background: url(../images/arrow-left.png) no-repeat;
@@ -671,7 +671,6 @@ ordered & tabbed in a way that represents the nesting of the generated HTML.
 #boxNext {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   right: 0;
   background: url(../images/arrow-right.png) no-repeat -50px 0;
@@ -691,7 +690,6 @@ ordered & tabbed in a way that represents the nesting of the generated HTML.
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   background: url(../images/close.png) no-repeat -50px 0;
   background-position: center;

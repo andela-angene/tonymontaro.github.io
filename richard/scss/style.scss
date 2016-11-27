@@ -8,7 +8,13 @@
 
 @include google-font("Lato");
 @include google-font("Courgette");
-
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
 body{
 	font-family: $text-font;
     color: $text-color;
@@ -17,8 +23,12 @@ body{
     overflow-y: scroll;
     overflow-x: hidden;
     .t-container{
-        max-width: $context-width;
+        max-width: 85%;
         margin: 0 auto;
+        @media (max-width: 480px){
+            max-width: 100%;
+            padding: 0 10px;
+        }
     }
     background-color: $text-color;
 }
@@ -30,15 +40,7 @@ body{
     display: none;
 }
 
-.hidden-work-item{
-    width: 100%;
-    height: 100vh;
-    color: #fff;
-    
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
+
 .photo-wrap{
     position: absolute;
     bottom: 0;
@@ -103,6 +105,7 @@ body{
             color: #fff;
             float: left;
             margin-left: 20px;
+            margin-bottom: 10px;
             a:visited, a:link{
                 color: #fff;
                 padding-bottom: 10px;

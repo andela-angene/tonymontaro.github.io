@@ -1,9 +1,15 @@
+
+
 .contact{
+    
     width: 100%;
-    height: 100vh;
-    overflow-y: auto;
+    min-height: 100%;
     color: #fff;
     padding-bottom: 70px;
+    margin-bottom: -70px; 
+    @media (max-width: 500px){
+        padding-bottom: 120px;
+    }
 
     background: no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -45,6 +51,9 @@
                     width: 50px;
                 }
             }
+            @media (max-width: 767px){
+                .contact-close{display: none;}
+            }
         }
         
         .contact-form{
@@ -75,35 +84,35 @@
             }
         }
     }
-    
-    .photo-footer{
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        padding: 20px;
-        background-color: #fff;
-        color: $text-color;
-        p{
+}
+
+.photo-footer{
+    width: 100%;
+    padding: 20px 0;
+    background-color: #fff;
+    color: $text-color;
+    .t-container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    p{
+        display: inline-block;
+        padding: 0; margin: 0;
+        font-size: 14px;
+    }
+    .social-icons{
+        i{
             display: inline-block;
-            padding: 0; margin: 0;
-            font-size: 14px;
-        }
-        .social-icons{
-            float: right;
-            i{
-                display: inline-block;
-                margin-left: 15px;
-                width: 30px;
-                height: 30px;
-                box-sizing: border-box;
-                border-radius: 15px;
-                //                text-align: center;
-                border: 2px solid $text-color;
-                color: $text-color;
-                font-size: 20px;
-                text-align: center;
-            }
+            margin-left: 15px;
+            width: 30px;
+            height: 30px;
+            box-sizing: border-box;
+            border-radius: 15px;
+            border: 2px solid $text-color;
+            color: $text-color;
+            font-size: 20px;
+            text-align: center;
         }
     }
-    
 }
