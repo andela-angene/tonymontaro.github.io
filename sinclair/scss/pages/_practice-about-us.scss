@@ -244,3 +244,20 @@
         h1,p{color: $black;}
     }
 }
+
+//Positions
+.positions{
+    padding: 20px 0;
+    background-color: $black;
+    color: #fff;
+    
+    .read-more{
+        display: inline-block;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #fff;
+        margin-bottom: 20px;
+    }
+    .positions-btn{
+        padding: 10px 0;
+    }
+}

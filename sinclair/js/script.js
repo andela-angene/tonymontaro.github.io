@@ -286,6 +286,18 @@ $(document).ready(function(){
            
         }
     });
+    
+    //Job Positions show or Hide
+    $('#positions-btn-show').on('click', function(){
+       $(this).hide();
+        $('#positions-btn-hide').show();
+        $('.positions-hide').slideDown();
+    });
+    $('#positions-btn-hide').on('click', function(){
+        $(this).hide();
+        $('#positions-btn-show').show();
+        $('.positions-hide').slideUp();
+    });
         
 });
 
