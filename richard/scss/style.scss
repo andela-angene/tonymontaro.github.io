@@ -51,7 +51,16 @@ body{
             color: #b9b9b9;
         }
     }
-    
+    .navbar-brand{
+        padding: 0;
+        margin: 5px 10px;
+        img{
+            height: 100%;
+        }
+    }
+    .navbar-toggle{
+        margin-top: 12px;
+    }
 }
 
 

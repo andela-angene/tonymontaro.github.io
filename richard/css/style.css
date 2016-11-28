@@ -59,6 +59,19 @@ body .t-container {
   color: #b9b9b9;
 }
 
+#mobile-navbar .navbar-brand {
+  padding: 0;
+  margin: 5px 10px;
+}
+
+#mobile-navbar .navbar-brand img {
+  height: 100%;
+}
+
+#mobile-navbar .navbar-toggle {
+  margin-top: 12px;
+}
+
 .clear-both {
   clear: both;
 }
@@ -536,7 +549,7 @@ ordered & tabbed in a way that represents the nesting of the generated HTML.
   min-height: 100%;
   color: #fff;
   padding-bottom: 70px;
-  margin-bottom: -150px;
+  margin-bottom: -165px;
   background: no-repeat center center fixed;
   background-size: cover;
 }
@@ -558,8 +571,14 @@ ordered & tabbed in a way that represents the nesting of the generated HTML.
 }
 
 .photo-desc {
-  padding-bottom: 10px;
+  padding-bottom: 25px;
   color: #fff;
+}
+
+@media (min-width: 768px) {
+  .photo-desc .exif-info {
+    text-align: right;
+  }
 }
 
 .photo-desc h2 {

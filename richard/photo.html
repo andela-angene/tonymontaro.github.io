@@ -34,7 +34,7 @@
                     </button>
                     <a class="navbar-brand" href="index.html">
 
-                        <!--                       LOGO HERE -->
+                        <img src="images/logo.png" alt="logo">
 
                     </a>
                 </div>
@@ -63,16 +63,17 @@
 
            
 
-            <!-- Portfolio Section -->
+            <!-- Full Image Section (as the background-image) -->
             <section class="photo" style="background-image: url(images/portfolio/car2.jpg)">
                 
+                <!-- Controls -->
                 <a href="photo.html?id=3"><div id="boxNext"></div></a>
                 <a href="photo.html?id=1"><div id="boxPrev"></div></a>
                 <a href="index.html"><div id="boxClose"></div></a>
                 
-                
             </section>
-            <!-- End Portfolio Section -->
+            
+        <!--      Image description and footer      -->
         <div class="photo-wrap">
             <div class="t-container">
                 <div class="photo-desc row">
@@ -80,13 +81,15 @@
                         <h2>Great speed through Les Combes</h2>
                         <p><i class="ion-android-calendar"></i> March 14, 2016 <i class="ion-ios-location-outline"></i> Hockenheim, Germany</p>
                     </div>
-                    <div class="col-sm-6 text-right">
-                        <p>
-                            <i class="ion-eye"></i> 33mm 
-                            <i class="ion-aperture"></i> 2.8 
-                            <i class="ion-ios-stopwatch-outline"></i> 1/200 
-                            <i class="ion-closed-captioning"></i> 400
-                        </p>
+                    <div class="col-sm-6">
+                        <div class="exif-info">
+                            <p>
+                                <i class="ion-eye"></i> 33mm 
+                                <i class="ion-aperture"></i> 2.8 
+                                <i class="ion-ios-stopwatch-outline"></i> 1/200 
+                                <i class="ion-closed-captioning"></i> 400
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -107,8 +110,8 @@
 
 
 
-        <!-- JS -->
-        <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+        <!-- Javascript Files Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
         <script type="text/javascript" src="js/bootstrap.min.js"></script>        
 
