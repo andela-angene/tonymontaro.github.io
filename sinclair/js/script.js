@@ -102,18 +102,6 @@ function init_masory() {
         //launch modal
         $('#registerPopup').modal();
     });
-    $(".hover-type-2").click(function(){
-        
-        var client = {
-            photo: $(this).attr('data-photo'),
-            name: $(this).data('name')
-        }
-        
-        $('.pop-photo-clip img').attr('src', client.photo);
-        $('.popup-client-name').html(client.name);
-        
-        $('#testimonials').modal();
-    })
     
     $(".launch-chatbox").click(function(){
         $('#chatbox').modal();
@@ -297,6 +285,26 @@ $(document).ready(function(){
         $(this).hide();
         $('#positions-btn-show').show();
         $('.positions-hide').slideUp();
+    });
+    
+    //launch testimonials modal
+    $(".hover-type-2").click(function(){
+
+        var client = {
+            photo: $(this).attr('data-photo'),
+            name: $(this).data('name'),
+            about: $(this).find('.testimonial-about').html(),
+            topic: $(this).find('.testimonial-topic').html(),
+            content: $(this).find('.testimonial-content').html(),
+        }
+
+        $('.pop-photo-clip img').attr('src', client.photo);
+        $('.popup-client-name').html(client.name);
+        $('#testimonial-about').html(client.about);
+        $('#testimonial-topic').html(client.topic);
+        $('#testimonial-content').html(client.content);
+
+        $('#testimonials').modal();
     });
         
 });
