@@ -75,11 +75,10 @@ function init_masonry(){
 
 
 
-
-
-
-
-
+$(document).ready(function(){
+    var photoDesc = $('#photo-desc').height();
+    $('.photo').css('margin-bottom', -photoDesc);
+});
 
 
 

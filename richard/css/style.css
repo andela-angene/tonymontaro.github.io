@@ -549,8 +549,7 @@ ordered & tabbed in a way that represents the nesting of the generated HTML.
   min-height: 100%;
   color: #fff;
   padding-bottom: 70px;
-  margin-bottom: -165px;
-  background: no-repeat center center fixed;
+  background: no-repeat center bottom fixed;
   background-size: cover;
 }
 
