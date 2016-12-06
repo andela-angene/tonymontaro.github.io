@@ -429,7 +429,7 @@ div.chkComments{
         top: -50px
     }
     div#spanCheckout{
-        height: 1px
+/*        height: 1px */
     }
 }
 
@@ -481,8 +481,6 @@ div.logo slash img{
 }
 /*price:: Controls the way the product's final price display throughout the site.*/ 
 .price {
-    font-size: 13px;
-    color: #22303a;
     font-weight: 700;
     letter-spacing: 0;
 }

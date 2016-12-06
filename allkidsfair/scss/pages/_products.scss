@@ -39,3 +39,23 @@ div.r-tabs-panel{
 .r-tabs-tab{
     background-color: #3c3c3c !important;
 }
+.promo-name{
+    float: none !important;
+    line-height: normal !important;
+    width: 100% !important;
+}
+
+.new-location{
+    padding: 15px 10px;
+    margin: 0 auto;
+    border: 3px solid $blue;
+    background-color: $yellow;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    margin-right: 5px;
+}
+@media (max-width: 767px){
+    .new-location{
+        padding: 5px 3px;
+    }
+}
