@@ -4,19 +4,16 @@
         element: document.getElementById('nav_wrap_two'),
         handler: function(direction) {
             if(direction == 'down'){
-
-                //                        $('#nav_wrap_two').css('display', 'none');
-                //                        $('#nav_wrap_two').fadeIn();
+                
                 $('#nav_wrap_two').addClass('fixed_nav_wrap');
-                $('body').addClass('body-pad');
+                $('body').css('padding-top',$('#nav_wrap_two').height());
 
             }
             if(direction == 'up'){
-                $('body').removeClass('body-pad');
+                $('body').css('padding-top', '0px');
                 $('#nav_wrap_two').removeClass('fixed_nav_wrap');
             }
         },
-
     });
 
 

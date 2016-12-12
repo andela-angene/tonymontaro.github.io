@@ -1,0 +1,210 @@
+/*
+Theme Name: Virtue Child Theme
+Author: Anthony Ngene
+Author URI: http://anthonyngene.com
+Template: virtue_premium
+Version: 0.1.0
+*/
+
+$brown-l: #F2F2F2;
+$brown-d: #666666;
+$blue: #2D5C88;
+
+.free-consultation{
+    padding: 15px 0;
+    background-color: #F2F2F2;
+}
+.footercol1 li {
+    float: left;
+    padding-right: 12px;
+}
+.virtue_social_widget {
+    float: right;
+}
+#topcontrol>div {
+    bottom: -30px;
+}
+.steph-more-info{
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.wpcf7 textarea {
+    height: 50px;
+}
+.wrap,.sliderclass, .pagefeat  {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+a.kad-btn-primary,a.kad-btn-primary:hover,a.kad-btn-primary:active,a.kad-btn-primary:visited{
+    color: #fff;
+}
+
+/* homepage blog edit */
+img.attachment-widget-thumb.size-widget-thumb.wp-post-image {
+    min-width: 130px;
+}
+a.recentpost_title {
+    font-size: 18px !important;
+    line-height: 25px !important;
+}
+li.clearfix.postclass {
+    margin: 30px 0 !important;
+}
+span.recentpost_date.color_gray {
+    display: none;
+}
+
+/* contact form on pages */
+input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required, textarea.wpcf7-form-control.wpcf7-textarea {
+    border-radius: 6px;
+    padding: 5px 10px;
+}
+
+
+/* start generated css */
+
+.ss-header{
+    position: relative;
+    height: 80vh;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    .ss-header-div{
+        width: 100%;
+        padding: 20px 10px;
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        background: rgba(29, 29, 29, 0.37);
+        
+        @media (min-width: 767px){
+            max-width: 750px;
+        }
+        h1{
+            font-size: 35px;
+            color: #fff;
+        }
+        p{
+            font-size: 25px;
+            line-height: 28px;
+        }
+    }
+}
+
+.ss-div{
+    margin: 0; 
+    padding: 60px 0;
+    
+    .ss-nextstep{
+        max-width: 750px;
+        margin: 0 auto;
+    }
+    .widget-title{
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+    .ss-nextstep-wt{
+        padding: 25px 20px;
+        line-height: 25px;
+    }
+}
+
+#ss-nextstep{
+    background-color: $brown-d;
+    
+    .widget-title{
+        color: #fff;
+    }
+    .ss-nextstep-wt{
+        background-color: #fff;
+    }
+}
+#ss-the-details{
+    
+}
+
+#ss-modules-desc{
+    
+    background-color: $brown-d;
+
+    .widget-title{
+        color: #fff;
+    }
+    .ss-nextstep-wt{
+        background-color: #fff;
+        .ss-module{
+            padding: 15px 0;
+            border-bottom: 1px solid #b2b2b2;
+        }
+    }
+}
+#ss-who-should{
+    
+    background-color: $brown-d;
+
+    .widget-title{
+        color: #fff;
+    }
+    .ss-nextstep-wt{
+        .ss-module{
+            padding: 15px 0;
+            border-bottom: 1px solid #b2b2b2;
+        }
+    }
+    .col-sm-4{
+        padding: 0 10px;
+        text-align: center;
+    }
+    .ss-who-should-txt{
+        margin-top: 10px;
+        background-color: #fff;
+        padding: 6px 0;
+    }
+}
+#ss-my-investment{
+    
+}
+#ss-order{
+    background-color: $brown-l;
+    h1,h2,h3{margin-top: 0;}
+    
+    .ss-order-wrap{
+        background-color: #fff;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    .ss-order-header{
+        padding: 10px 0;
+        border-bottom: 2px solid $brown-l;
+        h3{font-size: 22px;}
+    }
+    .ss-order-price{
+        margin: 25px 0;
+        display: inline-block;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: $brown-l;
+//        h1,h3{color: $blue;}
+    }
+    a{
+        margin-top: 20px;
+    }
+}
+
+
+#ss-testimonials{
+    img{
+        max-width: 150px;
+    }
+    .ss-testimonials-img{
+        img{
+            margin-bottom: 15px;
+        }
+    }
+}
