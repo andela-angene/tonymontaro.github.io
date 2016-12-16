@@ -111,6 +111,9 @@ footer{
                 padding: 0 5px !important;
             }
         }
+        @media (max-width: 767px){
+            text-align: center;
+        }
 
         h4{
             font-size: 15px;
@@ -123,6 +126,7 @@ footer{
         }
 
         .footer-socail{
+            margin-bottom: 20px;
 
             .socail-icons{
                 display: inline-block;
@@ -143,6 +147,7 @@ footer{
             .bronchure{
                 display: flex;
                 align-items: flex-end;
+                justify-content: center;
 
                 img{
                     display: inline-block;

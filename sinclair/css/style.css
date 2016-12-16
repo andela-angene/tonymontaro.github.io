@@ -573,6 +573,60 @@ body .pad0 {
   font-size: 16px;
 }
 
+.sticky-register-footer {
+  display: none;
+  padding: 5px 0;
+  background-color: rgba(35, 36, 38, 0.9);
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 999;
+}
+
+.sticky-register-footer p {
+  padding: 0;
+  margin: 0;
+  color: #DADADA;
+}
+
+.sticky-register-footer .pull-left p {
+  position: relative;
+  top: 5px;
+}
+
+.sticky-register-footer .subscribe-stf {
+  padding: 5px 8px;
+  border: 1px solid #E61B86;
+  margin-left: 4px;
+  color: #DADADA;
+}
+
+.sticky-register-footer .subscribe-stf i {
+  color: #E61B86;
+}
+
+.sticky-register-footer img {
+  height: 30px;
+}
+
+@media (max-width: 600px) {
+  .sticky-register-footer p {
+    font-size: 15px;
+  }
+  .sticky-register-footer .pull-left {
+    margin-bottom: 10px;
+  }
+  .sticky-register-footer .pull-right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  footer {
+    padding-bottom: 100px !important;
+  }
+}
+
 .post-list {
   padding-bottom: 20px;
 }
@@ -901,6 +955,12 @@ footer .footer-menu a:hover, footer .footer-menu a:active {
   }
 }
 
+@media (max-width: 767px) {
+  footer .footer-menu {
+    text-align: center;
+  }
+}
+
 footer .footer-menu h4 {
   font-size: 15px;
   font-family: "NHaasGrotesk-b", Helvetica, Verdana, Sans-Serif;
@@ -909,6 +969,10 @@ footer .footer-menu h4 {
 footer .footer-menu ul {
   list-style: none;
   padding: 0;
+}
+
+footer .footer-menu .footer-socail {
+  margin-bottom: 20px;
 }
 
 footer .footer-menu .footer-socail .socail-icons {
@@ -937,6 +1001,9 @@ footer .footer-menu .footer-socail .bronchure {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 footer .footer-menu .footer-socail .bronchure img {
@@ -1107,6 +1174,16 @@ footer .footer-copyright p {
   color: #fff;
 }
 
+@media (max-width: 767px) {
+  .top-tabs > .container, .about-tabs > .container {
+    padding: 0;
+  }
+}
+
+.top-tabs > .container ul, .about-tabs > .container ul {
+  padding: 0;
+}
+
 #team-strategy .container {
   padding-bottom: 50px;
 }
@@ -1268,42 +1345,6 @@ footer .footer-copyright p {
 .panel-text-div .panel-text p {
   font-style: italic;
   font-size: 16px;
-}
-
-.sticky-register-footer {
-  display: none;
-  padding: 5px 0;
-  background-color: rgba(35, 36, 38, 0.9);
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  z-index: 999;
-}
-
-.sticky-register-footer p {
-  padding: 0;
-  margin: 0;
-  color: #DADADA;
-}
-
-.sticky-register-footer .pull-left p {
-  position: relative;
-  top: 5px;
-}
-
-.sticky-register-footer .subscribe-stf {
-  padding: 5px 10px;
-  border: 1px solid #E61B86;
-  margin-left: 4px;
-  color: #DADADA;
-}
-
-.sticky-register-footer .subscribe-stf i {
-  color: #E61B86;
-}
-
-.sticky-register-footer img {
-  height: 30px;
 }
 
 .about-post .container {
@@ -2343,7 +2384,12 @@ footer .footer-copyright p {
 
 .homepage-header .container {
   position: relative;
-  padding: 90px 0;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.homepage-header .col-sm-4 {
+  margin-bottom: 30px;
 }
 
 .homepage-header .homepage-chat-logo img {
@@ -2359,6 +2405,12 @@ footer .footer-copyright p {
   margin: 0;
   padding-bottom: 20px;
   font-size: 55px;
+}
+
+@media (max-width: 500px) {
+  .homepage-header h2, .homepage-header h1 {
+    font-size: 45px;
+  }
 }
 
 .homepage-header h1 {
@@ -2412,6 +2464,10 @@ footer .footer-copyright p {
 #home-header-carousel .header-news-img {
   position: relative;
   text-align: center;
+}
+
+#home-header-carousel .header-news-img img {
+  max-width: 100%;
 }
 
 @media (min-width: 768px) {

@@ -51,6 +51,14 @@
         @include transition();
     }
 }
+.top-tabs > .container, .about-tabs > .container{
+    @media (max-width: 767px){
+        padding: 0;
+    }
+    ul{
+        padding: 0;
+    }
+}
 #team-strategy{
     .container{padding-bottom: 50px;}
 }
@@ -173,39 +181,7 @@
 }    
 
 
-.sticky-register-footer{
-    display: none;
-    padding: 5px 0;
-    background-color: transparentize($black, 0.1);
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    z-index: 999;
-    
-    p{
-        padding: 0;
-        margin: 0;
-        color: $gray;
-        
-        
-    }
-    .pull-left p {
-        position: relative;
-        top: 5px;
-    }
-    .subscribe-stf{
-        padding: 5px 10px;
-        border: 1px solid $pink;
-        margin-left: 4px;
-        color: $gray;
-        i{
-            color: $pink;
-        }
-    }
-    img{
-        height: 30px;
-    }
-}
+
 
 .about-post{
     

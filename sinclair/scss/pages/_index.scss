@@ -24,9 +24,12 @@
     background-color: $black;
     .container{
         position: relative;
-        padding: 90px 0;
+        padding-top: 90px;
+        padding-bottom: 90px;
     }
-    
+    .col-sm-4{
+        margin-bottom: 30px;
+    }
     .homepage-chat-logo img{
         position: absolute;
         bottom: -18px; right: 0;
@@ -38,6 +41,9 @@
         margin: 0;
         padding-bottom: 20px;
         font-size: 55px;
+    }
+    @media (max-width: 500px){
+        h2,h1{ font-size: 45px; }
     }
     h1{font-family: $text-font-b;}
     h2{font-family: $text-font-l;}
@@ -88,6 +94,9 @@
     .header-news-img{
         position: relative;
         text-align: center;
+        img{
+            max-width: 100%;
+        }
         
         @media (min-width: 768px){
             padding-left: 0;
