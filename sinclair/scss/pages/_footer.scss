@@ -186,9 +186,7 @@ footer{
 
 
 //Start Modal
-.modal{
 
-}
 .registerPopup .register-desc img{
     margin-top: 20px;
 }
@@ -197,11 +195,10 @@ footer{
     display: block;
     @include border-box;
     display: flex;
-
     @media (min-width: 767px){
         min-width: 700px;
     }
-
+    
 
 
     .col-xs-6{
@@ -215,7 +212,14 @@ footer{
             padding-left: 0;
             padding-top: 0;
         }
-        //        background-color: $gray;
+    }
+    @media (max-width: 512px){
+        .col-xs-6{
+            width: 100%; 
+            height: auto;
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
 
     .register-desc{
@@ -223,6 +227,15 @@ footer{
         height: 100%;
         padding: 20px;
         background-color: $gray;
+        @media (max-width: 512px){
+            padding: 15px;
+            p{
+                font-size: 15px;
+            }
+            .h2{
+                font-size: 25px;
+            }
+        }
 
         .sinclair-btn{
             padding: 5px 15px;
@@ -231,7 +244,6 @@ footer{
             border: none;
         }
         img{
-            
             width: 100%;
             height: auto;
         }
@@ -259,10 +271,7 @@ footer{
         }
     }
 
-    .register-form-div{
-        height: 100%;
-        background-color: $darker-gray;
-    }
+    
     .register-form{
         background-color: $black;
         padding: 20px 20px 10px 20px;
@@ -303,6 +312,21 @@ footer{
         span{
             font-size: 22px;
             color: #fff;
+        }
+    }
+    .register-form-div{
+        height: 100%;
+        background-color: $darker-gray;
+        @media (max-width: 512px){
+            
+            h2{
+                font-size: 25px;
+                padding-bottom: 8px;
+            }
+            form{padding-top: 10px;}
+            .form-control{
+                width: 100%;
+            }
         }
     }
 }

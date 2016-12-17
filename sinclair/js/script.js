@@ -43,8 +43,7 @@ $.fn.extend({
     }
     
     $.loadManagementPerson = function(name){
-        console.log('hi');
-        $('#management-team').load('management-person.txt', function(){
+        $('#management-team').load('management-person.html', function(){
             $('#management-team').addClass('management-person-active');
         });
     }
@@ -268,7 +267,7 @@ $(document).ready(function(){
     
     $('a[href="#management"]').click(function(){
         if($('#management-team').hasClass('management-person-active')){
-            $('#management-team').load('management-team.txt', function(){
+            $('#management-team').load('management-team.html', function(){
                 $('#management-team').removeClass('management-person-active');
             });
            

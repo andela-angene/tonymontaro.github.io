@@ -31,7 +31,10 @@
     @media (max-width: 600px){
         p{font-size: 15px;}
         .pull-left{
-            margin-bottom: 10px;
+            margin-bottom: 6px;
+            a{
+                display: inline-block;
+            }
         }
         .pull-right {
             width: 100%;
