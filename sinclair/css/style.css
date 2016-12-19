@@ -82,16 +82,18 @@ body .link-rm-default:link, body .link-rm-default:visited, body .link-rm-default
     margin: 0;
 }
 
-body .display-none {
-    display: none;
-}
-
 body .pad0 {
     padding: 0 !important;
 }
 
 .display-none {
     display: none;
+}
+
+@media (max-width: 767px) {
+    .hide-mobile {
+        display: none;
+    }
 }
 
 .to-upper {
@@ -2019,6 +2021,15 @@ footer .footer-copyright p {
     display: none;
 }
 
+@media (max-width: 767px) {
+    .fix-col-12 {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
 .gray-box-l {
     background-color: #F7F7F7;
 }
@@ -2032,13 +2043,13 @@ footer .footer-copyright p {
 }
 
 .text-box {
-    line-height: 25px;
+    line-height: 22px;
 }
 
 .text-box h3 {
-    font-size: 25px;
+    font-size: 20px;
     font-family: "NHaasGrotesk-b", Helvetica, Verdana, Sans-Serif;
-    line-height: 29px;
+    line-height: 22px;
 }
 
 .text-box h1 {
@@ -2067,10 +2078,13 @@ footer .footer-copyright p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin: 5px 0;
+    margin: 4px 0;
 }
 
 .text-box .line-div-l a {
@@ -2087,10 +2101,13 @@ footer .footer-copyright p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin: 5px 0;
+    margin: 4px 0;
 }
 
 .line-div a {
@@ -2118,6 +2135,15 @@ footer .footer-copyright p {
     bottom: 0;
     overflow: auto;
     box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+    .text-box-sm .maintain-aspect-r {
+        padding-bottom: 0px;
+    }
+    .text-box-sm .maintain-aspect-r .maintain-aspect-hold {
+        position: relative;
+    }
 }
 
 @media (min-width: 1200px) {
