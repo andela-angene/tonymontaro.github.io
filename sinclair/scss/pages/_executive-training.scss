@@ -1,19 +1,8 @@
-@mixin maintain-aspect-r($pad: 100%){
-    .maintain-aspect-r{
-        position: relative;
-        width: 100%;
-        padding-bottom: $pad;
-        box-sizing: border-box;
-        
-        .maintain-aspect-hold{
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            overflow: auto;
-            box-sizing: border-box;
-        }
+.fix-col-12{
+    @media (max-width: 767px){
+        flex-direction: column;
     }
 }
-
 .gray-box-l{background-color: $light-gray;}
 .pink-hover-bd{
     &:hover{
@@ -24,12 +13,12 @@
     border: 2px solid $pink;
 }
 .text-box{
-    line-height: 25px;
+    line-height: 22px;
     
     h3{
-        font-size: 25px;
+        font-size: 20px;
         font-family: $text-font-b;
-        line-height: 29px;
+        line-height: 22px;
     }
     h1{font-family: $text-font-b;}
     .h1-float-left{
@@ -51,8 +40,9 @@
     
     .line-div-l{
         display: flex;
+        align-items: center;
         justify-content: space-between;
-        margin: 5px 0;
+        margin: 4px 0;
         a{
             padding: 1px 10px;
             background-color: $gray;
@@ -65,8 +55,9 @@
 }
 .line-div{
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    margin: 5px 0;
+    margin: 4px 0;
     a{
         padding: 1px 10px;
         background-color: $black;
@@ -78,6 +69,14 @@
 }
 .text-box-sm{
     @include maintain-aspect-r(108.5%);
+    @media (max-width: 767px){
+        .maintain-aspect-r{
+            padding-bottom: 0px;
+            .maintain-aspect-hold{
+                position: relative;
+            }
+        }
+    }
     
 }
 @media (min-width: 1200px){

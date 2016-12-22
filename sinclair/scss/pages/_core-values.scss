@@ -52,7 +52,12 @@
         }
     }
 }
-
+.case-box-long img{
+    @media (max-width: 480px){
+        max-height: 424px !important;
+        overflow: hidden !important;
+    }
+}
 .case-studies{
     
     padding-top: 60px;
@@ -160,6 +165,13 @@
                 p {
                     font-size: $text-box-header;
                     font-family: $text-font-b;
+                }
+                
+                @media (max-width: 767px){
+                    padding: 12px;
+                    p {
+                        font-size: 25px;
+                    }
                 }
             }
         }

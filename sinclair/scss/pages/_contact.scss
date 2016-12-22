@@ -53,6 +53,14 @@
                         padding: 20px 0 10px 0;
                         border-bottom: 1px solid $gray;
                     }
+                    @media (max-width: 767px){
+                        h3{
+                            font-size: 20px;
+                        }
+                        a {
+                            padding-top: 5px;
+                        }
+                    }
                 }
             }
         }

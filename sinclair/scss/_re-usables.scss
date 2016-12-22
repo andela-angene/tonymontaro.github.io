@@ -1,5 +1,7 @@
 
-
+img{
+    max-width: 100%;
+}
 
 //Start Re-useables
 .fixed-navbar{
@@ -56,13 +58,15 @@ body {
         color: $black;
         padding: 0; margin: 0;
     }
-    .display-none{
-        display: none;
-    }
     .pad0{padding: 0 !important;}
 }
 .display-none{
     display: none;
+}
+@media (max-width: 767px){
+    .hide-mobile{
+        display: none;
+    }
 }
 .to-upper{
     text-transform: uppercase;

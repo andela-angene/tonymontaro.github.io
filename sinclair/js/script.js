@@ -97,7 +97,7 @@ function init_masory() {
         }
     });
     
-    $(".about-case-studies .hover-type, .sticky-register-footer .subscribe-stf, .case-studies .hover-type").click(function () {
+    $(".about-case-studies .hover-type, .sticky-register-footer .subscribe-stf, .case-studies .hover-type, .launchRegisterPopup").click(function () {
         //launch modal
         $('#registerPopup').modal();
     });
@@ -304,6 +304,11 @@ $(document).ready(function(){
         $('#testimonial-content').html(client.content);
 
         $('#testimonials').modal();
+    });
+    
+    //launch Positions modal
+    $(".launchPosition").click(function(){
+        $('#positionPopup').modal();
     });
         
 });

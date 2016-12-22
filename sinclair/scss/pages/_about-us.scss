@@ -3,6 +3,9 @@
         position: relative;
         width: 90%;
         border: 2px solid $pink;
+        @media (max-width:767px){
+            width: 100%;
+        }
     }
     .case-box{
         @include border-box;
@@ -71,6 +74,8 @@
 .bg-white{background-color: #fff !important;}
 .about-tabs{
     padding-top: 20px;
+    max-width: 100%;
+    overflow: hidden;
     
     .about-tab-links{
         list-style: none;
@@ -152,6 +157,15 @@
             padding-right: 60px;
         }
         h1{font-family: $text-font-b;}
+        @media (max-width: 767px){
+            padding: 10px;
+            .num{
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            h1{font-size: 25px;}
+            h3{font-size: 20px;}
+        }
     }
 }
 
@@ -168,7 +182,7 @@
     .panel-text{
         max-width: 600px;
         margin: 0 auto;
-        padding-top: 200px;
+        padding: 200px 15px 10px 15px;
         color: #fff;
         h1{
             font-family: $text-font-b;
@@ -215,6 +229,7 @@
         padding-right: 10px;
         max-width: 250px;
         margin-top: 20px;
+        margin: 0 auto;
         p{
             font-size: 13px;
             strong{font-family: $text-font-b;}

@@ -1,3 +1,19 @@
+@mixin maintain-aspect-r($pad: 100%){
+    .maintain-aspect-r{
+        position: relative;
+        width: 100%;
+        padding-bottom: $pad;
+        box-sizing: border-box;
+
+        .maintain-aspect-hold{
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            overflow: auto;
+            box-sizing: border-box;
+        }
+    }
+}
+
 .sticky-register-footer{
     display: none;
     padding: 5px 0;
@@ -63,12 +79,15 @@
     }
     li:before {
         content: "• ";
-        color: $pink; /* or whatever color you prefer */
+        color: $pink;
     }
 }
 
 .h-100{
     height: 100%;
+}
+.w-100{
+    width: 100%;
 }
 .flex-box{
     display: flex;

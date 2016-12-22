@@ -248,16 +248,23 @@
 //Positions
 .positions{
     padding: 20px 0;
-    background-color: $black;
-    color: #fff;
+    background-color: #fff;
+    color: $black;
+    border-top: 2px solid $pink;
+    border-bottom: 2px solid $pink;
     
     .read-more{
         display: inline-block;
         padding-bottom: 10px;
-        border-bottom: 2px solid #fff;
+        border-bottom: 2px solid $gray;
         margin-bottom: 20px;
+        a{padding-right: 15px;}
     }
     .positions-btn{
         padding: 10px 0;
+    }
+    .positions-head-text{
+        margin-top: 20px;
+        font-size: 20px;
     }
 }

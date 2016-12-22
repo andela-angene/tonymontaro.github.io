@@ -298,11 +298,12 @@
 }
 .fox-button-p{
     padding: 10px 15px;
-    color: $black;
+    color: #fff;
     background-color: $pink;
     border: none;
     &:hover{
         background-color: $pink;
-        color: #fff;
+        color: $black;
+        
     }
 }

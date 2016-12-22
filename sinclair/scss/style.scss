@@ -7,12 +7,15 @@
 @import "re-usables";
 
 @import 'partials/vendors';
+
+//Components
+@import "pages/components";
+
 //Navigation
 @import "navigation";
 
 
-//Components
-@import "pages/components";
+
 
 //Showcase Page
 @import "pages/core-values";

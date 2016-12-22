@@ -129,6 +129,7 @@ footer{
             margin-bottom: 20px;
 
             .socail-icons{
+                min-width: 160px;
                 display: inline-block;
                 padding-bottom: 10px;
                 border-bottom: 1px solid darken($gray, 20%);
@@ -301,16 +302,25 @@ footer{
             position: relative;
             right: 0;
         }
+        
+        .form-group{
+            button{
+                background-color: $gray;
+                &:hover{
+                    background-color: $darker-gray-l;
+                }
+            }
+        }
     }
 
     .registerPopup-tags{
         margin: 0; padding: 0;
         border-top: 2px solid #fff;
         color: $gray;
-        padding: 20px;
+        padding: 10px;
 
         span{
-            font-size: 22px;
+            font-size: 20px;
             color: #fff;
         }
     }
@@ -329,6 +339,51 @@ footer{
             }
         }
     }
+    
+}
+#positionPopup{
+    .register-form{
+        border-top: 2px solid #fff;
+        padding-bottom: 30px;
+        .form-control{
+            width: 100%;
+            margin: 0 auto;
+            background-color: $gray;
+        }
+    }
+    .registerPopup-tags{
+        border-top: 0px solid #fff;
+    }
 }
 
 //End Modal
+
+.footer-mail{
+    width: 180px;
+    padding: 0;
+    margin: 0 auto;
+    .row{width: 100%; padding: 0;}
+    .col-xs-6{
+        box-sizing: border-box;
+        padding: 0 5px !important;
+    }
+    img{
+        width: 80px;
+        height: 80px;
+    }
+    .footer-email{
+        @include transition();
+        background-position: 0 0;
+        &:hover,&:focus{
+            background-position: 0 -83px;
+        }
+        
+    }
+    .footer-cv{
+        @include transition();
+        background-position: -69px 0;
+        &:hover,&:focus{
+            background-position: -69px -83px;
+        }
+    }
+}

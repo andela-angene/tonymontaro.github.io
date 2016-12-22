@@ -92,6 +92,7 @@
             background-color: $black;
             color: #fff;
         }
+        @media (max-width: 767px){display: none;}
     }
     
     .news-content{
