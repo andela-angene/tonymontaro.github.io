@@ -1,0 +1,162 @@
+
+/*For main.css*/
+a.btn-orange{color: #fff !important}
+/*===========================================
+OVER50 Styles
+=============================================*/
+
+
+
+.orange-background .radio-option{
+    background-color: #ee753c !important;
+    color: #fff !important;
+}
+
+.product-item .price,
+.product-item span {font-size: 18px !important}
+
+.product-item .name a {font-size: 20px !important}
+
+{
+    border: 1px solid #bebebe !important;
+    font-size: 18px !important;
+}
+
+div.action input[type="button"] {
+    width: 100px;
+    background: url(http://over50fair.3dcartstores.com/images/category_template_btn.png) no-repeat center;
+    margin: 0 auto;
+}
+div.action input[type="button"]:hover {border: 1px solid #bebebe}
+div#qv_buttons{opacity: 0; width: 1px; height: 1px}
+
+span.label{
+    color: #656565 !important;
+    white-space: normal !important;
+    font-size: 100% !important;
+    font-weight: 700 !important;
+    text-align: left !important;
+    float: none !important;
+    display: inline !important;
+    padding: 0 !important;
+}
+span.required{margin-right: 1px !important}
+div#rTabs li{list-style: none;}
+
+div.sort-by{display: none !important}
+div.shipQuote{display: none !important}
+
+/*make item box smaller */
+.product-item{
+    display: inline-block !important;
+    margin: 0 auto !important;
+    padding: 0 10px !important;
+    margin-bottom: 10px !important;
+    text-align: center !important;
+    border: 1px solid #bebebe;
+    width: 280px !important;
+    min-height: 338px !important;
+}
+.product-item .status {margin: 0 !important}
+.product-item .name {margin-bottom: 0 !important}
+div.stars{display: none !important}
+
+@media(max-width: 400px){
+    .recalculate{
+        font-size: 13px !important;
+    }
+}
+
+.chkComments textarea{
+    width: 223px !important;
+}
+.product-responsive{
+    display: inline-block !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+}
+
+.purple-text{color: rgb(128, 0, 128);}
+.purple-text1{color: rgb(128, 0, 128);}
+.form-z-index{z-index: 990}
+div.action input {color: transparent !important}
+
+.subscribe-facebook p{
+    display: inline-block;
+}
+
+
+.display_none{
+    display: none !important;
+}
+
+.cvv2-edited{
+    float: right !important;
+}
+.ccv-to-right{
+    display: block;
+    float: left;
+    width: 185px;
+}
+.r-tabs-nav{
+    display: block !important;
+}
+.shoppingCartTotal{margin: 0 !important}
+div.opt-field label{
+    font-weight: 400 !important;
+}
+div.shoppingCartTotal div.row{
+    padding-right: 15px !important;
+}
+div.chkComments{
+    padding-bottom: 0 !important;
+}
+@media (min-width: 767px){
+    div#spanCheckout button.btn{
+        position: relative;
+        top: -50px
+    }
+  div#spanCheckout{
+      
+    }
+}
+div.logo img {
+    height: 120px !important;
+    width: auto !important;
+}
+
+
+.ul.slides{
+display: none !important;
+}
+
+
+/* =============================================================================== */
+
+
+
+.great-reasons ul {
+    list-style-image: url(../images/img-middle.jpg);
+}
+body{
+    background-color: #C0DCF4;
+}
+#nav_wrap_two{
+    background-color: #C0DCF4;
+}
+.new-location{
+    padding: 8px;
+    margin: 0 auto;
+    border: 3px solid #ee753c;
+    background-color: #C0DCF4;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    margin-right: 5px;
+    font-size: 16px;
+    color: #000;
+}
+@media (max-width: 767px){
+    .new-location{
+        padding: 5px 3px;
+    }
+}
