@@ -156,3 +156,19 @@
         width: 80%;
     }
 }
+
+
+//Tabs
+.executive-tabs{
+    padding: 60px 0;
+    .about-case-studies{
+        .row{
+            margin-bottom: 20px;
+        }
+    }
+    .text-box{
+        h2{
+            font-family: $text-font-b;
+        }
+    }
+}
