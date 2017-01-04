@@ -10,13 +10,11 @@
 
 @import 'partials/vendors';
 
-//Components
-@import "pages/components";
-
 //Navigation
 @import "navigation";
 
-
+//Components
+@import "pages/components";
 
 
 //Showcase Page
@@ -51,6 +49,9 @@
 
 //What we do
 @import "pages/what-we-do";
+
+//What we do
+@import "pages/venture";
 
 //Specific WP styles
 img.attachment-full.size-full.wp-post-image {

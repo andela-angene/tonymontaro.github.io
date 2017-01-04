@@ -110,3 +110,19 @@
 .gray-bg{
     background-color: $light-gray;
 }
+
+.sinclair-btn{
+    display: inline-block;
+    margin: 0;
+    padding: 15px 22px !important;
+    background-color: $black;
+    color: #fff !important;
+    border: none !important;
+    @include transition();
+    &:hover{
+        background-color: $pink;
+        color: #fff;
+        border: none;
+    }
+   
+}
