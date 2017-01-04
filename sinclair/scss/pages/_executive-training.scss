@@ -14,6 +14,9 @@
 }
 .text-box{
     line-height: 22px;
+    h1,h2,h3,h4, p{padding-top: 15px; margin-top: 0;}
+//    padding-top: 15px;
+    box-sizing: border-box;
     
     h3{
         font-size: 20px;
@@ -95,6 +98,7 @@
 
 
 .executive{
+    padding-top: 15px !important;
     .row{
         display: flex;
     }
@@ -162,9 +166,10 @@
 .executive-tabs{
     padding: 60px 0;
     .about-case-studies{
+        padding-top: 18px;
         @media (min-width: 768px){
             .row{
-                margin-bottom: 55px;
+                margin-bottom: 48px;
             }
         }
     }

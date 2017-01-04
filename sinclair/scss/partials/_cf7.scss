@@ -106,7 +106,7 @@ div.wpcf7 input[type="file"]:disabled {
 }
 
 
-.scf-contact{
+.scf-contact, #cvPopup, #positionPopup{
     .wpcf7 {
         padding-top: 30px;
         p{
@@ -141,3 +141,19 @@ div.wpcf7 input[type="file"]:disabled {
         }
     }
 }
+#cvPopup, #positionPopup{
+    p input {
+      margin-bottom: 5px;
+    }
+    .wpcf7{padding-bottom: 40px;}
+    .scf-submit-p {
+        width: 48% !important;
+        input{
+            border: 1px solid transparent;
+            &:hover{
+                color: #000;
+                background-color: $darker-gray-l;
+            }
+        }
+    }
+} 

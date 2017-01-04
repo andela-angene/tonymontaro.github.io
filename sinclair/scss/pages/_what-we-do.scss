@@ -1,7 +1,7 @@
 .dark-bg{background-color: $black;}
 .about-box-half-e{
 //    padding: 0 5px;
-    .frow:first-child{
+    .row:first-child{
         margin-bottom: 20px;
     }
     
@@ -13,7 +13,7 @@
     }
 }
 .about-box-half-txt{
-    @media (max-width: 767px){
+    @media (max-width: 991px){
         .ab-text-box{position: relative !important;}
         .maintain-aspect-r{
             padding-bottom: 0px !important;
@@ -28,7 +28,7 @@
     overflow: hidden;
     box-sizing: border-box;
     padding: 5px;
-    @include maintain-aspect-r(102%);
+    @include maintain-aspect-r(96.5%);
     .box-half{
         padding: 0;
         .logo-div{
@@ -37,6 +37,7 @@
             img{width: 60px;height: auto;}
         }
         >img{
+            max-height: 100%;
             width: 100%;
         }
     }
@@ -57,8 +58,27 @@
             }
         }
     }
+    
 }
-
+.team-member{
+    .ab-text-box{
+        padding-top: 10px;
+        h2{
+            font-size: 32px;
+            line-height: 35px;
+        }
+        p{
+            color: #e8e8e8;
+            padding-bottom: 12px;
+        }
+    }
+    .team-member-txt{
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+}
 .about-box{
     @include maintain-aspect-r(100%);
     padding: 0px 10px;    

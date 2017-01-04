@@ -51,3 +51,19 @@
 
 //What we do
 @import "pages/what-we-do";
+
+//Specific WP styles
+img.attachment-full.size-full.wp-post-image {
+    height: auto !important;
+}
+.trending-text p {
+    color: #232426;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+.a2a_svg {
+    height: 62px !important;
+    width: 62px !important;
+    border: none !important;
+}

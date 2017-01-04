@@ -191,6 +191,7 @@ footer{
 .registerPopup .register-desc img{
     margin-top: 20px;
 }
+
 .registerPopup, .testimonials{
     padding: 0; margin: 0;
     display: block;
@@ -385,5 +386,13 @@ footer{
         &:hover,&:focus{
             background-position: -69px -83px;
         }
+    }
+}
+#sharethis{
+    .chatbox-online{
+        margin-bottom: 30px;
+    }
+    .chatbox-team{
+        padding: 15px;
     }
 }

@@ -306,11 +306,38 @@ $(document).ready(function(){
         $('#testimonials').modal();
     });
     
+    $('.wpcf7 input, .wpcf7 select').addClass('form-control'); 
+    $('.wpcf7-submit').closest('p').addClass('scf-submit-p');
+    
     //launch Positions modal
     $(".launchPosition").click(function(){
+        var jobDiv = $(this).closest('.header-news-text');
+        var job = {
+            title: jobDiv.find('.job-title').html(),
+            description: jobDiv.find('.job-description').html(),
+            location: jobDiv.find('.job-location').html(),
+            salary: jobDiv.find('.job-salary').html(),
+        }
+
+        $('#job-title').html(job.title);
+        $('#job-description').html(job.description);
+        $('#job-location').html(job.location);
+        $('#job-salary').html(job.salary);
+        
         $('#positionPopup').modal();
     });
-        
+       
+    //launch CV modal
+    $(".launchCVPopup").click(function(){
+        $('#cvPopup').modal();
+    });
+    
+    //launch Share this modal
+    $(".sharethis").click(function(){
+        $('#sharethis').modal();
+    });
+    
+   
 });
 
 
