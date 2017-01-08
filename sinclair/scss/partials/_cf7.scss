@@ -157,3 +157,232 @@ div.wpcf7 input[type="file"]:disabled {
         }
     }
 } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Add to any */
+
+
+.addtoany_share_save_container {
+    clear: both;
+    margin: 16px 0
+}
+
+.addtoany_header {
+    margin: 0 0 16px
+}
+
+.addtoany_list {
+    display: inline;
+    line-height: 16px
+}
+
+.addtoany_list a,
+.widget .addtoany_list a {
+    border: 0;
+    box-shadow: none;
+    display: inline-block;
+    font-size: 16px;
+    padding: 0 4px;
+    vertical-align: middle
+}
+
+.addtoany_list a img {
+    border: 0;
+    display: inline-block;
+    height: auto;
+    opacity: 1;
+    overflow: hidden;
+    vertical-align: baseline;
+    width: auto
+}
+
+.addtoany_list a span {
+    display: inline-block;
+    float: none
+}
+
+.addtoany_list.a2a_kit_size_32 a {
+    font-size: 32px
+}
+
+.addtoany_list.a2a_kit_size_32 a > span {
+    border-radius: 4px;
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    opacity: 1;
+    width: 32px
+}
+
+.addtoany_list a .a2a_count {
+    position: relative;
+    vertical-align: top
+}
+
+.addtoany_list a:hover,
+.widget .addtoany_list a:hover {
+    border: 0;
+    box-shadow: none
+}
+
+.addtoany_list a:hover img,
+.addtoany_list a:hover span {
+    opacity: .7
+}
+
+.addtoany_list a.addtoany_special_service:hover img,
+.addtoany_list a.addtoany_special_service:hover span {
+    opacity: 1
+}
+
+.addtoany_special_service {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.addtoany_special_service a,
+.addtoany_special_service div,
+.addtoany_special_service iframe,
+.addtoany_special_service div.fb_iframe_widget,
+.addtoany_special_service span {
+    margin: 0;
+    vertical-align: baseline!important
+}
+
+.addtoany_special_service iframe {
+    display: inline;
+    max-width: none
+}
+
+a.addtoany_share_save.addtoany_no_icon span.a2a_img_text {
+    display: none
+}
+
+a.addtoany_share_save img {
+    border: 0;
+    width: auto;
+    height: auto
+}
+
+
+
+
+//start
+
+.sharebox{
+   padding: 0 ;
+    .modal-dialog{
+        padding: 0;
+        position: absolute;
+        width: 100% ;
+        height: 100%;
+        margin: 0 ;
+    }
+    .modal-content{
+        padding: 0;
+        position: absolute;
+        width: 100%;
+        min-height: 100%;
+        background-color: rgba(255, 255, 255, 0.91);
+        margin: 0 auto;
+        border: none;
+    }
+    .sharebox-close{
+        padding: 25px 60px;
+        font-size: 30px;
+        i{
+            -webkit-text-stroke: 6px white;
+            font-size: 50px;
+        }
+    }
+    .sharebox-div{
+        padding: 0 15px;
+        margin: 0 auto;
+        max-width: 750px;
+    }
+    .sharebox-head{
+        p{
+            font-size: 25px;
+        }
+        i{
+            font-size: 30px;
+        }
+    }
+    .sharebox-main{
+        h1{
+            font-size: 50px;
+            text-align: center;
+            font-family: $text-font-b;
+            margin-bottom: 30px;
+        }
+    }
+    .chatbox-online{
+        margin: 0 auto;
+        max-width: 440px;
+        text-align: center;
+        a{
+            padding-right: 10px;
+            padding-left: 10px;
+            color: $black;
+            border: none !important;
+            &:hover{
+                .a2a_svg{
+                    opacity: 1;
+                    background-color: $pink !important;
+                }
+                .a2a_label{
+                    opacity: 1;
+                    color: $pink !important;
+                }
+            }
+        }
+        .a2a_label {
+            position: relative !important;
+            width: 100%;
+            font-size: 16px;
+            display: block;
+            @include transition();
+        }
+        .a2a_svg{
+            background-color: $black !important;
+            @include transition();
+        }
+        .input-group{
+            margin-top: 30px;
+            input{
+                color: #fff !important;
+                background-color: $black;
+                padding-top: 25px;
+                border-right: none;
+                padding-bottom: 25px;
+            }
+            a{color: #fff; padding: 18px 5px;}
+            > span{
+                @include transition();
+                background-color: $darker-gray;
+                &:hover{
+                    background-color: $pink;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+

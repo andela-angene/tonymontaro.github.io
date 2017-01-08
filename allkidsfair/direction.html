@@ -207,7 +207,7 @@
                     <h2>Directions</h2>
                 </div>
                 
-                
+                <p id="availability">Sorry, sold out</p>
 
 
             <div>The All Kids Fair has a new home! 
@@ -238,7 +238,7 @@
 
 
 
-
+        
 
 
 
@@ -420,7 +420,11 @@
         <script src="js/lightbox.js"></script>
         
         <script src="js/allkidsfair.js"></script>
-
+        <script>
+            if ($('#availability').text() == 'Sorry, sold out'){
+                $('#availability').addClass('orange-text')
+            }    
+        </script>
 
     </body>
 </html>
