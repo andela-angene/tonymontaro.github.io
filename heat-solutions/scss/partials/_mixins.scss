@@ -1,0 +1,62 @@
+// === SCREENS ===
+@mixin tiny-screen(){
+  @media (max-width: 320px) {
+    @content;
+  }
+}
+@mixin small-screen(){
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+@mixin medium-screen(){
+  @media (max-width: 680px) {
+    @content;
+  }
+}
+@mixin large-screen(){
+  @media (max-width: 960px) {
+    @content;
+  }
+}
+
+@mixin  google-font($font){
+  $font: unquote($font);
+  @import url(https://fonts.googleapis.com/css?family=#{$font});
+}
+@mixin transition($time: 0.2s){
+    -webkit-transition: all $time;
+    transition: all $time;
+}
+
+@mixin nav-bar-links{
+    a:link, a:visited{
+        color: #fff;
+        text-decoration: none;
+        padding-bottom: 6px;
+        border-bottom: 1px solid transparent;
+        @include transition();
+    }
+    a:hover, a:active{
+        color: darken(#fff, 15%);
+        border-bottom: 1px solid darken(#fff, 15%);
+    }
+}
+
+@mixin orange-gradient{
+background: #e80606;
+background: -moz-linear-gradient(top,  #e80606 0%, #870505 68%, #750404 100%);
+background: -webkit-linear-gradient(top,  #e80606 0%,#870505 68%,#750404 100%);
+background: linear-gradient(to bottom,  #e80606 0%,#870505 68%,#750404 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e80606', endColorstr='#750404',GradientType=0 );
+}
+@mixin orange-gradient-d{
+background: #e80606;
+background: -moz-linear-gradient(top,  #e80606 0%, #770404 68%, #560303 100%);
+background: -webkit-linear-gradient(top,  #e80606 0%,#770404 68%,#560303 100%);
+background: linear-gradient(to bottom,  #e80606 0%,#770404 68%,#560303 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e80606', endColorstr='#560303',GradientType=0 );
+}
+
+
+

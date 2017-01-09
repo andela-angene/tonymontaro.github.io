@@ -1,0 +1,124 @@
+@media (min-width: 980px){
+    .hide-for-pc {
+        display: none !important;
+    }
+}
+@media (max-width: 979px){
+    .hide-for-ipad{
+        display: none !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width:  980px){
+    
+    
+ 
+    .header-ipad{
+        img{
+//            width: 100%;
+            border-top: 1px solid #fff;
+        }
+    }
+    
+    
+    .services {
+        padding: 0 !important;
+        .what-we-do{
+            padding: 30px;
+            text-align: center;
+            background-color: $ipad-black;
+            color: #fff;
+            
+            p{
+                font-size: 16px;
+            }
+        }
+        
+        
+        .services-ipad{
+            h3{
+                font-size: 18px;
+                margin: 0;
+                padding: 20px 0;
+            }
+            img{
+                max-width: 100%;
+            }
+            
+            .service-item{
+                color: #fff;
+
+                .service-heading{
+                    text-align: center;
+                }
+                img{
+                    margin-bottom: 30px;
+                }
+                .service-desc{
+                    font-size: 16px;
+                }
+            }
+            .first-row{
+                background-color: $ipad-gray;
+            }
+            .second-row{
+                background-color: $ipad-black-l;
+            }
+            .services-ipad-desc{
+                text-align: center;
+                padding: 20px 80px;
+                font-size: 16px;
+                color: #fff;
+            }
+        }
+    }
+    
+    
+    //Start Contact
+    .contact{
+        background-color: $ipad-black !important;
+        .the-text{
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+
+            div{
+                width: 100%;
+                padding-bottom: 20px;
+               
+            }
+            
+        }
+        .form-disclaimer{
+            font-size: 13px;
+            text-align: center;
+        }
+    }
+    
+    
+    footer{
+        
+        .the-address{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            color: #fff;
+            padding: 0 0 50px 100px;
+            font-size: 16px;
+
+            a{
+                color: #fff;
+            }
+            div:first-child{
+                padding-right: 10px;
+                font-weight: bold;
+            }
+            div:last-child{
+                border-left: 1px solid #fff;
+                padding: 10px 0 30px 10px;
+            }
+        }
+    }
+    
+}

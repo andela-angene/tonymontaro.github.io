@@ -1,0 +1,217 @@
+@media (max-width: 767px){
+    .hide-for-ipad, .hide-for-mobile {
+        display: none !important;
+    }
+}
+@media (min-width: 768px){
+    .mobile-only{
+        display: none !important;
+    }
+}
+.mobile-gray-box{
+    background-color: $mobile-gray;
+    color: #fff;
+}
+.mobile-gray-box-b{
+    background-color: $mobile-gray-d;
+    color: #fff;
+    p, h2{color: #fff;}
+}
+
+@media (max-width:  767px){
+    
+//    body{padding-top: 50px;}
+    
+    .navbar{
+        float: right;
+        background-color: transparent;
+        border: none !important;
+        
+        .navbar-toggle{
+            border: none !important;
+            margin: 30px 10px 0 0;
+            &:hover{
+                background-color: transparent;
+            }
+            &:active {
+                background-color: transparent;
+            }
+            
+            .icon-bar{
+                background-color: #fff;
+                border-radius: 2px;
+                height: 5px;
+                width: 30px;
+                
+            }
+            
+        }
+        .navbar-collapse{
+            background-color: $orange;
+            color: #fff;
+            
+            @include nav-bar-links();
+        }
+    }
+    
+    .mobile-header{
+        background: url('../images/body-bg.jpg');
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        
+        img{
+            position: relative;
+            z-index: 980;
+            max-width: 50%;
+            max-height: 150px;
+            height: auto;
+            max-width: 100%;
+            margin-bottom: 50px;
+        }
+        
+        
+        h3{
+            font-size: 25px;
+            line-height: 30px;
+        }
+    }
+    
+    .header-ipad{
+        img{width: 100%;}
+    }
+    
+    
+    
+    
+    .services {
+        padding: 0 !important;
+        
+
+
+        .services-ipad{
+            h3{
+                font-size: 18px;
+                margin: 0;
+                padding: 20px 0;
+            }
+            img{
+                max-width: 100%;
+            }
+
+            .service-item{
+                color: #fff;
+
+                .service-heading{
+                    text-align: center;
+                }
+                img{
+                    margin-bottom: 30px;
+                }
+                .service-desc{
+                    font-size: 16px;
+                }
+            }
+            
+            .what-we-do{
+                background-color: $mobile-gray;
+                .orange-text{margin-bottom: 25px;}
+                .row{margin-top: 30px;}
+            }
+        }
+    }
+    
+    //Start Contact
+    .contact{
+        .call-us{
+            background-color: $mobile-gray-d;
+        }
+        .the-text{
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+
+            div{
+                width: 100%;
+                padding-bottom: 20px;
+
+            }
+            padding-bottom: 30px;
+        }
+        .form-disclaimer{
+            font-size: 13px;
+            text-align: center;
+        }
+        
+        .form-fifty{
+            width: 48%;
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            font-size: 16px;
+            margin-bottom: 10px;
+            input[type = checkbox] {
+                width: 18px;
+                height: 18px;
+                margin-right: 10px;
+                -ms-flex-negative: 0;
+                flex-shrink: 0;
+            }
+        }
+    }
+    
+    footer{
+        padding: 30px 0;
+        background-color: $orange;
+    }
+    
+    
+}
+.welcome-text-mobile{
+    padding: 0px 0px 30px 0px !important;
+    background-color: $orange;
+    color: #fff;
+    .text-box-head{
+        padding: 15px 15px 10px 15px;
+        background-color: $orange-d;
+        margin-bottom: 15px;
+    }
+    .text-box{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    h2{
+        font-style: italic;
+        font-weight: bold;
+        font-size: 40px;
+    }
+    .down-triangle{
+        position: relative;
+        padding: 0;
+        margin: 0;
+
+        i{
+            font-size: 50px;
+            position: absolute;
+            bottom: 0;
+            color: $orange;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
+
+    }
+}
+.what-we-do{
+    padding: 30px;
+    text-align: center;
+    background-color: $ipad-black;
+    color: #fff;
+
+    p{
+        font-size: 16px;
+    }
+}
