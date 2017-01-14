@@ -210,8 +210,20 @@
     text-align: center;
     background-color: $ipad-black;
     color: #fff;
-
+    
+    .col-xs-6{
+        padding-top: 15px;
+        .orange-text{padding-bottom: 20px;}
+    }
+    .heat-app-list{
+        padding-left: 0;
+    }
+    .heat-app-btn{padding-left: 0; text-align: right;}
     p{
         font-size: 16px;
+    }
+    @media (max-width: 480px){
+        .col-xs-6{width: 100%;}
+        .heat-app-btn{text-align: left;}
     }
 }

@@ -67,9 +67,18 @@ $(document).ready(function(){
             }
             $.ajax({
                 type: "POST",
-                url: "send_mail.php",
+//                url: "send_mail.php",
+                url: "http://montaroweb.com/hosted/minty/send_mail.php",
                 data: data,
-                success: function(data){
+                complete: function(data){
+                    $("#email").val('');
+                    $("#phone").val('');
+                    $("#message").val('');
+                    $("#name").val('');
+                    $("#vinyl").prop('checked', false);
+                    $("#dtg").prop('checked', false);
+                    $("#silk").prop('checked', false);
+                    $("#embroid").prop('checked', false);
                     $('#thank-you').modal();
                 }
             });
@@ -90,7 +99,9 @@ $(document).ready(function(){
         }
     });
     
-   
-    
+    //Close navmenu after click
+    $(".navbar-nav li a").click(function(event) {
+        $(".navbar-collapse").collapse('hide');
+    });
     
 });

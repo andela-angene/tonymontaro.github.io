@@ -201,7 +201,15 @@ footer{
         min-width: 700px;
     }
     
-
+    .scf-submit-p {
+        input{
+            border: 1px solid transparent;
+            &:hover{
+                color: #000;
+                background-color: $darker-gray-l;
+            }
+        }
+    }
 
     .col-xs-6{
         @include border-box;
@@ -288,11 +296,13 @@ footer{
             width: 80%;
             margin: 0 auto;
             background-color: $gray;
-            margin-bottom: 35px;
         }
         
         p{
             color: #e8e8e8;
+        }
+        .wpcf7 p{
+            margin-bottom: 30px;
         }
         .popup-form-img{
             text-align: right;
@@ -327,7 +337,7 @@ footer{
     }
     .register-form-div{
         height: 100%;
-        background-color: $darker-gray;
+        background-color: $black;
         @media (max-width: 512px){
             
             h2{
@@ -337,6 +347,7 @@ footer{
             form{padding-top: 10px;}
             .form-control{
                 width: 100%;
+               padding: 0 !important;
             }
         }
     }

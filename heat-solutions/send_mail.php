@@ -3,6 +3,7 @@ if(isset($_POST['send_mail'])):
 // from the form
 $name = trim(strip_tags($_POST['name']));
 $email = trim(strip_tags($_POST['email']));
+$phone = trim(strip_tags($_POST['phone']));
 $dtg = $_POST['dtg'];
 $silk = $_POST['silk'];
 $embroid = $_POST['embroid'];
@@ -25,8 +26,8 @@ $message .= "Service(s): ". $services. "<br><br>";
 $message .= 'Message: ' . htmlentities($_POST['message']);
 
 // set here
-$subject = "Contact form your website by: ".$email;
-$to = 'ngeneanthony@gmail.com';
+$subject = "Contact form your website by: ".$name;
+$to = 'customerservice@heatsolutions.co';
 
 //$body = <<<HTML
 //$message
