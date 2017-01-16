@@ -136,19 +136,19 @@ display: none !important;
 
 
 .great-reasons ul {
-    list-style-image: url(../images/img-middle.jpg);
+    list-style-image: url(../images/img-middle.png);
 }
 body{
-    background-color: #C0DCF4;
+    background-color: #d2e7f8;
 }
 #nav_wrap_two{
-    background-color: #C0DCF4;
+    background-color: #d2e7f8;
 }
 .new-location{
     padding: 8px;
     margin: 0 auto;
     border: 3px solid #ee753c;
-    background-color: #C0DCF4;
+    background-color: #d2e7f8;
     letter-spacing: 1px;
     border-radius: 8px;
     margin-right: 5px;

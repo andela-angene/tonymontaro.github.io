@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Basic Form</title>
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/demo.css">
+	<link rel="stylesheet" href="assets/form-basic.css">
+
+</head>
+
+<body>
+
+	<header>
+		<img class="img img-rounded" src="../images/O50LogoRes.jpg" alt="">
+    </header>
+
+    <ul>
+        <li><a href="index.html" class="active">Register</a></li>
+        <li><a href="view.html">View Database</a></li>
+        <li><a href="../index.html">Back to Home</a></li>
+        
+    </ul>
+
+
+    <div class="main-content">
+
+        <!-- You only need this form and the form-basic.css -->
+
+        <form class="form-basic" method="post" action="#">
+
+            <div class="form-title-row">
+                <h1>Register Client</h1>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>First Name</span>
+                    <input type="text" name="first_name" id="first_name">
+                </label>
+            </div>
+            <div class="form-row">
+                <label>
+                    <span>Last Name</span>
+                    <input type="text" name="last_name" id="last_name">
+                </label>
+            </div>
+            <div class="form-row">
+                <label>
+                    <span>Town</span>
+                    <select name="town" id="town">
+                        <option>Town One</option>
+                        <option>Town Two</option>
+                        <option>Town Three</option>
+                        <option>Town Four</option>
+                    </select>
+                </label>
+            </div>
+            <div class="form-row">
+                <label>
+                    <span>E-mail address</span>
+                    <input type="text" name="e_mail" id="e_mail">
+                </label>
+            </div>
+            <div class="form-row">
+                <label>
+                    <span>How did you hear of our event?</span>
+                    <select name="hear_about_us" id="hear_about_us">
+                        <option>E-mail list</option>
+                        <option>Friend</option>
+                        <option>Facebook</option>
+                        <option>Other</option>
+                    </select>
+                </label>
+            </div>
+            <div class="form-row">
+                <label>
+                    <span>May we share your info with our exhibitors?</span>
+                    <input type="checkbox" name="share_info" id="share_info"> Yes
+                </label>
+            </div>
+            <div class="form-row">
+                <label>
+                    <span>Do you want info about our Over 50 Fair?</span>
+                    <input type="checkbox" name="over50_info" id="over50_info"> Yes
+                </label>
+            </div>
+            <div class="form-row">
+                <label>
+                    <span>Comment</span>
+                    <textarea name="comment" id="comment"></textarea>
+                </label>
+            </div>
+            
+
+            
+
+            <div class="form-row">
+                <button type="submit">Submit Form</button>
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
