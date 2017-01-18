@@ -180,3 +180,98 @@
         }
     }
 }
+.vinvest-pts{
+    .row{width: 100%; padding: 0; margin: 0;}
+}
+.vinvest-slider{
+    padding: 0;
+    h2{
+        font-size: 20px;
+    }
+    .effect-marley{
+        height: 440px;
+        text-align: center;
+        
+    }
+    .fa{
+        font-size: 50px;
+    }
+    figcaption{
+        padding: 20px;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+}
+//Copied
+figure.effect-marley h2,
+figure.effect-marley p {
+    position: relative;
+    right: 10px;
+    left: 10px;
+    padding: 10px 0;
+    top: 50px;
+    /* font-family: open sans;
+    */ }
+
+
+figure.effect-marley p {
+    bottom: 30px;
+    -webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+    line-height: 20px;
+}
+
+@media (min-width: 992px){
+    figure.effect-marley p {
+        line-height: 17px;
+    }
+}
+
+figure.effect-marley h2 {
+    top: 30px;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0,20px,0);
+    transform: translate3d(0,115px,0);
+}
+
+figure.effect-marley:hover h2 {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+
+figure.effect-marley h2::after,
+figure.effect-marley p {
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-marley:hover h2::after,
+figure.effect-marley:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+figure.effect-marley:hover .pBoxIcon{
+    font-size:22px !important;
+}
+
+/* ----------- iPhone 5 and 5S ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+    figure.effect-marley h2::after, figure.effect-marley p {
+        opacity: 1 !important;
+        -webkit-transform: translate3d(0, 0, 0) !important;
+        transform: translate3d(0, 0, 0) !important;
+    }
+    figure.effect-marley .pBoxIcon {
+        font-size:22px !important;
+    }
+    figure.effect-marley h2 {
+        -webkit-transform: translate3d(0, 0, 0) !important;
+        transform: translate3d(0, 0, 0) !important;
+    }
+}
