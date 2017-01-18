@@ -34,7 +34,7 @@ $to = 'customerservice@heatsolutions.co';
 //HTML;
 
 
-$headers = "From: ".$email."\r\n";
+$headers = "From: sub5.mail.dreamhost.com\r\n";
 $headers .= "Content-type: text/html\r\n";
 if(mail($to, $subject, $message, $headers)){
 echo "success!";

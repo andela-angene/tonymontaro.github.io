@@ -68,7 +68,7 @@ $(document).ready(function(){
             $.ajax({
                 type: "POST",
 //                url: "send_mail.php",
-                url: "http://montaroweb.com/hosted/minty/send_mail.php",
+                url: "send_mail.php",
                 data: data,
                 complete: function(data){
                     $("#email").val('');
