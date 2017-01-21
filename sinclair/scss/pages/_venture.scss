@@ -82,6 +82,7 @@
     height: 300px;
     background-position: center;
     background-size: cover;
+    background-color: $black;
     color: #fff;
     h1, p{
         display: inline-block;
@@ -136,6 +137,7 @@
     position: relative;
     background-position: center;
     background-size: cover;
+    background-color: $black;
     color: #fff;
     background-attachment: fixed;
    
@@ -189,7 +191,8 @@
         font-size: 20px;
     }
     .effect-marley{
-        height: 440px;
+        padding-top: 0;
+        height: 300px;
         text-align: center;
         
     }
@@ -201,7 +204,17 @@
         height: 100%;
         width: 100%;
         overflow: hidden;
+        &:hover{
+            padding-top: 40px;
+        }
     }
+}
+.callOutTitle{
+    top: 0;
+    margin: 0;
+    padding: 0;
+    padding-top: 25px;
+    margin-bottom: 0;
 }
 //Copied
 figure.effect-marley h2,
@@ -210,7 +223,7 @@ figure.effect-marley p {
     right: 10px;
     left: 10px;
     padding: 10px 0;
-    top: 50px;
+    top: -20px;
     /* font-family: open sans;
     */ }
 
@@ -229,7 +242,7 @@ figure.effect-marley p {
 }
 
 figure.effect-marley h2 {
-    top: 30px;
+    top: -20px;
     -webkit-transition: -webkit-transform 0.35s;
     transition: transform 0.35s;
     -webkit-transform: translate3d(0,20px,0);
@@ -274,4 +287,11 @@ figure.effect-marley:hover .pBoxIcon{
         -webkit-transform: translate3d(0, 0, 0) !important;
         transform: translate3d(0, 0, 0) !important;
     }
+}
+
+
+// PrettyPhoto popup
+ .pp_content{
+    height: auto !important;
+    background-color: transparent !important;
 }
