@@ -84,9 +84,11 @@
             <div class="container">
                 <div class="top-nav">
                     <ul>
-                        <li class="top-nav-search">
-                            <i class="fa fa-search"></i>
-                        </li>
+                       <li>
+                           <form id="demo-2" action="<?php esc_url(home_url('/')); ?>" method="get">
+                               <input name="s" type="search" placeholder="Search">
+                           </form>
+                       </li>
                         <li class="sign-in">
                             <a href="#">Sign In</a>
                         </li>
