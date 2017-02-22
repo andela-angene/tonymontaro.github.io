@@ -1,31 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <title>Shopping Cart</title>
-    <!--  Style Sheet  -->
+    <title>Document</title>
+
+    <!--  styles  -->
     <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <!--First Drop Target-->
-    <h2>Drag blocks from Store to Cart to add, <br> drag out of Cart to remove</h2>
-    <div id="store" class="container">
-       <h2>Store</h2>
-       <div class="clear"></div>
-        <div id="box1" draggable="true" class="draggable box navy"></div>
-        <div id="box2" draggable="true" class="draggable box red"></div>
-        <div id="box3" draggable="true" class="draggable box green"></div>
-        <div id="box4" draggable="true" class="draggable box orange"></div>
+  </head>
+  <body>
+
+    <header>
+      <h1>SHOPPING CART</h1>
+
+      <nav>
+        <ul>
+          <li><a href="#bags">BAGS</a></li>
+          <li><a href="#watches">WATCHES</a></li>
+          <li><a href="#">SHEOS</a></li>
+          <li><a href="#">CLOTHES</a></li>
+        </ul>
+      </nav>
+      <hr>
+    </header>
+
+
+    <div class="wrapper">
+
+      <div id="cart" class="cart">
+        <div class="cart-header">
+          <h2>CART </h2>
+        </div>
+
+        <div class="summary">
+          <h2>Order Summary</h2>
+          <div class="col-50">
+            Shipping <br>
+            <h3>Total</h3>
+          </div>
+          <div class="col-50 text-right">
+            Free
+            <h3>$<span id="total">0</span></h3>
+          </div>
+          <div class="clear"></div>
+        </div>
+
+      </div>
+
+      <div class="shop">
+
+        <!--     Bags    -->
+        <div id="bags" class="clear"></div>
+        <div id="item-1" class="col-50 shop-item"  draggable="true">
+          <img draggable="false" src="img/bag1.jpeg" alt="">
+          <p class="num"></p>
+          <h3>Mulberry</h3>
+          <h2>$<span class="price">40</span></h2>
+        </div>
+
+        <div id="item-2" class="col-50 shop-item"  draggable="true">
+          <img draggable="false" src="img/bag2.jpg" alt="">
+          <p class="num"></p>
+          <h3>Gucci Bag</h3>
+          <h2>$<span class="price">120</span></h2>
+        </div>
+
+        <div id="item-3" class="col-50 shop-item"  draggable="true">
+          <img draggable="false" src="img/bag3.jpeg" alt="">
+          <p class="num"></p>
+          <h3>Alexa Bag</h3>
+          <h2>$<span class="price">25</span></h2>
+        </div>
+
+        <div id="item-4" class="col-50 shop-item"  draggable="true">
+          <img draggable="false" src="img/bag4.jpg" alt="">
+          <p class="num"></p>
+          <h3>Drew Crossbody Bag</h3>
+          <h2>$<span class="price">30</span></h2>
+        </div>
+
+        <!--    Watches    -->
+        <div id="watches" class="clear"></div>
+        <div id="item-5" class="col-50 shop-item"  draggable="true">
+          <img draggable="false" src="img/watch1.jpeg" alt="">
+          <p class="num"></p>
+          <h3>Watch1</h3>
+          <h2>$<span class="price">150</span></h2>
+        </div>
+
+        <div id="item-6" class="col-50 shop-item"  draggable="true">
+          <img draggable="false" src="img/watch2.jpeg" alt="">
+          <p class="num"></p>
+          <h3>Watch2</h3>
+          <h2>$<span class="price">150</span></h2>
+        </div>
+
+        <div id="item-7" class="col-50 shop-item"  draggable="true">
+          <img draggable="false" src="img/watch3.jpeg" alt="">
+          <p class="num"></p>
+          <h3>Watch3</h3>
+          <h2>$<span class="price">150</span></h2>
+        </div>
+
+      </div>
+
     </div>
 
-    <!--Second Drop Target-->
-    <div id="cart" class="container">
-        <h2>Cart</h2>
-        <div class="clear"></div>
-    </div>
-    
-    <!--  Scripts  -->
+
     <script src="js/jquery.min.js"></script>
     <script src="js/myscript.js"></script>
-</body>
+  </body>
 </html>
