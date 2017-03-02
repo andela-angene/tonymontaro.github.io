@@ -209,7 +209,6 @@
         background-color: $light-gray;
         
         .col-sm-9, .col-sm-12{
-//            padding-bottom: 30px;
             @media (min-width: 767px){
                 padding: 0 40px;
             }
@@ -220,8 +219,10 @@
     
     
     p{
+		padding-bottom: 10px;
         line-height: 25px;
     }
+	P:last-child{padding-bottom: 0px}
     .about-passport{
         max-width: 100px;
     }
