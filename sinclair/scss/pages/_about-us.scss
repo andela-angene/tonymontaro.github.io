@@ -199,19 +199,19 @@
 
 .about-post{
     
+	h2{
+		font-family: $text-font-b;
+		margin: 0;
+		padding-bottom: 20px;
+	}
     .container{
-        padding: 60px 15px;
+        padding: 30px 15px;
         background-color: $light-gray;
         
-        .col-sm-9{
-            padding-bottom: 30px;
+        .col-sm-9, .col-sm-12{
+//            padding-bottom: 30px;
             @media (min-width: 767px){
                 padding: 0 40px;
-            }
-            h2{
-                font-family: $text-font-b;
-                margin: 0;
-                padding-bottom: 20px;
             }
         }
         

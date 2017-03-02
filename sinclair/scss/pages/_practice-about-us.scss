@@ -141,11 +141,12 @@
 
 
 //Practices and Venture
-.fl-head-text{
+.sinclair-t, .fl-head-text{
     float: left;
     margin: 0 5px 0 0;
-    font-size: 36px;
+    font-size: 68px;
     font-family: $text-font-b;
+	color: $pink;
 }
 .practices{
     .text-box{
