@@ -12,6 +12,15 @@ body {
   color: #F4781F;
 }
 
+a:link, a:visited {
+  color: #c6c6c6;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  color: #fff;
+}
+
 .btn-donate,
 .btn-donate:link {
   padding: 5px 10px;
@@ -31,7 +40,7 @@ body {
 }
 
 .btn-blue,
-.btn-blue:link {
+.btn-blue:link, .btn-blue:visited {
   padding: 5px 10px;
   border-radius: 8px;
   color: #fff;
@@ -52,9 +61,14 @@ body {
 }
 
 .navbar .navbar-brand {
-  color: #fff;
+  padding-top: 7px;
+  color: #f8a468;
   font-family: 'Courgette', cursive;
   font-size: 24px;
+}
+
+.navbar .navbar-brand img {
+  max-width: 300px;
 }
 
 .navbar .navbar-nav a:visited,
@@ -181,16 +195,31 @@ section .description {
 
 footer {
   padding: 50px 0;
+  color: #fff;
+  background-color: #3E7293;
+}
+
+footer .github-foot {
+  margin-top: 25px;
+}
+
+footer .github-foot img {
+  margin-right: 20px;
 }
 
 .crDonateWidget {
+  -webkit-box-shadow: 0px 0px 0px 0px transparent !important;
+  -moz-box-shadow: 0px 0px 0px 0px transparent !important;
   box-shadow: 0px 0px 0px 0px transparent !important;
+  -webkit-border-radius: 8px !important;
+  -moz-border-radius: 8px !important;
   border-radius: 8px !important;
 }
 
 .crDonateWidgetOuter {
   text-align: center;
   background-color: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 0px transparent !important;
   box-shadow: 0px 0px 0px 0px transparent !important;
   border: 0px solid #e6e6e6 !important;
   margin: 0px 0px !important;
@@ -230,6 +259,8 @@ footer {
   width: 80% !important;
   margin-top: 8px !important;
   background: #f4781f !important;
+  -webkit-border-radius: 8px !important;
+  -moz-border-radius: 8px !important;
   border-radius: 8px !important;
   text-transform: none !important;
 }
