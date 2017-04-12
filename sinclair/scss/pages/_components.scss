@@ -135,6 +135,38 @@
    
 }
 
+.connect-lk{
+  border: 3px solid $blue;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 10px;
+  
+  .connect-lk-icon{
+    padding: 3px 8px;
+    font-size: 40px;
+    line-height: 40px;
+    position: relative;
+    float: left;
+    color: #fff;
+    background-color: $blue;
+    border-radius: 5px;
+  }
+  .connect-lk-text{
+    text-align: center;
+    display: inline-block;
+    color: $black;
+    padding: 0;
+    padding-left: 5px;
+  }
+  
+  &:hover{
+    border-color: $pink;
+    .connect-lk-icon{
+      background-color: $pink;
+    }
+  }
+}
+
 //Search Form
 .top-nav{
 
