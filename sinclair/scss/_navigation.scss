@@ -201,7 +201,7 @@
         a:hover, a:active{
             color: darken($gray, 80%);
         }
-        .col-sm-2,.col-sm-3{
+        .col-sm-2,.col-sm-3,.col-sm-5ths{
             padding: 0;
             margin: 0;
             padding-bottom: 10px;
@@ -220,14 +220,14 @@
                 @include transition();
             }
         }
-        .col-sm-2.active,.col-sm-3.active{
+		.col-sm-2.active,.col-sm-3.active, .col-sm-5ths.active{
             border-bottom: 2px solid $pink;
             a{
                 color: $pink;
             }
             i{color: $pink;}
         }
-        .col-sm-2:hover,.col-sm-3:hover{
+		.col-sm-2:hover,.col-sm-3:hover, .col-sm-5ths:hover{
             border-bottom: 2px solid darken($pink, 5%);
             a{
                 color: darken($pink, 10%);

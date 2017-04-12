@@ -118,7 +118,15 @@
 .gray-bg{
     background-color: $light-gray;
 }
-
+.gray-bg-d{
+	background-color: $darker-gray-l;
+	padding: 0;
+	.container{
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+		background-color: transparent !important;
+	}
+}
 .sinclair-btn{
     display: inline-block;
     margin: 0;
@@ -131,8 +139,7 @@
         background-color: $pink;
         color: #fff;
         border: none;
-    }
-   
+    }  
 }
 
 //Search Form
