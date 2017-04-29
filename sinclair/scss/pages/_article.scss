@@ -1,41 +1,112 @@
-.article-header{
-    text-align: center;
-    padding: 100px 0;
-    
-    h1{
-        font-family: $text-font-b;
-    }
-    p.small{
-        color: $gray;
-    }
-    p.article-author{
-        margin-top: 30px;
-    }
+.article-header {
+  padding: 50px 0 120px;
+  background-size: cover;
+  background-position: center;
+  h1 {
+    font-family: $text-font-b;
+    color: $pink;
+  }
 }
 
-.article-post-top-border{border-top: 10px solid $gray;}
-.article-post{
-    
-    .author-sidebar{
-        img{
-            border: 2px solid $pink;
-        }
-        h3{
-            font-size: 18px;
-        }
-        p{
-            padding-top: 30px;
-        }
+.article-post {
+  h1, h2, h3 {
+    font-family: $text-font-b;
+    font-weight: 900;
+  }
+  .container {
+    background-color: transparent;
+  }
+  .author-sidebar {
+    img {
+      border: 2px solid $pink;
     }
-    
-    .read-more-top-img{
-        padding: 0;
-        .read-more-div{
-            padding: 0 15px 20px 15px;
-        }
-        img{
-            width: 100%;
-        }
+    h3 {
+      font-size: 18px;
     }
-    
+    p {
+      padding-top: 30px;
+    }
+  }
+  .read-more-top-img {
+    padding: 0;
+    .read-more-div {
+      padding: 0 15px 20px 15px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .col-xs-11 {background-color: #fff;}
+}
+
+.news-content {
+  img {
+    margin: 10px 0 25px 0;
+  }
+  .new-discover-btn {
+    margin-top: 30px;
+  }
+}
+
+.news-author {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px;
+  margin-bottom: 30px;
+  background-color: $light-gray;
+  img {
+    max-width: 150px;
+    margin-right: 15px;
+  }
+  a {
+    color: $blue !important;
+    &:hover {
+      border-color: $blue;
+    }
+  }
+}
+
+.related-articles {
+  .ra-heading{
+    font-family: $text-font;
+    font-weight: 300;
+  }
+  .ra-category {
+    position: absolute;
+    top: 15px;
+    color: #fff;
+    padding: 8px 15px;
+    background-color: $pink;
+    left: -5px;
+  }
+  
+  .related {
+    position: relative;
+    img {
+      margin: 0;
+      width: 100%;
+    }
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+  }
+  .ra-text {
+    padding: 0 15px;
+  }
+}
+.related1 {background-color: $light-gray;}
+.related2 {
+  background-color: $pink;
+  color: #fff;
+}
+.related3 {
+  background-color: $black;
+  color: #fff;
+}
+
+.news-social {
+  .a2a_label, .input-group {
+    display: none !important;
+  }
+  a {border: none !important;}
 }

@@ -33,3 +33,17 @@
 		float: left;
 	}
 }
+
+.launch-chatbox,
+.sticky-register-footer .pull-right,
+li.sign-in,
+.news-filters
+{
+  display: none !important;
+}
+.sticky-register-footer {
+  padding-bottom: 15px;
+}
+.wysija-submit {
+  margin-top: 0px !important;
+}

@@ -242,3 +242,16 @@
     }
     
 }
+
+.pink-button {
+  display: inline-block !important;
+  padding: 15px 22px !important;
+  background-color: $pink;
+  color: #fff !important;
+  @include transition();
+  &:hover{
+    background-color: darken($pink, 5%);
+    text-decoration: none;
+    color: #fff;
+  }
+}
