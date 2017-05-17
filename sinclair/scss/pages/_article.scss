@@ -89,6 +89,11 @@
     }
     padding-bottom: 30px;
     margin-bottom: 10px;
+    
+    h3 {
+      font-size: 18px;
+    }
+    p { font-size: 16px; }
   }
   .ra-text {
     padding: 0 15px;
@@ -124,5 +129,10 @@
     position: absolute;
     top: 0;
     left: 30px;
+  }
+  
+  h3{
+    margin-top: 5px;
+    margin-bottom: 20px;
   }
 }
